@@ -47,7 +47,7 @@ ul.no-list {
 }
 
 .no-list li:nth-child(3){
-	margin-top: 16px;
+	padding-top: 16px;
 }
 
 .feedback {
