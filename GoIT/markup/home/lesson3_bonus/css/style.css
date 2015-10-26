@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #000000
+}
+
+.wrapper {
+	display: block;
+	width: 820px;
+	background: url(../img/bg_body.jpg) center center no-repeat;
+	margin: 0 auto;
+	padding: 40px 60px;
+	position: relative;
+}
+
+p {
+	color: #d4d4d4;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 13px;
+	text-align: center;
+ }
+ 
+ /* HEADER */
+
+ .header {
+ 	overflow: hidden;
+ 	background: url(../img/palm.png) 142px 20px  no-repeat;
+ 	padding: 90px 18px 18px 0;
+ }
+
+.logo-slogan {
+	float: left;
+	overflow: hidden;
+}
+
+.contacts {
+	float: right;
+	position: relative;
+	top: 10px;
+}
+
+.contacts p {
+	text-align: left;
+	font-size: 10px;
+}
+.contacts p:first-child {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+ /* CONTENT */
+
+.content {
+	padding: 0px 0 120px 0;
+}
+
+.row .img {
+	display: inline-block;
+	margin: 0 1px 50px 2px ;
+}
+
+.row img {
+	border: 3px solid #828684;
+	border-radius: 1%;
+}
+
+.img p {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 16px;
+}
+
+	
+
+
+
+
+
+
