@@ -16,6 +16,14 @@ body {
 	position: relative;
 }
 
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
 p {
 	color: #d4d4d4;
 	font-family: Tahoma, Arial, sans-serif;
@@ -23,24 +31,25 @@ p {
 	line-height: 13px;
 	text-align: center;
  }
+
+ a {
+ 	text-decoration: none;
+ }
  
  /* HEADER */
 
  .header {
- 	overflow: hidden;
  	background: url(../img/palm.png) 142px 20px  no-repeat;
  	padding: 90px 18px 18px 0;
  }
 
 .logo-slogan {
 	float: left;
-	overflow: hidden;
 }
 
 .contacts {
 	float: right;
-	position: relative;
-	top: 10px;
+	padding-top: 12px;
 }
 
 .contacts p {
@@ -58,9 +67,15 @@ p {
 	padding: 0px 0 120px 0;
 }
 
+.row {
+	line-height:0;
+	font-size: 0;
+	vertical-align: 0;
+}
+
 .row .img {
 	display: inline-block;
-	margin: 0 1px 50px 2px ;
+	padding: 0 3px 50px 3px ;
 }
 
 .row img {
@@ -70,14 +85,6 @@ p {
 
 .img p {
 	font-family: Tahoma, Arial, sans-serif;
-	font-size: 17px;
-	line-height: 16px;
+	font-size: 15px;
+	line-height: 20px;
 }
-
-	
-
-
-
-
-
-
