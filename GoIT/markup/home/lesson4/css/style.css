@@ -1,0 +1,232 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../img/bg_body.jpg);
+}
+
+.wrapper {
+	width: 1000px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	box-shadow: 0 0 17px #555;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.copyright p {
+	color: #ffffff;
+	text-align: center;
+	line-height: 29px;
+}
+
+/* HEADER */
+
+.head {
+	padding: 10px 30px 0 30px;
+}
+
+.logo {
+	float:left;
+	height: 164px;
+}
+
+.contacts-icons {
+	float: right;
+	color: #128aa7;
+}
+
+.contacts {
+	float: right;
+}
+
+.icons {
+	padding-top: 26px;
+}
+
+.icons ul {
+	list-style: none;
+	width: 337px;
+}
+
+.icons li {
+	font-size: 10px;
+}
+
+.icons li a {
+	background-image: url(../img/countries.jpg);
+	float: left;
+	width: 43px;
+	height: 43px;
+	vertical-align: top;
+	text-align: center;
+	margin-left: 13px;
+}
+
+.icons .india {
+	background-position: 0 0px ;
+}
+
+.icons .nepal {
+	background-position: 0 -42px;
+}
+
+.icons .tibet {
+	background-position: 0  -84px;
+}
+
+.icons .bhutan {
+	background-position: 0 -126px;
+}
+
+.icons .sri-lanka {
+	background-position: 0  -168px;
+}
+
+.icons .maldives {
+	background-position: 0 -211px;
+}
+
+span {
+	position: relative;
+	top: 46px;
+	display: inline-block;
+	width: 48px;
+	text-decoration: underline;
+	color: #128aa7;
+}
+
+.banner img {
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
+
+/*------------------------------------*\
+	НАВИГАЦИЯ
+\*------------------------------------*/
+
+#nav{
+	float:left;
+	width:100%;
+	background-image: url(../img/panel.jpg);
+	list-style:none;
+	font-weight:normal;
+	padding-left: 40px;
+	box-sizing:border-box;
+
+}
+#nav li{
+	float:left;
+	padding: 0 50px 0 10px;
+	position:relative;
+	display:block;
+}
+#nav li a{
+	display:block;
+	line-height: 30px;
+	color:#fff;
+	text-decoration:none;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.75);
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+}
+#nav li a:hover{
+	color:#fff;
+}
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+
+#nav ul{
+	box-shadow: 0 0 20px;
+	list-style:none;
+	position:absolute;
+	background-color: #303030;
+	opacity:0;
+	-webkit-transition:0.25s linear opacity;
+}
+#nav ul li{
+	float:left;
+}
+#nav ul a{
+	white-space:nowrap;
+}
+#nav li:hover ul{ 
+	left:0; 
+	opacity:1;
+}
+#nav li:hover ul a{ 
+	text-decoration:none;
+	
+}
+#nav li:hover ul li a:hover{ 
+	background:#333;
+	background:rgba(51,51,51,0.75);
+	-moz-transform:scale(1.05);
+	-webkit-transform:scale(1.05);
+}
+
+.banner {
+	height: 239px;
+}
+
+/* CONTENT */
+
+.fon {
+width: 1000px;
+overflow: hidden;
+text-align: center;
+font-family: Tahoma, Arial, sans-serif;
+font-weight: normal; 
+line-height: 24px;
+font-size: 14px;
+color: #959a97;
+}
+
+.leftColumn, .rightColumn {
+	border-left: 1px solid #c7cacf;
+	border-right: 1px solid #c7cacf;
+}
+
+.leftColumn {
+width: 208px;
+float: left;
+background: #edeef0;
+padding-bottom: 20000px;
+margin-bottom: -20000px;
+}
+
+.centerColumn {
+width: 580px;
+float: left;
+background: #ffffff;
+padding-bottom: 20000px;
+margin-bottom: -20000px;
+}
+
+.rightColumn {
+width: 208px;
+float: left;
+background: #edeef0;
+padding-bottom: 20000px;
+margin-bottom: -20000px;
+}
+
+.fon p:first-child {
+	color: #424c43;
+	font-weight: bold; 
+	line-height: 28px;
+	font-size: 17px;
+}
