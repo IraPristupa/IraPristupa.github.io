@@ -27,9 +27,11 @@ body {
 }
 
 .copyright p {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 15px;
 	color: #ffffff;
 	text-align: center;
-	line-height: 29px;
+	line-height: 32px;
 }
 
 /* HEADER */
@@ -52,13 +54,25 @@ body {
 	float: right;
 }
 
+.contacts p {
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+.contacts p:first-child {
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+}
+
 .icons {
 	padding-top: 26px;
 }
 
 .icons ul {
 	list-style: none;
-	width: 337px;
+	width: 386px;
 }
 
 .icons li {
@@ -66,9 +80,9 @@ body {
 }
 
 .icons li a {
-	background-image: url(../img/countries.jpg);
+	background: #fff url(../img/countries.jpg) no-repeat;
 	float: left;
-	width: 43px;
+	width: 50px;
 	height: 43px;
 	vertical-align: top;
 	text-align: center;
@@ -76,34 +90,34 @@ body {
 }
 
 .icons .india {
-	background-position: 0 0px ;
+	background-position: center 0px ;
 }
 
 .icons .nepal {
-	background-position: 0 -42px;
+	background-position: center -42px;
 }
 
 .icons .tibet {
-	background-position: 0  -84px;
+	background-position: center  -84px;
 }
 
 .icons .bhutan {
-	background-position: 0 -126px;
+	background-position: center -126px;
 }
 
 .icons .sri-lanka {
-	background-position: 0  -168px;
+	background-position: center  -168px;
 }
 
 .icons .maldives {
-	background-position: 0 -211px;
+	background-position: center -211px;
 }
 
 span {
 	position: relative;
 	top: 46px;
 	display: inline-block;
-	width: 48px;
+	/*width: 48px;*/
 	text-decoration: underline;
 	color: #128aa7;
 }
