@@ -38,6 +38,9 @@ h1 img {
 
 .menu {
 	background-image: url(../img/bg_menu.jpg);
+}
+
+.menu ul {
 	line-height:0;
 	font-size: 0;
 	vertical-align: 0;
@@ -45,9 +48,6 @@ h1 img {
 
 .menu li {
 	display: inline-block;
-	font-family: Tahoma, Arial, sans-serif;
-	font-weight: normal;
-	font-size: 15px;
 }
 
 .menu li:hover {
@@ -57,10 +57,12 @@ h1 img {
 }
 
 .menu a {
-	display: inline-block;
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight: normal;
 	color: white;
 	padding: 0 40px;
 	line-height: 40px;
+	font-size: 15px;
 	text-decoration: none;
 	text-shadow: 0 0 3px black;
 }
