@@ -1,0 +1,231 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	background: url(../img/bg-body.jpg) no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+span {
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	color: white;
+}
+
+/* HEADER */
+
+.header__menu ul {
+	background: url(../img/bg-header.jpg) repeat-x;
+	line-height:0; 
+	font-size:0; 
+	vertical-align:0;
+	text-align: right;
+	padding:0 20px;
+}
+
+.header__menu ul li {
+	display: inline-block;
+}
+
+.header__menu ul li a {
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-weight: normal;
+	color: #60b5ed;
+	padding: 0 20px;
+	line-height: 40px;
+	font-size: 15px;
+	text-decoration: none;
+    display: block;
+    height: 40px;
+}
+
+.header__menu ul li a:hover {
+	background-color: #4eabda;
+	color: white;
+}
+
+.header__menu .ofertas_link {
+	border-left: 1px solid #56a2dc;
+}
+
+.header__menu .ofertas_link a{
+	color: white;
+	padding: 0 20px 0 45px;
+	background: url(../img/flag.png) 11px 7px no-repeat !important;
+}
+
+.header__menu .login_link {
+	padding: 0 15px;
+	font-size: 17px;
+	color: white;
+}
+
+.header__menu .login_link li {
+	line-height:0; 
+	font-size:0; 
+	vertical-align:0;
+}
+
+.header__menu .login_link a {
+	padding: 0 5px;
+	color: white;
+	text-decoration: underline;
+	display: inline-block;
+}
+
+.ofertas_link:hover, .login_link:hover {
+	height: 39px;
+	border: 1px solid #459ad4;
+	border-top: none;
+	background: #4eabda;
+background: -moz-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, hsla(200,65%,58%,1)), color-stop(100%, hsla(210,62%,47%,1)));
+background: -webkit-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -o-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -ms-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: linear-gradient(to bottom, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eabda', endColorstr='#2e78c2', GradientType=0 );
+}
+
+.header__menu .ofertas_link a:hover,
+.header__menu .login_link a:hover {
+	background: none;
+}
+
+/* CONTENT*/
+
+.wrapper {
+	text-align: center;
+	color: #cccccc;
+	width:600px;
+	height:612px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-306px 0 0 -300px;
+
+}
+
+.title, .login {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title {
+	margin-bottom: 2px;
+
+}
+
+.login {
+	padding: 35px 0 15px;
+}
+
+h1 {
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-weight: bold;
+	color: white;
+	line-height: 40px;
+	font-size: 24px;
+	line-height: 60px; 
+}
+
+.formHeader {
+	color:#999;
+	padding: 20px 0;
+}
+
+.separator {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+	border-bottom:1px solid black;
+	border-top: 1px solid #666;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font: 14px "Helvetica Neue", Tahoma, sans-serif;
+    line-height: 37px;
+    color:#cccccc;	
+    border: 0px;
+	border-bottom: 1px solid #484848;
+	background-color: #0f0f0f;
+	width: 250px;
+	padding-left: 18px;
+	margin: 7px 0;	
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+	border: 0px;
+	border-bottom: 1px solid #5680A9;
+	background-color: #1b5288;
+	color: #fffbfb;
+	-webkit-box-shadow: 0px 0px 15px #5791b9;
+	-moz-box-shadow: 0px 0px 15px #5791b9;
+	box-shadow: 0px 0px 15px #5791b9;
+}
+
+input[type="checkbox"] {
+	width: 25px;
+	margin: 7px 0;
+	padding: 10px 0px;
+}
+
+label {
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-weight: normal;
+	color: #cccccc;
+	font-size: 14px;
+	line-height: 47px;
+}
+
+input[type="submit"] {
+    width: 155px;
+    margin: 7px 0 17px;
+	padding: 10px 0;
+	border: 0;
+	font: 14px "Helvetica Neue", Tahoma, sans-serif;
+    font-weight: bold;
+    line-height: 16px;
+    color: white;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #4eabda;
+background: -moz-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, hsla(200,65%,58%,1)), color-stop(100%, hsla(210,62%,47%,1)));
+background: -webkit-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -o-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: -ms-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+background: linear-gradient(to bottom, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eabda', endColorstr='#2e78c2', GradientType=0 );
+}
+
+p {
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-weight: normal;
+	line-height: 18px;
+	font-size: 12px;
+	color: #cccccc;
+}
