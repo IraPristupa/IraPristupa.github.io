@@ -19,7 +19,7 @@ body, html {
 }
 
 .wrapper {
-	background: url(../img/bg-body.jpg) center center no-repeat fixed;
+	background: url(../img/body_bg.jpg) center center no-repeat fixed;
 	height: 100%;
 	background-size: 100%;
 }
