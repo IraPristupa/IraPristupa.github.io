@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.menu li {
+	list-style: none;
+	color: #b1bcc0;
+	display: inline-block;
+} 
+/* HEADER */
+
+header{
+ 	background-color: #fff;
+ 	width: 910px;
+ 	margin: 0 auto;
+ 	padding: 15px 5px 7px;
+ }
+
+li a {
+	color: #b1bcc0;
+}
+
+
+i .fa .fa-user {
+    color: white;
+    font-size: 20px;
+    padding: 0 5px;
+    position: relative;
+    top: 3px;
+}
+
+.phones {
+	display: inline-block;
+}
+
+.phones img {
+/*	background-color: #0e385c;
+	border-radius: 5px;*/
+}
+.phones p {
+	display: inline-block;
+	color: #0e3a5e;
+	font-size: 18px;
+}
+ 
+.enter {
+ 	display: inline-block;
+ 	background-color: #0e385c;
+ 	line-height: 30px;
+ 	border-radius: 6px;
+ }
+
+.enter form {
+	display: inline-block;
+}
+
+.enter form input {
+	max-width: 114px;
+}
+
+.enter .enter-registration {
+	display: inline-block;
+}
+
+.enter .enter-registration a {
+	color: white;
+}
+
+.enter .forget-password{
+	display: inline-block;
+
+}
+
+.enter .forget-password a {
+	color: #bfbfbf;
+}
+ 
+ .icons {
+	display: inline-block;
+	border: 1px solid #bfbfbf;
+	border-radius: 9px;
+	padding: 0 2px;
+ }
+
+ .icons a {
+ 	padding: 0 2px;
+ }
+
+/* CONTENT */
+
+  .wrapper {
+ 	width: 910px;
+ 	margin: 0 auto;
+ }
+   
+nav .menu {
+ 	background-color: #17191b;
+ }
+
+nav .menu ul {
+ 	background-color: #17191b;
+ 	display: inline-block;
+ }
+
+nav .menu .corb  {
+	color: black;
+	display: inline-block;
+}
+
+.name {
+	border: 1px solid gray;
+}
+
+.products,
+.brends {
+	width: 182px;
+}
+ .catalog {
+	background: url(../img/main_bg.jpg) no-repeat;
+	
+}
+ .product-item {
+	display: inline-block;
+}
+
+.logo a {
+	display: inline-block;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #213a4d;
+}
+
+footer ul li a {
+	color: #bec6c9;
+}
+
+footer p {
+	color: #7f4740;
+}
+
+
