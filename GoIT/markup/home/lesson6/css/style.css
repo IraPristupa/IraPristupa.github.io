@@ -22,7 +22,7 @@ a, span, p {
 
 /* HEADER */
 
-header{
+header{ 
  	background-color: #fff;
  	margin: 0 auto;
  	padding: 15px 5px 10px;
@@ -230,35 +230,53 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 
 /* sidebar */
 
-.sidebar header, .sidebar .name {
-	width: 100%;
+.sidebar header {
+	width: 85%;
 	border:1px solid #79878d;
-	border-radius: 10px;
-	padding: 4px 0;
+	border-radius: 16px;
+	padding: 0 0 0 26px;
 	font-size: 14px;
 	color: #114165;
-	background: url(../img/sidebar_dot.png) 0 0  no-repeat;
+	background: url(../img/icon_doc.png) 2px 1px  no-repeat;
+	margin: 5px 0 13px;
+	line-height: 23px;
 }
 
-.sidebar header i {
-	color:white;
-	padding-right: 5px;
-	padding-left: 5px;
+.sidebar header img {
+	vertical-align: text-bottom;
+}
+
+.sidebar header h1 {
+	color: #114165;
+	font-size: 13px;
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
+	font-weight: normal;
+	display: inline-block;
 }
 
 .sidebar .name {
-	background: #fff url(../img/icon_round.png) 0 0 no-repeat;
+	background: url(../img/icon_round.png) 3px 1px no-repeat;
 	width: 70%;
 	padding-left: 26px;
-	font-size: 13px;
+	border:1px solid #79878d;
+	border-radius: 15px;
+	font-size: 14px;
 	font-weight: 200;
 	text-transform: uppercase;
-	margin-top: 15px;
+	line-height: 26px;
+}
+
+/*.checkbox .shyny, .checkbox .discs {
+    padding-left: 10px;
+}*/
+
+.checkbox .name {
+    width: 62%;
 }
 
 .sidebar .sidebarMenu {
-	padding-left: 40px;
-	margin: 10px 0;
+	padding-left: 48px;
+	/*margin: 10px 0;*/
 }
 
 .sidebar .sidebarMenu ul {
@@ -267,6 +285,9 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 
 .sidebar .sidebarMenu ul li a, .sidebar label {
 	color: #465961;
+	font-size: 13px;
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
+	line-height: 25px;
 }
 
 .sidebar .sidebarMenu ul li a:hover {
@@ -274,27 +295,32 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	font-weight: bold;
 	color: #0c3256;
 	font-style: italic;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+}
+
+.sidebar form {
+	padding-left: 10px;
 }
 
 .sidebar form label {
-	padding-left: 20px;
+	padding-left: 9px;
 }
 
 .sidebar form .checkboxControl {
-	margin: 10px 0;
+	margin: 7px 0;
 }
 
 .sidebar form label input {
-	margin-right: 15px;
+	margin-right: 13px;
 }
 
 .sidebar form button {
 	background-color: #124569;
 	padding: 5px 10px;
-	margin-left: 25px;
+	margin: 7px 15px;
 	border:none;
-	display: inline-block;
-	border-radius: 10px;
+	border-radius: 15px;
 	color:white;
 	box-shadow: 2px 2px 4px gray;
 	text-transform: uppercase;
@@ -345,7 +371,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 /*logos*/
 
 .logo {
-	padding: 20px 0;
+	padding: 40px 0 24px;
 	text-align: center;
 }
 
@@ -398,7 +424,7 @@ footer .copyright {
 
 /*TODO Filter*/
 .filter {
-	height: 100px;
+	height: 160px;
 }
 
 
