@@ -21,7 +21,8 @@ body, html {
 .wrapper {
 	background: url(../img/body_bg.jpg) center center no-repeat fixed;
 	height: 100%;
-	background-size: 100%;
+	background-size: cover;
+	position: relative
 }
 
 a {
@@ -39,7 +40,8 @@ span {
 /* HEADER */
 
 .header__menu {
-	background: url(../img/bg-header.jpg) repeat-x;
+	/*background: url(../img/bg-header.jpg) repeat-x;*/
+	background: #074e8c;
 	width: 100%;
 	text-align: right;
 	padding-right: 20px;
@@ -49,7 +51,7 @@ span {
 .header__menu ul {
 	line-height:0; 
 	font-size:0; 
-	vertical-align:0;
+	vertical-align: middle;
 	text-align: right;
 	display: inline-block;
 }
@@ -87,7 +89,6 @@ ul:after {
 
 .login_menu {
 	display: inline-block;
-	position: relative;
 }
 
 .login_menu .ofertas_link {
@@ -147,7 +148,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eabda', end
 	text-align: center;
     color: #cccccc;
     width: 600px;
-    margin: 8% auto auto;
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	 transform: translate(-50%, -50%);
 }
 
 .title, .login {
@@ -241,6 +245,7 @@ button[type="submit"] {
     font-weight: bold;
     line-height: 16px;
     color: white;
+    cursor: pointer;
 	-webkit-border-radius: 3px;
 	-o-border-radius: 3px;
 	-moz-border-radius: 3px;
