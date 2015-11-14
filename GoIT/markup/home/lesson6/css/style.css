@@ -7,118 +7,198 @@ body {
 	background-color: #fff;
 }
 
+.wrapper {
+ 	width: 910px;
+ 	margin: 0 auto;
+}
+
 a {
 	text-decoration: none;
 }
 
-.menu li {
-	list-style: none;
-	color: #b1bcc0;
-	display: inline-block;
-} 
+a, span, p {
+ 	font-family: "Lucida Sans Unicode", Arial, sans-serif;
+ }
+
 /* HEADER */
 
 header{
  	background-color: #fff;
- 	width: 910px;
  	margin: 0 auto;
- 	padding: 15px 5px 7px;
+ 	padding: 15px 5px 10px;
  }
-
-li a {
-	color: #b1bcc0;
-}
-
-
-i .fa .fa-user {
-    color: white;
-    font-size: 20px;
-    padding: 0 5px;
-    position: relative;
-    top: 3px;
-}
 
 .phones {
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 .phones img {
-/*	background-color: #0e385c;
-	border-radius: 5px;*/
+	vertical-align: text-bottom;
 }
 .phones p {
 	display: inline-block;
-	color: #0e3a5e;
+	font-family: Arial, sans-serif;
+	color: #5e696d;
 	font-size: 18px;
 }
  
+ /*login form*/
+
 .enter {
  	display: inline-block;
- 	background-color: #0e385c;
- 	line-height: 30px;
+ 	padding: 0 8px;
+ 	margin: 0 10px;
+ 	line-height: 24px;
  	border-radius: 6px;
+ 	background: rgba(31,102,133,1);
+background: -moz-linear-gradient(top, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(31,102,133,1)), color-stop(90%, rgba(15,59,94,1)), color-stop(100%, rgba(13,54,90,1)));
+background: -webkit-linear-gradient(top, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);
+background: -o-linear-gradient(top, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);
+background: -ms-linear-gradient(top, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);
+background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);
  }
 
 .enter form {
 	display: inline-block;
 }
 
+.enter i {
+	color:white;
+    position: relative;
+    top: 2px;
+}
+
 .enter form input {
 	max-width: 114px;
+	font-size: 11px;
+    line-height: 13px;
 }
 
 .enter .enter-registration {
 	display: inline-block;
+	color: white;
+	padding-left: 5px;
 }
 
 .enter .enter-registration a {
+	padding-right: 4px;
+	font-size: 11px;
 	color: white;
 }
 
 .enter .forget-password{
 	display: inline-block;
-
+	margin-left: 18px;
 }
 
 .enter .forget-password a {
 	color: #bfbfbf;
+	font-size: 12px;
+}
+
+.enter .forget-password a:hover {
+	text-decoration: underline;
 }
  
  .icons {
 	display: inline-block;
 	border: 1px solid #bfbfbf;
-	border-radius: 9px;
-	padding: 0 2px;
+	border-radius: 12px;
+	padding: 0 10px;
+	line-height: 20px;
  }
 
  .icons a {
  	padding: 0 2px;
  }
 
-/* CONTENT */
+   /*main menu*/
 
-  .wrapper {
- 	width: 910px;
- 	margin: 0 auto;
- }
-   
-nav .menu {
- 	background-color: #17191b;
- }
+.menu {
+	text-align: right;
+	border-radius: 6px;
+	margin: 1px 0 14px 0;
+	line-height: 28px;
+	background: rgba(77,86,99,1);
+background: -moz-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(77,86,99,1) 4%, rgba(45,50,54,1) 14%, rgba(1,1,1,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(77,86,99,1)), color-stop(4%, rgba(77,86,99,1)), color-stop(14%, rgba(45,50,54,1)), color-stop(100%, rgba(1,1,1,1)));
+background: -webkit-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(77,86,99,1) 4%, rgba(45,50,54,1) 14%, rgba(1,1,1,1) 100%);
+background: -o-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(77,86,99,1) 4%, rgba(45,50,54,1) 14%, rgba(1,1,1,1) 100%);
+background: -ms-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(77,86,99,1) 4%, rgba(45,50,54,1) 14%, rgba(1,1,1,1) 100%);
+background: linear-gradient(to bottom, rgba(77,86,99,1) 0%, rgba(77,86,99,1) 4%, rgba(45,50,54,1) 14%, rgba(1,1,1,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d5663', endColorstr='#010101', GradientType=0 );
+}
 
-nav .menu ul {
- 	background-color: #17191b;
- 	display: inline-block;
- }
-
-nav .menu .corb  {
-	color: black;
+.menu ul, .menu .corb {
 	display: inline-block;
+	vertical-align: top;
 }
 
-.name {
-	border: 1px solid gray;
+.menu ul {
+	line-height:0; 
+	font-size:0; 
+	vertical-align:0;
 }
+
+.menu ul li {
+	list-style: none;
+	display: inline-block;
+	border-radius: 16px;
+	padding: 0 6px;
+	font-size: 14px;
+	font-weight: 200;
+	text-transform: uppercase;
+	color: #b1bcc0;
+	line-height: 24px;
+}
+ .menu ul li a{
+ 	color: #b1bcc0;
+ 	padding: 0 8px;
+ }
+
+.menu ul li:hover {
+	background: rgba(31,102,133,1);
+background: -moz-linear-gradient(top, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(31,102,133,1)), color-stop(90%, rgba(15,59,94,1)), color-stop(100%, rgba(13,54,90,1)));
+background: -webkit-linear-gradient(top, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);
+background: -o-linear-gradient(top, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);
+background: -ms-linear-gradient(top, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);
+background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);	
+}
+
+.menu ul li a:hover {
+	color: #fff;
+}
+
+.menu .corb {
+	padding: 0 0 0 40px;
+}
+
+.menu .corb img {
+	vertical-align: text-bottom;
+    padding-right: 5px;
+}
+
+.menu .corb a {
+	color: #8a9296;
+	font-size: 11px;
+}
+
+.menu .corb a span {
+	color: #0d5a8f;
+	font-size: 12px;
+	padding-right: 14px;
+}
+
+
+/*CONTENT */
+
+/*.name {
+	border: 1px solid gray;
+	font-size: 14px;
+}*/
 
 .products,
 .brends {
@@ -136,18 +216,191 @@ nav .menu .corb  {
 	display: inline-block;
 }
 
-/* FOOTER */
+.wrapper .sidebar, .wrapper main {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	box-sizing: border-box;
+}
 
+.wrapper main {
+	width: 55%;
+	margin: 0 18px;
+}
+
+/* sidebar */
+
+.sidebar header, .sidebar .name {
+	width: 100%;
+	border:1px solid #79878d;
+	border-radius: 10px;
+	padding: 4px 0;
+	font-size: 14px;
+	color: #114165;
+	background: url(../img/sidebar_dot.png) 0 0  no-repeat;
+}
+
+.sidebar header i {
+	color:white;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.sidebar .name {
+	background: #fff url(../img/icon_round.png) 0 0 no-repeat;
+	width: 70%;
+	padding-left: 26px;
+	font-size: 13px;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+.sidebar .sidebarMenu {
+	padding-left: 40px;
+	margin: 10px 0;
+}
+
+.sidebar .sidebarMenu ul {
+
+}
+
+.sidebar .sidebarMenu ul li a, .sidebar label {
+	color: #465961;
+}
+
+.sidebar .sidebarMenu ul li a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #0c3256;
+	font-style: italic;
+}
+
+.sidebar form label {
+	padding-left: 20px;
+}
+
+.sidebar form .checkboxControl {
+	margin: 10px 0;
+}
+
+.sidebar form label input {
+	margin-right: 15px;
+}
+
+.sidebar form button {
+	background-color: #124569;
+	padding: 5px 10px;
+	margin-left: 25px;
+	border:none;
+	display: inline-block;
+	border-radius: 10px;
+	color:white;
+	box-shadow: 2px 2px 4px gray;
+	text-transform: uppercase;
+}
+
+
+/*catalog*/
+
+.catalog {
+	padding: 15px 28px;
+}
+
+.catalog .product-item {
+	width: 135px;
+	text-align: center;
+}
+
+.catalog .product-item p:first-child {
+	color:#206988;
+	font-size: 15px
+}
+
+.catalog .product-item p:nth-child(2) {
+	color:#1f2528;
+	font-size: 13px
+}
+
+.catalog .product-item p:last-child {
+	color:#114165;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.catalog .product-item .image {
+	border-radius: 10px;
+	border: 1px solid #cfd4d6;
+	text-align: center;
+	background-color: white;
+	width: 100%;
+}
+
+.catalog .product-item:nth-child(even) {
+	margin: 0 15px;
+}
+
+
+
+/*logos*/
+
+.logo {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.logo a {
+	vertical-align: top;
+	margin-right: 20px;
+}
+
+
+/*footer*/
 footer {
 	background-color: #213a4d;
+	text-align: center;
+}
+footer ul {
+	width: 100%;
+	list-style: none;
+	padding: 12px 0;
+	line-height: 8px;
+}
+
+footer ul li {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	padding-right: 14px;
+	border-right: 1px solid white;
 }
 
 footer ul li a {
-	color: #bec6c9;
+	color:#bec6c9;
+	font-size: 12px;
 }
 
-footer p {
-	color: #7f4740;
+
+footer ul li:last-child {
+	border: none;
 }
+
+footer ul li a:hover {
+	color:#4185a0;
+}
+
+footer .copyright {
+	padding: 0 0 30px 0;
+	color: #7f4740;
+	font-size: 10px;
+	line-height: 40px;
+}
+
+/*TODO Filter*/
+.filter {
+	height: 100px;
+}
+
+
 
 
