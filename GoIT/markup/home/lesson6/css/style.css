@@ -200,11 +200,11 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	font-size: 14px;
 }*/
 
-.products,
-.brends {
+aside .catalog,
+aside .brends {
 	width: 182px;
 }
- .catalog {
+ .products {
 	background: url(../img/main_bg.jpg) no-repeat;
 	
 }
@@ -216,7 +216,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	display: inline-block;
 }
 
-.wrapper .sidebar, .wrapper main {
+.wrapper aside , .wrapper main {
 	display: inline-block;
 	vertical-align: top;
 	width: 20%;
@@ -230,7 +230,8 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 
 /* sidebar */
 
-.sidebar header {
+.catalog header, 
+.brends header {
 	width: 85%;
 	border:1px solid #79878d;
 	border-radius: 16px;
@@ -242,55 +243,65 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	line-height: 23px;
 }
 
-.sidebar header img {
+/*.sidebar header img {
 	vertical-align: text-bottom;
-}
+}*/
 
-.sidebar header h1 {
+.catalog header h1, 
+.brends header h1 {
 	color: #114165;
 	font-size: 13px;
 	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-weight: normal;
-	display: inline-block;
+	line-height: 24px;
+	/*display: inline-block;*/
 }
 
-.sidebar .name {
+.brends header h1 {
+	font-size: 14px;
+}
+
+.catalog .name,
+.brends .name {
 	background: url(../img/icon_round.png) 3px 1px no-repeat;
 	width: 70%;
-	padding-left: 26px;
+	padding-left: 27px;
 	border:1px solid #79878d;
-	border-radius: 15px;
+	border-radius: 12px;
 	font-size: 14px;
 	font-weight: 200;
 	text-transform: uppercase;
 	line-height: 26px;
 }
 
-/*.checkbox .shyny, .checkbox .discs {
-    padding-left: 10px;
-}*/
-
 .checkbox .name {
     width: 62%;
 }
 
-.sidebar .sidebarMenu {
+aside .name h2 {
+    color: #114165;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-weight: normal;
+}
+.catalog .sidebarMenu {
 	padding-left: 48px;
 	/*margin: 10px 0;*/
 }
 
-.sidebar .sidebarMenu ul {
+.catalog .sidebarMenu ul {
 
 }
 
-.sidebar .sidebarMenu ul li a, .sidebar label {
+.catalog .sidebarMenu ul li a,
+.brends label {
 	color: #465961;
 	font-size: 13px;
 	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	line-height: 25px;
 }
 
-.sidebar .sidebarMenu ul li a:hover {
+.catalog .sidebarMenu ul li a:hover {
 	text-decoration: underline;
 	font-weight: bold;
 	color: #0c3256;
@@ -299,23 +310,23 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	font-family: Arial, sans-serif;
 }
 
-.sidebar form {
+.brends form {
 	padding-left: 10px;
 }
 
-.sidebar form label {
+.brends form label {
 	padding-left: 9px;
 }
 
-.sidebar form .checkboxControl {
+.brends form .checkboxControl {
 	margin: 7px 0;
 }
 
-.sidebar form label input {
+.brends form label input {
 	margin-right: 13px;
 }
 
-.sidebar form button {
+.brends form button {
 	background-color: #124569;
 	padding: 5px 10px;
 	margin: 7px 15px;
@@ -327,34 +338,34 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 }
 
 
-/*catalog*/
+/*products*/
 
-.catalog {
+.products {
 	padding: 15px 28px;
 }
 
-.catalog .product-item {
+.products .product-item {
 	width: 135px;
 	text-align: center;
 }
 
-.catalog .product-item p:first-child {
+.products .product-item p:first-child {
 	color:#206988;
 	font-size: 15px
 }
 
-.catalog .product-item p:nth-child(2) {
+.products .product-item p:nth-child(2) {
 	color:#1f2528;
 	font-size: 13px
 }
 
-.catalog .product-item p:last-child {
+.products .product-item p:last-child {
 	color:#114165;
 	font-size: 16px;
 	font-weight: bold;
 }
 
-.catalog .product-item .image {
+.products .product-item .image {
 	border-radius: 10px;
 	border: 1px solid #cfd4d6;
 	text-align: center;
@@ -362,7 +373,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	width: 100%;
 }
 
-.catalog .product-item:nth-child(even) {
+.products .product-item:nth-child(even) {
 	margin: 0 15px;
 }
 
