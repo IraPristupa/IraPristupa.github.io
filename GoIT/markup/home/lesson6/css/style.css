@@ -49,7 +49,7 @@ header{
  	display: inline-block;
  	padding: 0 8px;
  	margin: 0 10px;
- 	line-height: 24px;
+ 	line-height: 25px;
  	border-radius: 6px;
  	background: rgba(31,102,133,1);
 background: -moz-linear-gradient(top, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);
@@ -195,40 +195,21 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 
 /*CONTENT */
 
-/*.name {
-	border: 1px solid gray;
-	font-size: 14px;
-}*/
-
-aside .catalog,
-aside .brends {
-	width: 182px;
-}
- .products {
-	background: url(../img/main_bg.jpg) no-repeat;
-	
-}
- .product-item {
+.wrapper aside,
+.wrapper main {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .logo a {
 	display: inline-block;
 }
 
-.wrapper aside , .wrapper main {
-	display: inline-block;
-	vertical-align: top;
+/* aside */
+
+.wrapper aside {
 	width: 20%;
-	box-sizing: border-box;
 }
-
-.wrapper main {
-	width: 55%;
-	margin: 0 18px;
-}
-
-/* sidebar */
 
 .catalog header, 
 .brends header {
@@ -243,10 +224,6 @@ aside .brends {
 	line-height: 23px;
 }
 
-/*.sidebar header img {
-	vertical-align: text-bottom;
-}*/
-
 .catalog header h1, 
 .brends header h1 {
 	color: #114165;
@@ -254,7 +231,6 @@ aside .brends {
 	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-weight: normal;
 	line-height: 24px;
-	/*display: inline-block;*/
 }
 
 .brends header h1 {
@@ -264,10 +240,10 @@ aside .brends {
 .catalog .name,
 .brends .name {
 	background: url(../img/icon_round.png) 3px 1px no-repeat;
-	width: 70%;
+	width: 68%;
 	padding-left: 27px;
 	border:1px solid #79878d;
-	border-radius: 12px;
+	border-radius: 14px;
 	font-size: 14px;
 	font-weight: 200;
 	text-transform: uppercase;
@@ -275,7 +251,10 @@ aside .brends {
 }
 
 .checkbox .name {
-    width: 62%;
+	background: url(../img/icon_round.png) 5px 1px no-repeat;
+    width: 63%;
+    border-radius: 14px;
+    line-height: 27px;
 }
 
 aside .name h2 {
@@ -285,15 +264,21 @@ aside .name h2 {
     font-weight: normal;
 }
 .catalog .sidebarMenu {
-	padding-left: 48px;
-	/*margin: 10px 0;*/
+	padding: 0 0 2px 48px;
 }
 
 .catalog .sidebarMenu ul {
-
+	margin-bottom: -4px
 }
 
 .catalog .sidebarMenu ul li a,
+.brends label {
+	color: #465961;
+	font-size: 13px;
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
+	line-height: 26px;
+}
+
 .brends label {
 	color: #465961;
 	font-size: 13px;
@@ -311,7 +296,7 @@ aside .name h2 {
 }
 
 .brends form {
-	padding-left: 10px;
+	padding-left: 17px;
 }
 
 .brends form label {
@@ -319,7 +304,7 @@ aside .name h2 {
 }
 
 .brends form .checkboxControl {
-	margin: 7px 0;
+	margin: 3px 0 7px;
 }
 
 .brends form label input {
@@ -328,44 +313,74 @@ aside .name h2 {
 
 .brends form button {
 	background-color: #124569;
-	padding: 5px 10px;
-	margin: 7px 15px;
+	padding: 5px 12px;
+	margin: 9px 10px;
 	border:none;
 	border-radius: 15px;
+	font-size: 12px;
 	color:white;
 	box-shadow: 2px 2px 4px gray;
 	text-transform: uppercase;
 }
 
-
 /*products*/
 
-.products {
-	padding: 15px 28px;
+.wrapper main {
+	width: 52%;
+	margin: 0 8px;
 }
 
-.products .product-item {
+.products {
+	padding: 15px 24px 0;
+	background: rgba(228,231,232,1);
+background: -moz-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(147,167,176,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(228,231,232,1)), color-stop(100%, rgba(147,167,176,1)));
+background: -webkit-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(147,167,176,1) 100%);
+background: -o-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(147,167,176,1) 100%);
+background: -ms-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(147,167,176,1) 100%);
+background: linear-gradient(to bottom, rgba(228,231,232,1) 0%, rgba(147,167,176,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', endColorstr='#93a7b0', GradientType=0 );	
+}
+
+.products .row {
+	padding-bottom: 23px;
+}
+
+.product {
+	display: inline-block;
 	width: 135px;
 	text-align: center;
 }
 
-.products .product-item p:first-child {
-	color:#206988;
-	font-size: 15px
+.product__name {
+	line-height: 15px;
 }
 
-.products .product-item p:nth-child(2) {
+.product__name a {
+	color:#206988;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.product__name p {
 	color:#1f2528;
 	font-size: 13px
 }
 
-.products .product-item p:last-child {
+.product__price p {
 	color:#114165;
-	font-size: 16px;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
 	font-weight: bold;
+	font-style: italic;
 }
 
-.products .product-item .image {
+.product__price span {
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+}
+
+.product__img {
 	border-radius: 10px;
 	border: 1px solid #cfd4d6;
 	text-align: center;
@@ -373,10 +388,9 @@ aside .name h2 {
 	width: 100%;
 }
 
-.products .product-item:nth-child(even) {
-	margin: 0 15px;
+.product:nth-child(even) {
+	padding: 0 29px;
 }
-
 
 
 /*logos*/
@@ -388,20 +402,22 @@ aside .name h2 {
 
 .logo a {
 	vertical-align: top;
-	margin-right: 20px;
+	margin-right: 6px;
 }
 
 
 /*footer*/
+
 footer {
 	background-color: #213a4d;
 	text-align: center;
 }
+
 footer ul {
 	width: 100%;
 	list-style: none;
 	padding: 12px 0;
-	line-height: 8px;
+	line-height: 9px;
 }
 
 footer ul li {
@@ -412,18 +428,17 @@ footer ul li {
 	border-right: 1px solid white;
 }
 
+footer ul li:last-child {
+	border: none;
+}
+
 footer ul li a {
 	color:#bec6c9;
 	font-size: 12px;
 }
 
-
-footer ul li:last-child {
-	border: none;
-}
-
 footer ul li a:hover {
-	color:#4185a0;
+	color:#52abcb;
 }
 
 footer .copyright {
