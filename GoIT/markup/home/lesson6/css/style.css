@@ -225,7 +225,10 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 }
 
 .brends header {
-	margin: 5px 0 13px;
+	width: 83%;
+	margin: 2px 0 13px;
+	padding: 0 0 0 31px
+
 }
 .catalog header h1, 
 .brends header h1 {
@@ -258,6 +261,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
     width: 63%;
     border-radius: 14px;
     line-height: 27px;
+    padding-left: 30px;
 }
 
 aside .name h2 {
@@ -299,7 +303,7 @@ aside .name h2 {
 }
 
 .brends form {
-	padding-left: 1px;
+	padding-left: 14px;
 }
 
 .brends form label {
@@ -330,11 +334,11 @@ aside .name h2 {
 
 .wrapper main {
 	width: 52%;
-	margin: 0 8px;
+	margin: 0 7px 0 5px;
 }
 
 .products {
-	padding: 15px 24px 0;
+	padding: 15px 25px 0;
 	background: rgba(228,231,232,1);
 background: -moz-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(147,167,176,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(228,231,232,1)), color-stop(100%, rgba(147,167,176,1)));
@@ -346,7 +350,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', end
 }
 
 .products .row {
-	padding-bottom: 23px;
+	padding-bottom: 28px;
 }
 
 .product {
