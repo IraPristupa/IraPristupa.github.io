@@ -226,7 +226,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 
 .brends header {
 	margin: 5px 0 13px;
-
+}
 .catalog header h1, 
 .brends header h1 {
 	color: #114165;
@@ -251,10 +251,6 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	font-weight: 200;
 	text-transform: uppercase;
 	line-height: 26px;
-}
-
-.brends .name {
-	padding-left: 30px;
 }
 
 .checkbox .name {
@@ -303,7 +299,7 @@ aside .name h2 {
 }
 
 .brends form {
-	padding-left: 13px;
+	padding-left: 1px;
 }
 
 .brends form label {
@@ -333,12 +329,12 @@ aside .name h2 {
 /*products*/
 
 .wrapper main {
-	width: 53%;
-	margin: 0 3px;
+	width: 52%;
+	margin: 0 8px;
 }
 
 .products {
-	padding: 15px 23px 0;
+	padding: 15px 24px 0;
 	background: rgba(228,231,232,1);
 background: -moz-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(147,167,176,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(228,231,232,1)), color-stop(100%, rgba(147,167,176,1)));
@@ -350,12 +346,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', end
 }
 
 .products .row {
-	padding-bottom: 20px;
+	padding-bottom: 23px;
 }
 
 .product {
 	display: inline-block;
-	width: 136px;
+	width: 135px;
 	text-align: center;
 }
 
@@ -380,7 +376,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', end
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	font-style: italic;
-	line-height: 24px;
 }
 
 .product__price span {
