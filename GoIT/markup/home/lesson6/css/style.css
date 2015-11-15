@@ -25,7 +25,7 @@ a, span, p {
 header{ 
  	background-color: #fff;
  	margin: 0 auto;
- 	padding: 15px 5px 10px;
+ 	padding: 18px 5px 10px;
  }
 
 .phones {
@@ -49,7 +49,7 @@ header{
  	display: inline-block;
  	padding: 0 8px;
  	margin: 0 10px;
- 	line-height: 25px;
+ 	line-height: 24px;
  	border-radius: 6px;
  	background: rgba(31,102,133,1);
 background: -moz-linear-gradient(top, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 90%, rgba(13,54,90,1) 100%);
@@ -120,7 +120,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	text-align: right;
 	border-radius: 6px;
 	margin: 1px 0 14px 0;
-	line-height: 28px;
+	line-height: 33px;
 	background: rgba(77,86,99,1);
 background: -moz-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(77,86,99,1) 4%, rgba(45,50,54,1) 14%, rgba(1,1,1,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(77,86,99,1)), color-stop(4%, rgba(77,86,99,1)), color-stop(14%, rgba(45,50,54,1)), color-stop(100%, rgba(1,1,1,1)));
@@ -224,6 +224,9 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	line-height: 23px;
 }
 
+.brends header {
+	margin: 5px 0 13px;
+
 .catalog header h1, 
 .brends header h1 {
 	color: #114165;
@@ -250,6 +253,10 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	line-height: 26px;
 }
 
+.brends .name {
+	padding-left: 30px;
+}
+
 .checkbox .name {
 	background: url(../img/icon_round.png) 5px 1px no-repeat;
     width: 63%;
@@ -268,7 +275,7 @@ aside .name h2 {
 }
 
 .catalog .sidebarMenu ul {
-	margin-bottom: -4px
+	margin-bottom: -6px
 }
 
 .catalog .sidebarMenu ul li a,
@@ -296,7 +303,7 @@ aside .name h2 {
 }
 
 .brends form {
-	padding-left: 17px;
+	padding-left: 13px;
 }
 
 .brends form label {
@@ -326,12 +333,12 @@ aside .name h2 {
 /*products*/
 
 .wrapper main {
-	width: 52%;
-	margin: 0 8px;
+	width: 53%;
+	margin: 0 3px;
 }
 
 .products {
-	padding: 15px 24px 0;
+	padding: 15px 23px 0;
 	background: rgba(228,231,232,1);
 background: -moz-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(147,167,176,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(228,231,232,1)), color-stop(100%, rgba(147,167,176,1)));
@@ -343,12 +350,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', end
 }
 
 .products .row {
-	padding-bottom: 23px;
+	padding-bottom: 20px;
 }
 
 .product {
 	display: inline-block;
-	width: 135px;
+	width: 136px;
 	text-align: center;
 }
 
@@ -373,6 +380,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', end
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	font-style: italic;
+	line-height: 24px;
 }
 
 .product__price span {
@@ -450,7 +458,7 @@ footer .copyright {
 
 /*TODO Filter*/
 .filter {
-	height: 160px;
+	height: 148px;
 }
 
 
