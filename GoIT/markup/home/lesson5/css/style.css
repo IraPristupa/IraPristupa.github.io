@@ -18,16 +18,19 @@ body, html {
     font-style: normal;
 }
 
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
 .wrapper {
 	background: url(../img/body_bg.jpg) center center no-repeat fixed;
 	height: 100%;
 	background-size: cover;
-	position: relative
-}
-
-a {
-	text-decoration: none;
-	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	position: relative;
 }
 
 span {
@@ -39,37 +42,41 @@ span {
 
 /* HEADER */
 
-.header__menu {
-	/*background: url(../img/bg-header.jpg) repeat-x;*/
+.header {
 	background: #074e8c;
-	width: 100%;
-	text-align: right;
 	padding-right: 20px;
-	box-sizing: border-box;
+}
+
+.header > * {
+	float: right;
+}
+
+.header__menu {
+	text-align: right;
 }
 
 .header__menu ul {
+	position: relative;
 	line-height:0; 
 	font-size:0; 
 	vertical-align: middle;
-	text-align: right;
-	display: inline-block;
+	padding-right: 10px;
 }
  
 .header__menu ul li {
-	display: inline-block;
+	float: left;
 }
 
 .header__menu ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
 	font-family: "Helvetica Neue", Tahoma, sans-serif;
 	font-weight: normal;
+	font-size: 14px;
+	line-height: 36px;
 	color: #60b5ed;
-	padding: 0 20px;
-	line-height: 40px;
-	font-size: 15px;
-	text-decoration: none;
-    display: block;
-    height: 40px;
+	transition: all 0.25s;
 }
 
 .header__menu ul li a:hover {
@@ -77,44 +84,48 @@ span {
 	color: white;
 }
 
-
-ul:after {
+.header__menu:after {
 	content: ' ';
-    display: inline-block;
     border-left: 1px solid #56a2dc;
-    height: 31px;
+    height: 30px;
     position: absolute;
     top: 4px;
 }
 
-.login_menu {
-	display: inline-block;
+.header__ofertas {
+	color: #fff;
+	padding: 0 15px;
+	width: 128px;
+	text-align: right;
 }
 
-.login_menu .ofertas_link {
+.header__ofertas a {
+	float: right;
+	text-decoration: none;
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-size: 14px;
+	color: #fff;
+	line-height: 36px;
+	transition: all 0.25s;
+}
+
+.header__ofertas img {
+	padding: 0 6px;
+	float: left;
+	position: relative;
+    top: 4px;
+}
+
+.header__ofertas a:hover {
 	color: #60b5ed;
-	display: inline-block;
-	padding: 0 15px;
-	line-height: 39px;
 }
 
-.login_menu .ofertas_link i {
-	padding: 0 7px;
-	font-size: 20px;
-}
-
-.login_menu .ofertas_link:hover {
+.header__login {
+	width: 189px;
 	color: white;
-}
-
-.login_menu .auth {
-	padding: 0 15px;
-	font-size: 17px;
-	display: inline-block;
-	color: white;
-	height: 39px;
 	border: 1px solid #459ad4;
 	border-top: none;
+	text-align: center;
 	background: #4eabda;
 background: -moz-linear-gradient(top, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, hsla(200,65%,58%,1)), color-stop(100%, hsla(210,62%,47%,1)));
@@ -125,19 +136,15 @@ background: linear-gradient(to bottom, hsla(200,65%,58%,1) 0%, hsla(210,62%,47%,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eabda', endColorstr='#2e78c2', GradientType=0 );
 }
 
-.login_menu .auth span {
-	line-height: 40px;
+.header__login a,
+.header__login  span {
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+	font-size: 14px;
+	line-height: 34px;
+	color: #fff;
 }
 
-
-.login_menu .auth a {
-	padding: 0 5px;
-	color: white;
-	text-decoration: underline;
-	display: inline-block;
-}
-
-.login_menu .auth a:hover {
+.header__login a:hover {
 	text-decoration: none;
 }
 
@@ -151,7 +158,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4eabda', end
     position: absolute;
 	left: 50%;
 	top: 50%;
-	 transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 .title, .login {
