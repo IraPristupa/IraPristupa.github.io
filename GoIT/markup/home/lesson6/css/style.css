@@ -152,7 +152,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	float: left;
 	height: 112px;
 	border: 1px solid #9c9c9d;
-	border-radius: 13px;
+	border-radius: 19px;
 	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.3);
 	box-shadow: 2px 2px 5px rgba(0,0,0,.3);
 }
@@ -174,7 +174,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 
 .search legend {
 	position: absolute;
-	top: 4px;
+	top: 2px;
 	font-family: Arial, sans-serif;
 	font-weight: 900;
 	font-size: 11px;
@@ -192,7 +192,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 
 .search button {
 	position: absolute;
-	right: 14px;
+	right: 20px;
 	line-height: 23px;
 	bottom: 5px;
 	border: none;
@@ -253,7 +253,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 
 .auto {
 	padding: 20px 15px 2px 17px;
-	margin-right: 15px;
+	margin-right: 14px;
 }
 
 .auto .search_title  {
@@ -304,8 +304,8 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 /* wheels */
 
 .wheels {
-	width: 168px;
-	padding: 15px 11px 6px 14px;
+	width: 167px;
+	padding: 17px 11px 6px 14px;
 	margin-right: 9px;
 }
 
@@ -377,25 +377,25 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 
 /* discs */
 
-.discs {
-	padding: 19px 6px 0px 15px;
+.disc {
+	padding: 16px 6px 6px 15px;
 }
 
-.discs .search_title {
+.disc .search_title {
 	top: 1px;
 	left: 9px;
 	letter-spacing: .5px;
 }
 
-.discs fieldset {
+.disc fieldset {
 	border: none;
 }
 
-.discs fieldset:first-of-type {
+.disc fieldset:first-of-type {
 	width: 160px;
 }
 
-.discs fieldset:last-of-type {
+.disc fieldset:last-of-type {
 	position: relative;
 	top: -15px;
 	width: 72px;
@@ -403,34 +403,34 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 	border-left: 1px solid #bdc6ca;
 }
 
-.discs dl {
+.disc dl {
 	font-size: 0;
 	line-height: 0;
 	padding: 2px 0;
 }
 
-.discs dt {
+.disc dt {
 	width: 92px;
 }
 
-.discs select {
+.disc select {
 	width: 57px;
 }
 
-.discs select[name='number'] {
+.disc select[name='number'] {
 	width: 50px;
 }
 
-.discs fieldset:last-of-type dt {
+.disc fieldset:last-of-type dt {
 	width: 62px;
 }
 
-.discs fieldset:last-of-type dt label span {
+.disc fieldset:last-of-type dt label span {
 	font-size: 8px;
 	display: block;
 }
 
-.discs fieldset:last-of-type dd {
+.disc fieldset:last-of-type dd {
 	margin: 3px 0;
 }
 
@@ -439,7 +439,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 .menu {
 	text-align: right;
 	border-radius: 6px;
-	margin: 1px 0 14px 0;
+	margin: 1px 0 12px 0;
 	line-height: 33px;
 	background: rgba(77,86,99,1);
 background: -moz-linear-gradient(top, rgba(77,86,99,1) 0%, rgba(77,86,99,1) 4%, rgba(45,50,54,1) 14%, rgba(1,1,1,1) 100%);
