@@ -18,9 +18,9 @@
 					<i class="fa fa-user"></i>
 					<input type="text" placeholder="логин">
 					<input type="password" placeholder="пароль">
+					<button class="vhod" type="submit">вход</button>
 				</form>
-				<div class="enter-registration">
-					<a href="">вход</a>|
+				<div class="registration">
 					<a href="">регистрация</a>
 				</div>	
 				<div class="forget-password">
@@ -48,8 +48,206 @@
 				<a href=""><img src="img/icon_corb.png" alt="corb">товаров: <span>0</span> на сумму: <span> &nbsp;0.00 грн</span></a>
 			</div>
 		</nav>
-		<div class="filter">
-			
+		<div class="search clearfix">
+			<div class="auto">
+				<h2 class="search_title">Поиск по автомобилю</h2>
+				<form action="#" class="auto_form clearfix">
+					<fieldset>
+						<legend>Диски:</legend>
+						<dl>
+							<dt><label>Марка <span>авто:</span></label></dt>
+							<dd>
+								<select name="disc_auto_brand" id="disc_auto_brand">
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label>Модель <span>автомобиля:</span></label></dt>
+							<dd>
+								<select name="disc_auto_model" id="disc_auto_model">
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label>Год выпуска <span>автомобиля:</span></label></dt>
+							<dd>
+								<select name="disc_auto_year" id="disc_auto_year">
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label>Комплектация:</label></dt>
+							<dd>
+								<select name="complect" id="auto_complect">
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+					</fieldset>
+					<fieldset>
+						<legend>Шины:</legend>
+						<dl>
+							<dt><label>Марка <span>авто:</span></label></dt>
+							<dd>
+								<select name="wheels_auto_brand" id="wheels_auto_brand">
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label>Модель <span>автомобиля:</span></label></dt>
+							<dd>
+								<select name="wheels_auto_model" id="wheels_auto_model">
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label>Год выпуска <span>автомобиля:</span></label></dt>
+							<dd>
+								<select name="wheels_auto_year" id="wheels_auto_year">
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label>Комплектация:</label></dt>
+							<dd>
+								<select name="wheels_auto_complect" id="wheels_auto_complect">
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+					</fieldset>
+					<button type="submit">поиск...</button>
+				</form>
+			</div>
+			<div class="wheels">
+				<h2 class="search_title">поиск шин</h2>
+				<form action="#">
+					<fieldset>
+						<dl>
+							<dt><label>Размер:</label></dt>
+							<dd>
+								<select name="wheels_size_1" id="wheels_size_1">
+									<option value="145">145</option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+							<dt><label>/</label></dt>
+							<dd>
+								<select name="wheels_size_2" id="wheels_size_2">
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>	
+						<dl>
+							<dt><label>R</label></dt>
+							<dd>
+								<select name="wheels_r" id="wheels_r">
+									<option value="12">12</option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt class="bottom_list"><label>Сезон:</label></dt>
+							<dd class="bottom_list">
+								<input type="checkbox" id="summer">
+								<label for="summer">лето</label>
+								<input type="checkbox" id="winter">
+								<label for="winter">зима</label>
+								<input type="checkbox" id="allseasons">
+								<label for="allseasons">всесез</label>
+							</dd>
+						</dl>
+					</fieldset>
+					<button type="submit">поиск...</button>
+				</form>
+			</div>
+			<div class="discs">
+				<h2 class="search_title">поиск дисков</h2>
+				<form action="#" class="discs_form clearfix">
+					<fieldset>
+						<dl>
+							<dt><label>Диаметр <span>диска</span>:</label></dt>
+							<dd>
+								<select name="disc_d" id="disc_d">
+									<option value="14">14</option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>	
+						</dl>
+						<dl>
+							<dt><label>Количество <span>крепёжных отверстий</span>:</label></dt>
+							<dd>
+								<select name="disc_holes_number" id="disc_holes_number">
+									<option value="3">3</option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label>Диаметр <span>расположения крепёжных отверстий</span>:</label></dt>
+							<dd>
+								<select name="disc_holes_d" id="disc_holes_d">
+									<option value="12" selected>12</option>
+									<option value="11">11</option>
+									<option value="10">10</option>
+								</select>
+							</dd>
+						</dl>
+					</fieldset>
+					<fieldset>
+						<dl>
+							<dt><label>ДЦО <span>(диаметр центрального отверстия):</span></label></dt>
+							<dd>
+								<select name="disc_center_hole_d" id="disc_center_hole_d">
+									<option value="12">12</option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label>ЕТ <span>(вылет диска):</span></label></dt>
+							<dd>
+								<select name="disc_offset" id="disc_offset">
+									<option value="12">12</option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</dd>
+						</dl>
+					</fieldset>
+					<button type="submit">поиск...</button>
+				</form>
+			</div>
 		</div>
 		<aside class="catalog">
 			<header>

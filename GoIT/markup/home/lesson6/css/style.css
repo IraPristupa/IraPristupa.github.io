@@ -7,6 +7,14 @@ body {
 	background-color: #fff;
 }
 
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
 .wrapper {
  	width: 910px;
  	margin: 0 auto;
@@ -74,17 +82,33 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 .enter form input {
 	max-width: 109px;
 	font-size: 11px;
-    line-height: 11px;
+    line-height: 14px;
     padding-left: 3px;
 }
 
-.enter .enter-registration {
-	display: inline-block;
-	color: white;
-	padding-left: 2px;
+.enter button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Lucida Sans Unicode", Arial,sans-serif;
+    font-size: 11px;
 }
 
-.enter .enter-registration a {
+.enter .vhod {
+    border-right: 1px solid #fff;
+    line-height: 11px;
+    text-align: left;
+    padding: 0 5px 0 3px;
+}
+
+.enter .registration {
+	display: inline-block;
+	color: white;
+	padding-left: 1px;
+}
+
+.enter .registration a {
 	padding-right: 4px;
 	font-size: 11px;
 	color: white;
@@ -115,6 +139,300 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
  .icons a {
  	padding: 0 2px;
  }
+
+/* SEARCH */
+
+.search {
+	margin-bottom: 12px;
+	padding: 0 4px;
+}
+
+.search > div {
+	position: relative;
+	float: left;
+	height: 112px;
+	border: 1px solid #9c9c9d;
+	border-radius: 13px;
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+	box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+
+.search .search_title {
+	position: absolute;
+	top: 2px;
+	font-family: Arial, sans-serif;
+	font-weight: bolder;
+	font-size: 14px;
+	letter-spacing: 0px;
+	line-height: 12px;	
+	color: #154467;
+}
+
+.search fieldset {
+	float: left;
+}
+
+.search legend {
+	position: absolute;
+	top: 4px;
+	font-family: Arial, sans-serif;
+	font-weight: 900;
+	font-size: 11px;
+	letter-spacing: 0px;
+	color: #154468;
+}
+
+.search fieldset:first-of-type legend {
+	left: 20px;
+}
+
+.search fieldset:last-of-type legend {
+	right: 20px;
+}
+
+.search button {
+	position: absolute;
+	right: 14px;
+	line-height: 23px;
+	bottom: 5px;
+	border: none;
+	text-decoration: underline;
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	font-size: 14px;
+	background: transparent;
+	color: #154467;
+	cursor: pointer;
+	outline: none;
+}
+
+.search dt,
+.search dd {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+}
+
+.search dd:not([class="bottom_list"]):after {
+	content: '';
+	position: absolute;
+	width: 18px;
+	height: 17px;
+	top: 0;
+	right: -2px;
+	background: url(../img/strilka.png) right no-repeat;
+	z-index: -999;
+}
+
+.search select {
+	font-size: 11px;
+	font-family: 'Arial Regular', Arial, sans-serif;
+	border: none;
+	outline: none;
+	color: #000;
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,.5);
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,.5);
+	background-color: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+.search label {
+	font: 10px/8px 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+.search label span {
+	font: 9px/8px 'Lucida Sans Unicode', Arial, sans-serif;
+	color: #77858b;
+}
+
+/* auto */
+
+.auto {
+	padding: 20px 15px 2px 17px;
+	margin-right: 15px;
+}
+
+.auto .search_title  {
+	left: 125px;
+}
+.auto label {
+	font: 10px/8px Arial, sans-serif;
+}
+
+.auto label span {
+	font: 9px/8px Arial, sans-serif;
+	color: #77858b;
+}
+
+.auto fieldset {
+	width: 176px;
+	border: none;
+}
+
+.auto fieldset:first-child {
+	margin-right: 29px;
+}
+
+.auto dl {
+	line-height: 0;
+	font-size: 0;
+	padding: 2px 0;
+}
+
+.auto dt {
+	width: 70px;
+	padding-right: 6px;
+}
+
+.auto dd {
+	margin-bottom: 3px;
+}
+
+.auto select {
+	width: 100px;
+}
+
+.auto select[name='disc_auto_year'],
+.auto select[name='wheels_auto_year'] {
+	width: 57px;
+}
+
+/* wheels */
+
+.wheels {
+	width: 168px;
+	padding: 15px 11px 6px 14px;
+	margin-right: 9px;
+}
+
+.wheels .search_title {
+	top: 1px;
+	left: 8px;
+}
+
+.wheels fieldset {
+	border: none;
+}
+
+.wheels dl {
+	padding: 2px 0;
+}
+
+.wheels dt:not(:nth-of-type(2)) {
+	width: 40px;
+	text-align: right;
+}
+
+.wheels dt:nth-of-type(3) {
+	text-align: right;
+}
+
+.wheels dt label {
+	height: 17px;
+}
+
+.wheels dd:not([class="bottom_list"]):after {
+    top: 2px;
+}
+
+.wheels dd:nth-of-type(3) select {
+	width: 45px;
+}
+
+.wheels dd:nth-of-type(3) {
+	margin-right: 59px;
+}
+
+.wheels select {
+	width: 53px;
+	height: 17px;
+}
+
+.wheels .bottom_list {
+	line-height: 0;
+	font-size: 0;
+}
+
+.wheels dt.bottom_list {
+	vertical-align: top;
+}
+
+.wheels dd.bottom_list {
+	width: 50px;
+}
+
+.wheels .bottom_list label {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 10px;
+}
+
+.wheels .bottom_list input[type="checkbox"] {
+	margin: 0 3px 1px 0;
+}
+
+/* discs */
+
+.discs {
+	padding: 19px 6px 0px 15px;
+}
+
+.discs .search_title {
+	top: 1px;
+	left: 9px;
+	letter-spacing: .5px;
+}
+
+.discs fieldset {
+	border: none;
+}
+
+.discs fieldset:first-of-type {
+	width: 160px;
+}
+
+.discs fieldset:last-of-type {
+	position: relative;
+	top: -15px;
+	width: 72px;
+	padding-left: 11px;
+	border-left: 1px solid #bdc6ca;
+}
+
+.discs dl {
+	font-size: 0;
+	line-height: 0;
+	padding: 2px 0;
+}
+
+.discs dt {
+	width: 92px;
+}
+
+.discs select {
+	width: 57px;
+}
+
+.discs select[name='number'] {
+	width: 50px;
+}
+
+.discs fieldset:last-of-type dt {
+	width: 62px;
+}
+
+.discs fieldset:last-of-type dt label span {
+	font-size: 8px;
+	display: block;
+}
+
+.discs fieldset:last-of-type dd {
+	margin: 3px 0;
+}
 
    /*main menu*/
 
