@@ -378,7 +378,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 /* discs */
 
 .disc {
-	padding: 16px 6px 6px 15px;
+	padding: 19px 6px 3px 16px;
 }
 
 .disc .search_title {
@@ -406,7 +406,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 .disc dl {
 	font-size: 0;
 	line-height: 0;
-	padding: 2px 0;
+	padding: 3px 0;
 }
 
 .disc dt {
@@ -431,7 +431,7 @@ background: linear-gradient(to bottom, rgba(31,102,133,1) 0%, rgba(15,59,94,1) 9
 }
 
 .disc fieldset:last-of-type dd {
-	margin: 3px 0;
+	margin: 4px 0;
 }
 
    /*main menu*/
