@@ -1,23 +1,3 @@
-var x = +prompt('Введите число, которое будем возводить в степень');
-var n = +prompt('Введите степень, в которую будем возводить');
-
-
-function pow(base, exponent) {
-  var result = 1;
-
-  for (var i = 0; i < exponent; i++) {
-    result = result * base;
-  }
-
-  return result;
-}
-
-
-var powResult = pow(x, n);
-
-console.log(powResult);
-
-
 var arr = [];
 
 for (var i = 0; i < 5; i++) {
@@ -27,7 +7,7 @@ for (var i = 0; i < 5; i++) {
 console.log(arr);
 
 var userName = prompt('Введите свое имя');
-var flag;
+var flag = false;
 
 for (var i = 0; i < arr.length; i++) {
   if (arr[i] === userName){
