@@ -663,7 +663,7 @@ aside .name h2 {
 }
 
 .products {
-	padding: 15px 25px 0;
+	padding: 15px 25px 4px 25px;
 	background: rgba(228,231,232,1);
 background: -moz-linear-gradient(top, rgba(228,231,232,1) 0%, rgba(147,167,176,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(228,231,232,1)), color-stop(100%, rgba(147,167,176,1)));
