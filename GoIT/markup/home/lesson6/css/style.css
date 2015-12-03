@@ -675,7 +675,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', end
 }
 
 .products .row {
-	padding-bottom: 28px;
+	padding-bottom: 24px;
 }
 
 .product {
@@ -699,6 +699,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', end
 	font-size: 13px
 }
 
+.product__price {
+	padding-top: 4px;
+}
+
 .product__price p {
 	color:#114165;
 	font-size: 12px;
@@ -718,6 +722,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', end
 	text-align: center;
 	background-color: white;
 	width: 100%;
+}
+
+.product__img img {
+    vertical-align: middle;
+    padding: 3px 0;
 }
 
 .product:nth-child(even) {
