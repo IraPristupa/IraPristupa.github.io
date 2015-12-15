@@ -1,0 +1,9 @@
+#timer >div {
+  display:inline-block;
+ }
+ 
+ #ms {
+  display:block;
+  width:100px;
+  text-align:right;
+  }
