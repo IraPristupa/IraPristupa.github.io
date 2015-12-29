@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+fieldset {
+	border: 4px groove threedface;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	padding: 0 10px;
+}
+
+.row {
+	margin: 6px 0 20px;
+}
+.row input {
+	margin-left: 10px;
+	min-height: 28px;
+}
+
+.row:last-child input {
+	margin-left: 20px;
+}
+
+.tooltip{
+ position:absolute;
+ z-index:999;
+ left:-9999px;
+ background-color:#dedede;
+ padding:5px;
+ border:1px solid #fff;
+ width:250px;
+}
+
+.tooltip p{
+ margin:0;
+ padding:0;
+ color:#fff;
+ background-color:#222;
+ padding:2px 7px;
+}
+
+button {
+	margin-top: 5px;
+}

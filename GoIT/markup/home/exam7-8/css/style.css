@@ -486,7 +486,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 
 @media (max-width: 959px) {
 	.wrapper {
-		width: 768px;
+		width: 100%;
 		padding: 0 20px;
 	}
 	.header__menu {
@@ -600,7 +600,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 
 @media (max-width: 767px) {
 	.wrapper {
-		width: 480px;
+		width: 100%;
 		padding: 0 20px;
 	}
 	.logo {
@@ -767,9 +767,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	}
 } 
 
-@media (max-width: 479px) {
+@media only screen and (max-width: 479px) {
 	.wrapper {
-		width: 320px;
+		width: 100%;
 		padding: 0 20px;
 	}
 	.logo {
@@ -805,12 +805,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	.sliders__left {
     	position: relative;
     	top: 100px;
-    	left: -25px;
+    	left: -22px;
     }
     .sliders__right {
     	position: relative;
     	top: 100px;
-    	right: -25px;
+    	right: -20px;
     }
     .iphone__text {
    		width: 100%;
