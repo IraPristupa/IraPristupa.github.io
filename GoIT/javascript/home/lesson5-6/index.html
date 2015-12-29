@@ -4,16 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="js/script.js">
+	<script src="js/script.js"></script>
 </head>
 <body>
-	<div id="timer">
-  		<div id="hours">00</div> :
-  		<div id="minutes">00</div> :
- 		<div id="seconds">00</div>
-  		<div id="ms">00</div>
+	<div class="wrapper">
+		<div class="timer">
+	  		<div class="hours">00</div> <span>:</span>
+	  		<div class="minutes">00</div><span>:</span>
+	 		<div class="seconds">00</div>
+	  		<div class="ms">00</div>
+		</div>
+		<button id="st" onClick="timer.startTimer()">Start</button>
+		<button onclick='timer.stopTimer()'>Clear</button>
 	</div>
-	<a href="#" id="st" onClick="t.startTimer()">Start</a>
-	<a href="#" onclick='t.stopTimer()'>Clear</a>
 </body>
 </html>
