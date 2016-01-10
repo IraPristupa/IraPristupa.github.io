@@ -1,0 +1,9 @@
+img {
+	border: none;
+}
+.inform__block {
+	width: 34%;
+}
+.sliders {
+	background-image: url(../img/bg_sliders.png);
+}
