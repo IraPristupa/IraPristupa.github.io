@@ -11,6 +11,12 @@ img {
 	background-color: #694876
 }
 
+@media only screen and (min-width: 767px) and (max-width: 959px){
+	.about__company {
+	    width: 32%;
+	}
+}
+
 @media only screen and (max-width: 767px) {
 	.drop_menu:hover {
 	    background-image: url(../img/bg_drop-menu.png);
@@ -19,6 +25,6 @@ img {
 		background-image: url(../img/menu_hover.png);
 	}
 	.logos__img {
-		padding: 8px 22px;
+		padding: 8px 20px;
 	}
 }
