@@ -584,7 +584,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
     	max-height: 52px;
     }
     .logos__images {
-    padding: 33px 0;
+    	padding: 33px 0;
 	}
     .logos__img {
 	    padding: 0 50px 0 0;
@@ -598,7 +598,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
     	max-width: 216px;
     }
     .footer__menu {
-    width: 100%;
+    	width: 100%;
 	}
     .copyright {
     	padding-top: 10px;
@@ -790,10 +790,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
     	max-height: 96px;
 	}
 	.footer__menu__item {
-    margin-right: 21px;
+    	margin-right: 21px;
 	}
 	.footer__menu__link {
-    font-size: 20px;
+    	font-size: 20px;
 	}
 	.copyright {
 		width:100%;
@@ -842,7 +842,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	.drop_menu:hover{
 		background: rgba(54, 41, 62, 0.7);
 		border: 1px solid #051116;
+		-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+		-webkit-border-radius: 5px;
 		border-radius: 5px;
 	}
 	.drop_menu:hover .header__menu__item:not(:first-child){
@@ -953,12 +955,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
     	max-height: 52px;
     }
     .updates__group a {
-    max-height: 24px;
-    display: block;
-    overflow: hidden;
+    	max-height: 24px;
+    	display: block;
+    	overflow: hidden;
 	}
 	.updates__group img {
-    padding-right: 10px;
+    	padding-right: 10px;
 	}
     .logos__images {
     	padding: 33px 0px 33px 15px;
@@ -971,6 +973,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 		display: none;
 	}
 	.footer__menu {
-    	    display: none;
+    	display: none;
 	}
 } 

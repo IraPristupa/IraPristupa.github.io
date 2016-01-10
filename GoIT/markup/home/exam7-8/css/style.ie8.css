@@ -10,12 +10,12 @@ img {
 .about {
 	background-color: #694876
 }
-
-	.logos__images {
-		padding: 33px 0px 33px 28px;
-		width: 94%;
-	}
-
+.drop_menu:hover {
+	background-image: url(../img/bg_drop-menu2.png);
+}
+.header__menu__item:hover{
+	background-image: url(../img/menu_hover.png);
+}
  	
 @media only screen and (max-width: 959px) {
     .logos__img {
@@ -42,10 +42,5 @@ img {
 	.logos__img {
 	    padding: 8px 16px;
 	}
-	.drop_menu:hover {
-	    background-image: url(../img/bg_drop-menu2.png);
-	}
-	.header__menu__item:hover{
-		background-image: url(../img/menu_hover.png);
-	}
 }
+
