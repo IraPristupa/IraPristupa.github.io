@@ -11,26 +11,18 @@ img {
 	background-color: #694876
 }
 
-/*@media only screen and (min-width: 768px) and (max-width: 959px){*/
-/*}*/
-
-/*@media only screen and (max-width: 767px) {*/
-	
-/*}*/
-/*@media only screen and (max-width: 959px) {*/
-	
 	.logos__images {
 		padding: 33px 0px 33px 28px;
 		width: 94%;
 	}
 
-	.logos__img {
-	    padding: 0 45px 0 0;
-	}
 	.about__company {
 	    width: 30%;
 	}
-/*}*/
+	.about__company:nth-child(3) {
+		width: 29%;
+		float: left;
+}
 
 /*@media only screen and (max-width: 767px) {*/
 	.logos__img {
