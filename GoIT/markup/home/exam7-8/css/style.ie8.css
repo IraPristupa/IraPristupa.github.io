@@ -23,11 +23,28 @@ img {
 		width: 29%;
 		float: left;
 }
-
-/*@media only screen and (max-width: 767px) {*/
-	.logos__img {
-	    padding: 8px 15px;
+ 	
+@media only screen and (max-width: 959px) {
+ 	.logos__images {
+    padding: 25px 0;
 	}
+    .logos__img {
+	    padding: 0 40px 0 0;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.logos__images {
+    	padding: 33px 0px 33px 25px;
+    	width: 93%;
+	}
+    .logos__img {
+	    padding: 8px 19px;
+	}
+}
+/*@media only screen and (max-width: 767px) {*/
+/*	.logos__img {
+	    padding: 8px 15px;
+	}*/
 	.drop_menu:hover {
 	    background-image: url(../img/bg_drop-menu2.png);
 	}
