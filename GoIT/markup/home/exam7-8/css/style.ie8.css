@@ -17,11 +17,11 @@ img {
 /*@media only screen and (max-width: 767px) {*/
 	
 /*}*/
-@media only screen and (max-width: 959px) {
+/*@media only screen and (max-width: 959px) {*/
 	
 	.logos__images {
 		padding: 33px 0px 33px 28px;
-		width: 90%;
+		width: 94%;
 	}
 
 	.logos__img {
@@ -30,9 +30,9 @@ img {
 	.about__company {
 	    width: 30%;
 	}
-}
+/*}*/
 
-@media only screen and (max-width: 767px) {
+/*@media only screen and (max-width: 767px) {*/
 	.logos__img {
 	    padding: 8px 18px;
 	}
@@ -42,4 +42,4 @@ img {
 	.header__menu__item:not(:first-child):hover{
 		background-image: url(../img/menu_hover.png);
 	}
-}
+/*}*/
