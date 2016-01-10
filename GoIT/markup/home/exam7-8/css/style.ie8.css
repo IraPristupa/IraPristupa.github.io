@@ -12,19 +12,28 @@ img {
 }
 
 /*@media only screen and (min-width: 768px) and (max-width: 959px){*/
-	.about__company {
-	    width: 30%;
-	}
 /*}*/
 
 /*@media only screen and (max-width: 767px) {*/
+	
+/*}*/
+@media only screen and (max-width: 959px) {
+	.logos__img {
+	    padding: 0 45px 0 0;
+	}
+	.about__company {
+	    width: 30%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.logos__img {
+	    padding: 8px 18px;
+	}
 	.drop_menu:hover {
-	    background-image: url(../img/bg_drop-menu.png);
+	    background-image: url(../img/bg_drop-menu2.png);
 	}
 	.header__menu__item:not(:first-child):hover{
 		background-image: url(../img/menu_hover.png);
 	}
-	.logos__img {
-		padding: 8px 18px;
-	}
-/*}*/
+}
