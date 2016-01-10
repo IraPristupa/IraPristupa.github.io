@@ -1,3 +1,10 @@
+ .clearfix:after {
+    content: ' ';
+    display: block;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
 img {
 	border: none;
 }
