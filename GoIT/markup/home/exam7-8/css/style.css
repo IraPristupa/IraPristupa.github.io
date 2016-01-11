@@ -537,10 +537,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 		right: 0;
 	}
 	.about__company {
-		width: 35%;
+		width: 33.3%;
 	}
 	.about__company:nth-child(3) {
-		width: 29%;
+		width: 30%;
 		float: right;
 	}
 	.about__company h2 {

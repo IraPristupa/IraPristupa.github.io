@@ -13,34 +13,11 @@ img {
 .drop_menu:hover {
 	background-image: url(../img/bg_drop-menu2.png);
 }
-.header__menu__item:hover{
+.logos__img {
+	width: 70px;
+} 
+
+/*.header__menu__item:hover{
 	background-image: url(../img/menu_hover.png);
-}
- 	
-@media only screen and (max-width: 959px) {
-    .logos__img {
-	    padding: 0 40px 0 0;
-	}
-	.about__company {
-	    width: 33%;
-	}
-}
-@media only screen and (max-width: 767px) {
-	.logos__images {
-    	padding: 33px 0px 33px 25px;
-    	width: 93%;
-	}
-    .logos__img {
-	    padding: 8px 19px;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	.logos__images {
-    	padding: 33px 0px 33px 10px;
-	}
-	.logos__img {
-	    padding: 8px 16px;
-	}
-}
-
+}*/
+ 
