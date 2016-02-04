@@ -95,14 +95,14 @@ body {
 	float: left;
 	position: absolute;
     top: 170px;
-    left: -95px;
+    left: -148px;
 }
 
 .sliders__right {
 	float: right;
 	position: absolute;
     top: 170px;
-    right: -95px;
+    right: -148px;
 }
 
 .iphone {
@@ -140,9 +140,10 @@ body {
 
 .iphone__img {
 	float: right; 
-	width: 40%;
+/*	width: 40%;*/
 	position: absolute;
-	right: -35px;
+	/*right: -31px;*/
+	right: 42px;
     top: -27px;
 }
 
@@ -369,7 +370,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 .logos__images {
 	padding: 33px 60px;
 	float: left;
-    width: 100%;
+/*    width: 100%;*/
 }
 
 .logos__img {
@@ -481,11 +482,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 
 /* ===================== DEVICES ===================== */
 
-@media only screen and (max-width: 1280px) {
-	body {
-		overflow-x: hidden; 
+@media only screen and (max-width: 1278px) {
+	.sliders__left, .sliders__right {
+	    display: none;
 	}
 }
+
 
 @media only screen and (max-width: 959px) {
 	.wrapper {
@@ -505,11 +507,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 		margin: 70px 0 155px;
 	}
 	.sliders__left {
+    	display: block;
     	position: relative;
     	top: 170px;
     	left: -20px;
     }
     .sliders__right {
+    	display: block;
     	position: relative;
     	top: 170px;
     	right: -20px;
@@ -534,7 +538,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 	}
 	.iphone__img {
 		position: absolute;
-		right: 0;
+		right: 34px ;
 	}
 	.about__company {
 		width: 33.3%;
