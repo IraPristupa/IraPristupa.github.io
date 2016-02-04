@@ -75,7 +75,6 @@ body {
 	font-family: "League Gothic", Arial, sans-serif;
 	font-weight: normal;
 	font-size: 24px;
-	/*line-height: 44px;*/
 	color: white;
 }
 
@@ -140,9 +139,7 @@ body {
 
 .iphone__img {
 	float: right; 
-/*	width: 40%;*/
 	position: absolute;
-	/*right: -31px;*/
 	right: 42px;
     top: -27px;
 }
@@ -370,7 +367,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', end
 .logos__images {
 	padding: 33px 60px;
 	float: left;
-/*    width: 100%;*/
 }
 
 .logos__img {
