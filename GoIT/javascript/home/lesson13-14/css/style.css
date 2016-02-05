@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width:800px;
+	margin: 0 auto;
+	background-color: #e5ffff;
+}
+
+.test_list {
+	list-style: none;
+    padding: 0 30px;
+}
+
+.test_item {
+	padding-left: 30px;
+    border: 1px solid #7eb4ff;
+    margin-top: 4px;
+}
+
+.test_item:hover {
+	background-color: #fff;
+}
+
+.headerTitle {
+	padding: 20px 170px;
+	font-size: 30px;
+	margin: 0;
+}
+
+input[type=checkbox] {
+    margin: 4px 4px 0 0;
+}
+
+label{
+      display: block;
+    }
+
+.btn-lg{
+	margin: 20px 240px;
+}
