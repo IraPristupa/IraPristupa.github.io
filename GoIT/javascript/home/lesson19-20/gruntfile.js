@@ -7,23 +7,39 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['js/src/*.js'],
-        dest: 'js/dist/script.min.js'
+        src: ['src/js/*.js'],
+        dest: 'dist/js/script.min.js'
       }
     },
     uglify: {
       dist: {
-        src: ['js/dist/script.min.js'],
-        dest: 'js/dist/script.min.js'
+        src: ['dist/js/script.min.js'],
+        dest: 'dist/js/script.min.js'
       }
     },
-    concat_css: {
-      options: {},
-      dist: {
-        src: ['style/*.scss'],
-        dest: 'styles/style.css'
+    imagemin: {
+      static: {
+        options: {
+          progressive: true,
+          interlaced: true
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'src/img/',
+            src: ['*.{jpg,png,gif}'],
+            dest: 'dist/img/',
+          }
+        ]
       }
     },
+    // concat_css: {
+    //   options: {},
+    //   dist: {
+    //     src: ['style/*.scss'],
+    //     dest: 'styles/style.css'
+    //   }
+    // },
     cssmin: {
       options: {
         shorthandCompacting: false,
@@ -31,7 +47,7 @@ module.exports = function(grunt) {
       },
       target: {
         files: {
-          'styles/style.min.css': ['styles/style.css']
+          'dist/css/style.min.css': ['dist/css/style.css']
         }
       }
     },
@@ -39,29 +55,29 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'styles',
+          cwd: 'src/css',
           src: ['*.scss'],
-          dest: './styles',
+          dest: 'dist/css',
           ext: '.css'
         }]
       }
     },
     watch: {
       sass: {
-        // We watch and compile sass files as normal but don't live reload here
-        files: ['styles/*.scss'],
-        tasks: ['concat_css','sass'],
+        files: ['src/css/*.scss'],
+        tasks: ['sass'],
       }
     }
   });
-  grunt.loadNpmTasks('grunt-concat-css');
+  // grunt.loadNpmTasks('grunt-concat-css');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   
 
-  grunt.registerTask('default', ['concat_css','concat', 'cssmin', 'uglify', 'sass', 'watch']);
+  grunt.registerTask('default', ['concat', 'imagemin', 'cssmin', 'uglify', 'sass', 'watch']);
 
 };
