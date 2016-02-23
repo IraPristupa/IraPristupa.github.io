@@ -8,12 +8,12 @@ module.exports = function(grunt) {
       },
       dist: {
         src: ['src/js/*.js'],
-        dest: 'dist/js/script.min.js'
+        dest: 'dist/js/script.js'
       }
     },
     uglify: {
       dist: {
-        src: ['dist/js/script.min.js'],
+        src: ['dist/js/script.js'],
         dest: 'dist/js/script.min.js'
       }
     },
