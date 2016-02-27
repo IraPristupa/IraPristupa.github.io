@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ---------- HEADER ----------- */
+
+.header {
+	border-bottom: 1px solid black;
+    padding: 20px 0;
+}
+
+.header h1 {
+	text-align: center;
+	font-size: 28px;
+    font-weight: 700;
+}
+
+.enter {
+	text-align: right;
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+}
+
+/* --------- MAIN ----------- */
+
+.main {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid black;
+}
+
+.info {
+	float:left;
+	width:25%;
+	min-height: 500px;
+}
+.center {
+	padding: 10px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	float: left;
+	width: 50%;
+	min-height: 500px;
+	background-color:gray;
+}
+
+.form {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.l1, .l2, .l3 {
+	margin: 2px;
+}
+
+.l1{
+	padding-left: 42px;
+}
+
+.l2{
+	padding-left: 35px;
+}
+
+.l3{
+	padding-left: 16px;
+}
+
+.button{
+	margin-left: 93px;
+}
+
+.statistic {
+	/*border:1px solid red;*/
+	padding: 10px;
+	float: right;
+	width: 25%;
+	min-height: 500px;
+}
+
+.statistic-list li {
+	list-style: none;
+}
+
+/* ----------- FOOTER ----------- */
+
+.footer {
+	text-align: center;
+}
