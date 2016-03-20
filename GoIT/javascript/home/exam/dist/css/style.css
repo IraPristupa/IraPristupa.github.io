@@ -389,7 +389,7 @@ li {
 
   .enter {
     float: right;
-    padding: 1px 38px 0; }
+    padding: 3px 38px 0; }
 
   .enter__link {
     line-height: 2.6em;
@@ -397,7 +397,7 @@ li {
 
   .logo {
     float: left;
-    padding: 0; }
+    padding: 0 0 0 37px; }
 
   .logo__link {
     font-size: 20px;
@@ -412,7 +412,7 @@ li {
   .slogan__text {
     font-size: 23px;
     line-height: 2em;
-    padding: 14px 0; }
+    padding: 15px 0; }
 
   .slogan__button {
     margin-top: 10px; }
@@ -457,7 +457,7 @@ li {
     max-width: 50%; }
 
   .partners__button {
-    margin-top: 13px; }
+    margin-top: 51px; }
 
   .partner__name {
     padding: 14px 0px 13px; }
@@ -533,6 +533,9 @@ li {
 @media only screen and (min-width: 960px) {
   .header__inner {
     max-width: 960px; }
+
+  .logo {
+    padding: 0; }
 
   .enter {
     padding: 0; }
