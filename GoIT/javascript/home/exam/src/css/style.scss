@@ -197,11 +197,11 @@ li {
 	}
 
 	.arrows__left {
-		left: 26px;
+		left: 31px;
 	} 
 
 	.arrows__right {
-		right: 26px; 
+		right: 28px; 
 	}
 
 	.slider__step {
@@ -220,7 +220,7 @@ li {
 		height: inherit;
 	    display: table-cell;
 	    vertical-align: bottom;
-	    padding: 23px 20px;
+	    padding: 17px 20px;
 	}
 
 	.slider__title {
@@ -283,7 +283,7 @@ li {
 	}
 
 	.partner__name {
-		padding: 10px 0;
+		padding: 15px 0;
 	}
 
 	.partner__info {
@@ -442,15 +442,24 @@ li {
 @media only screen and (min-width: 768px) {
 
 /* ---------- HEADER --------- */
+.header {
+	height: 700px;
+}
+
 .header__top {
 	position: relative;
 	overflow: hidden;
-	padding: 35px 40px 90px;
+	padding: 35px 11px 138px;
 }
 
 .enter {
 	float: right;
 	padding: 0;
+}
+
+.enter__link {
+	line-height: 2.6em;
+    padding: 0 17px;
 }
 
 .logo {
@@ -474,19 +483,20 @@ li {
 .slogan__text {
     font-size: 23px;
     line-height: 2em;
+    padding: 14px 0;
 }
 
 .slogan__button {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .slogan__link {
-	padding: 0 40px;
+	padding: 0 20px;
 }
 
 /* ---------- SLIDER ---------- */
 .block-title {
-    padding: 80px 0 20px;
+    padding: 93px 0 29px;
 }
 
 .sliders {
@@ -523,17 +533,17 @@ li {
 }
 
 .partner {
-    padding: 17px 12px;
+    padding: 0 12px 17px;
     float: left;
     max-width: 50%;
 }
 
 .partners__button {
-    margin-top: 20px;
+    margin-top: 13px;
 }
 
  .partners__link {
-    padding: 0 23px;
+    padding: 0 28px;
 }
 
 /* ----------- IDEAS --------- */
@@ -649,7 +659,7 @@ li {
 	}
 
 	.arrows__left, .arrows__right {
-		top: 162px;
+		top: 158px;
 	}
 
 	/* ----------- IDEAS --------- */
