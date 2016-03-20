@@ -397,6 +397,7 @@ li {
 		font-size: 14px;
 		color: #333;
 		line-height: 2em;
+		letter-spacing: 2px;
 	}
 
 	.footer__logo {
@@ -435,6 +436,7 @@ li {
 		font-size: 10px;
 		color: #ccc;
 		line-height: 2.7em;
+		letter-spacing: 1px;
 	}
 
 }
@@ -564,7 +566,11 @@ li {
 /* ---------- SEARCH ---------- */
 
 	.search {
-		padding: 20px 0 75px;
+		padding: 0 0 76px;
+
+		.block-title {
+			padding: 79px 0 26px;
+		}
 	}
 
 	.search__title {
@@ -572,11 +578,11 @@ li {
 	}
 
 	.search__form {
-		padding: 20px 0;
+		padding: 24px 0;
 	}
 
 	.search__input {
-    	width: 235px;
+    	width: 237px;
 	}
 
 	.search__button {
@@ -591,7 +597,7 @@ li {
 /* ---------- FOOTER ---------- */
 
 .footer {
-	padding: 30px 0;
+	padding: 33px 0;
 }
 
 .footer__logo {
@@ -684,27 +690,27 @@ li {
 	}
 
 	.footer__logo {
-		width: 13%;
+		width: 16%;
 	}
 
 	.company {
-	    width: 17%;
+	    width: 16%;
 	    padding: 0;
-	    margin-left: 12%;
+	    margin-left: 10%;
 	}
 
 	.footer-partners {
 		float: left;
-		width: 10%;	
+		width: 8%;	
 	}
 
 	.copyright {
 		float: right;
-		width: 13%;
+		width: 14%;
 	}
 
 	.copyright__text {
-	    padding-right: 10px;
+	    padding-right: 13px;
 	}
 
 }
