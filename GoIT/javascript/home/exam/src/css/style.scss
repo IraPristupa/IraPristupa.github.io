@@ -456,7 +456,7 @@ li {
 
 .enter {
 	float: right;
-	padding: 0;
+	padding: 1px 38px 0;
 }
 
 .enter__link {
@@ -489,7 +489,7 @@ li {
 }
 
 .slogan__button {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .slogan__link {
@@ -532,6 +532,7 @@ li {
 /* ---------- PARTNER ---------- */
 .partners {
 	max-width: 500px;
+	padding: 0;
 }
 
 .partner {
@@ -542,6 +543,10 @@ li {
 
 .partners__button {
     margin-top: 13px;
+}
+
+.partner__name {
+	padding: 14px 0px 13px;
 }
 
  .partners__link {
@@ -643,6 +648,14 @@ li {
 		max-width: 960px;
 	}
 
+	.enter {
+		padding: 0;
+	}
+
+	.slogan__button {
+		margin-top: 15px;
+	}
+
 	.partners {
     	max-width: 960px;
 	}
@@ -650,6 +663,10 @@ li {
 	.partners__group {
 		position: relative;
 		overflow: hidden;
+	}
+
+	.partners__button {
+    	margin-top: 13px;
 	}
 
 	.partner {

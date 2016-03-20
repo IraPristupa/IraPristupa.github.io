@@ -389,7 +389,7 @@ li {
 
   .enter {
     float: right;
-    padding: 0; }
+    padding: 1px 38px 0; }
 
   .enter__link {
     line-height: 2.6em;
@@ -415,7 +415,7 @@ li {
     padding: 14px 0; }
 
   .slogan__button {
-    margin-top: 15px; }
+    margin-top: 10px; }
 
   .slogan__link {
     padding: 0 20px; }
@@ -448,7 +448,8 @@ li {
 
   /* ---------- PARTNER ---------- */
   .partners {
-    max-width: 500px; }
+    max-width: 500px;
+    padding: 0; }
 
   .partner {
     padding: 0 12px 17px;
@@ -457,6 +458,9 @@ li {
 
   .partners__button {
     margin-top: 13px; }
+
+  .partner__name {
+    padding: 14px 0px 13px; }
 
   .partners__link {
     padding: 0 28px; }
@@ -530,12 +534,21 @@ li {
   .header__inner {
     max-width: 960px; }
 
+  .enter {
+    padding: 0; }
+
+  .slogan__button {
+    margin-top: 15px; }
+
   .partners {
     max-width: 960px; }
 
   .partners__group {
     position: relative;
     overflow: hidden; }
+
+  .partners__button {
+    margin-top: 13px; }
 
   .partner {
     max-width: 25%; }
