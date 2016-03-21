@@ -362,7 +362,8 @@ li {
 
   .footer__logo {
     color: #ff4e50;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    line-height: 2em; }
 
   .company {
     padding: 10px 0 14px; }
