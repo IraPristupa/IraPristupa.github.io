@@ -409,14 +409,14 @@ li {
 		text-align: center;
 		position: relative;
     	overflow: hidden;
-    	padding-top: 12px;
+    	padding-top: 13px;
 	}
 
 	.footer__logo, .company__title, .footer-partners__link {
 		font-family: $font-Bold;
 		font-size: 14px;
 		color: #333;
-		line-height: 2em;
+		line-height: 1em;
 	}
 
 	.footer__logo {
@@ -425,7 +425,7 @@ li {
 	}
 
 	.company {
-		padding: 11px 0;
+		padding: 10px 0 14px;
 	}
 
 
@@ -444,19 +444,19 @@ li {
 	.company__link {
 		font-family: $font-Light;
 		font-size: 14px;
-		line-height: 1.8em;
+		line-height: 1.5em;
 		color: #666;
 	}
 
 	.copyright {
-		padding: 10px 0;
+		padding: 8px 0;
 	}
 
 	.copyright__text {
 		font-family: $font-Bold;
 		font-size: 10px;
 		color: #ccc;
-		line-height: 2.7em;
+		line-height: 2.6em;
 		letter-spacing: 1px;
 	}
 
