@@ -435,7 +435,7 @@ li {
     margin-top: 10px; }
 
   .slogan__link {
-    padding: 0 20px; }
+    padding: 0 22px; }
 
   /* ---------- SLIDER ---------- */
   .block-title {
@@ -569,13 +569,14 @@ li {
     max-width: 960px; }
 
   .logo {
-    padding: 0; }
+    padding: 1px 0; }
 
   .enter {
-    padding: 0; }
+    padding: 1px 0;
+    width: 177px; }
 
   .slogan__button {
-    margin-top: 15px; }
+    margin-top: 10px; }
 
   .partners {
     max-width: 960px; }
