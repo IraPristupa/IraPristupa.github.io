@@ -106,7 +106,7 @@ li {
 			font-family: $font-Light;
 			font-size: 18px;
 			line-height: 1.2em;
-    		padding: 9px 0 16px;
+    		padding: 9px 26px 16px;
 		}
 
 	.slogan__button {
@@ -357,7 +357,7 @@ li {
 
 	.search {
 		text-align: center;
-		padding-bottom: 40px;
+		padding-bottom: 39px;
 		.block-title {
 			padding: 30px 0 0px;   
 		}
@@ -387,7 +387,7 @@ li {
 	}
 
 	.search__button {
-		margin-top: 10px;
+		margin-top: 11px;
 		background-color: $red-color;
 		border: 1px solid $red-color;
 		@include border-radius(20px);
@@ -638,13 +638,21 @@ li {
 
 .company {
 	float: left;
-	width: 24%;
+	width: 28%;
 	text-align: left;
-	padding: 0 7%;
+	padding: 0 6%;
 }
 
 .company__item {
 	float: none;
+}
+
+.company__title {
+	line-height: 2em;
+}
+
+.company__link {
+	line-height: 1.8em;
 }
 
 .company__list {
@@ -653,18 +661,23 @@ li {
 
 .footer-partners {
 	float: left;
-	width: 24%;	
+	width: 20%;
+	text-align: left;	
+}
+
+.footer-partners__link {
+	line-height: 2em;
 }
 
 .copyright {
 	float: left;
-	width: 24%;
-	padding: 0;
+	width: 20%;
+	padding-left: 10px;
 }
 
 .copyright__text {
 	float: right;
-    padding-right: 40px;
+    padding-right: 15px;
 }
 
 }
