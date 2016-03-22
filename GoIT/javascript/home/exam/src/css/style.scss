@@ -577,7 +577,7 @@ li {
 }
 
  .partners__link {
-    padding: 0 28px;
+    padding: 0 26px;
 }
 
 /* ----------- IDEAS --------- */
@@ -703,13 +703,11 @@ li {
 		padding: 1px 0;
 	}
 	.enter {
-		padding: 1px 0;
-		width: 177px;
+		// padding: 1px 0;
+		// width: 177px;
+		width: 195px;
+    	padding: 1px 0px 0 18px;
 	}
-
-	// .slogan__button {
-	// 	margin-top: 10px;
-	// }
 
 	.partners {
     	max-width: 960px;
@@ -721,7 +719,6 @@ li {
 	}
 
 	.partners__button {
-    	// margin-top: 13px;
     	margin: 13px 0 3px;
 	}
 

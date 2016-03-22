@@ -482,7 +482,7 @@ li {
     padding: 14px 0px 13px; }
 
   .partners__link {
-    padding: 0 28px; }
+    padding: 0 26px; }
 
   /* ----------- IDEAS --------- */
   .ideas .block-title {
@@ -575,8 +575,8 @@ li {
     padding: 1px 0; }
 
   .enter {
-    padding: 1px 0;
-    width: 177px; }
+    width: 195px;
+    padding: 1px 0px 0 18px; }
 
   .partners {
     max-width: 960px; }
