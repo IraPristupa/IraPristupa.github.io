@@ -33,13 +33,13 @@ module.exports = function(grunt) {
         ]
       }
     },
-    // concat_css: {
-    //   options: {},
-    //   dist: {
-    //     src: ['src/css/*.scss'],
-    //     dest: 'dist/css/style.css'
-    //   }
-    // },
+    concat_css: {
+      options: {},
+      dist: {
+        src: ['src/css/*.css'],
+        dest: 'dist/css/IE9.css'
+      }
+    },
     cssmin: {
       options: {
         shorthandCompacting: false,
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
         },
     }
   });
-  // grunt.loadNpmTasks('grunt-concat-css');
+  grunt.loadNpmTasks('grunt-concat-css');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -85,6 +85,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   
 
-  grunt.registerTask('default', ['concat', 'imagemin', 'uglify', 'cssmin', 'sass', 'watch']);
+  grunt.registerTask('default', ['concat', 'imagemin', 'uglify', 'concat_css','cssmin', 'sass', 'watch']);
 
 };

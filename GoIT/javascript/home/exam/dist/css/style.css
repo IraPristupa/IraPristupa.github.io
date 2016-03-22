@@ -2873,5 +2873,8 @@ li {
 
   .copyright__text {
     padding-right: 9px; } }
+/* -------------- IE 10 --------------- */
+img {
+  border: none; }
 
 /*# sourceMappingURL=style.css.map */
