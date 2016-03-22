@@ -565,6 +565,9 @@ li {
     float: right;
     padding-right: 15px; } }
 @media only screen and (min-width: 960px) {
+  .header__top {
+    padding: 36px 11px 136px; }
+
   .header__inner {
     max-width: 960px; }
 
@@ -574,9 +577,6 @@ li {
   .enter {
     padding: 1px 0;
     width: 177px; }
-
-  .slogan__button {
-    margin-top: 10px; }
 
   .partners {
     max-width: 960px; }

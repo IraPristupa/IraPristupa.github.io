@@ -690,6 +690,11 @@ li {
 }
 
 @media only screen and (min-width: 960px) {
+	 
+	.header__top {
+		padding: 36px 11px 136px;
+	}       
+
 	.header__inner {
 		max-width: 960px;
 	}
@@ -702,9 +707,9 @@ li {
 		width: 177px;
 	}
 
-	.slogan__button {
-		margin-top: 10px;
-	}
+	// .slogan__button {
+	// 	margin-top: 10px;
+	// }
 
 	.partners {
     	max-width: 960px;
