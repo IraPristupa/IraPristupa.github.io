@@ -714,11 +714,13 @@ li {
 	}
 
 	.partners__button {
-    	margin-top: 13px;
+    	// margin-top: 13px;
+    	margin: 13px 0 3px;
 	}
 
 	.partner {
 	    max-width: 25%;
+	    padding: 0 6px 17px 10px;
 	}
 
 	.sliders {
@@ -755,27 +757,28 @@ li {
 	}
 
 	.footer__logo {
-		width: 16%;
+		width: 17%;
 	}
 
 	.company {
 	    width: 16%;
 	    padding: 0;
-	    margin-left: 10%;
+	    margin-left: 9%;
 	}
 
 	.footer-partners {
 		float: left;
-		width: 8%;	
+		width: 8%;
+		padding-left: 6px;
 	}
 
 	.copyright {
 		float: right;
-		width: 14%;
+		width: 15%;
 	}
 
 	.copyright__text {
-	    padding-right: 13px;
+	    padding-right: 9px;
 	}
 
 }
