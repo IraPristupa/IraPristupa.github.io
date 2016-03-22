@@ -405,7 +405,8 @@ li {
 
   .enter {
     float: right;
-    padding: 3px 38px 0; }
+    padding: 3px 38px 0;
+    width: 253px; }
 
   .enter__link {
     line-height: 2.6em;
@@ -446,7 +447,7 @@ li {
     max-width: 100%; }
 
   .jcarousel {
-    width: 33%;
+    width: 33.3%;
     height: 410px; }
 
   .slider__group {
@@ -466,6 +467,8 @@ li {
   .partners {
     max-width: 500px;
     padding: 0; }
+    .partners .block-title {
+      padding: 93px 0 29px; }
 
   .partner {
     padding: 0 12px 17px;
@@ -497,7 +500,7 @@ li {
   .search {
     padding: 0 0 76px; }
     .search .block-title {
-      padding: 79px 0 26px; }
+      padding: 81px 0 22px; }
 
   .search__title {
     padding: 20px 0; }
@@ -520,7 +523,7 @@ li {
 
   .footer__logo {
     float: left;
-    width: 24%; }
+    width: 29%; }
 
   .company {
     float: left;

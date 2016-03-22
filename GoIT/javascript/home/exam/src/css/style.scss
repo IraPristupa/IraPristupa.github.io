@@ -479,6 +479,7 @@ li {
 .enter {
 	float: right;
 	padding: 3px 38px 0;
+	width: 253px;
 }
 
 .enter__link {
@@ -530,7 +531,7 @@ li {
 }
 
 .jcarousel {
-	width: 33%;
+	width: 33.3%;
     height: 410px;
 }
 
@@ -555,6 +556,9 @@ li {
 .partners {
 	max-width: 500px;
 	padding: 0;
+	.block-title {
+		padding: 93px 0 29px;
+	}
 }
 
 .partner {
@@ -596,7 +600,7 @@ li {
 		padding: 0 0 76px;
 
 		.block-title {
-			padding: 79px 0 26px;
+			padding: 81px 0 22px;
 		}
 	}
 
@@ -629,7 +633,7 @@ li {
 
 .footer__logo {
 	float: left;
-	width: 24%;
+	width: 29%;
 }
 
 .company {
