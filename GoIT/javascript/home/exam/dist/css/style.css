@@ -2749,7 +2749,9 @@ li {
     padding: 24px 0; }
 
   .search__input {
-    width: 237px; }
+    width: 237px;
+    height: 40px;
+    /* --for IE --- */ }
 
   .search__button {
     margin: 8px 0 0 4px; }
