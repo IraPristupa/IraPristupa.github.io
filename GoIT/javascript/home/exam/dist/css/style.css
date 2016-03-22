@@ -485,6 +485,9 @@ li {
     padding: 0 28px; }
 
   /* ----------- IDEAS --------- */
+  .ideas .block-title {
+    padding: 93px 0 25px; }
+
   .grid {
     max-width: 768px; }
 
@@ -498,7 +501,8 @@ li {
 
   /* ---------- SEARCH ---------- */
   .search {
-    padding: 0 0 76px; }
+    padding: 0 0 74px;
+    margin-top: 4px; }
     .search .block-title {
       padding: 81px 0 22px; }
 
@@ -519,7 +523,8 @@ li {
 
   /* ---------- FOOTER ---------- */
   .footer {
-    padding: 33px 0; }
+    padding: 33px 0;
+    border-top: 5px solid #ff4e50; }
 
   .footer__logo {
     float: left;
