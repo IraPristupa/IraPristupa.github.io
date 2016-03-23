@@ -45,7 +45,7 @@
 		font-size: 14px;
 		line-height: 2.6em;
 		padding: 0 17px;
-		color: white;	
+		color: #fff;	
 	}
 
 	.slogan {
@@ -124,7 +124,6 @@
 	.slider__group {
 		width: 300px;
 	    height: 400px;
-	   /* padding: 5px;*/
 	    color: #fff;
 	    margin: 0px 5px;
 	}
@@ -423,6 +422,23 @@
 	    text-align: left;
 	}
 
+	.company__list {
+	    width: 100%;
+	    position: relative;
+    	overflow: hidden;
+	}
+
+	.company__item {
+		padding-right: 14px;
+	}
+
+	.company__link {
+	    font-family: "Roboto Light",sans-serif;
+	    font-size: 14px;
+	    line-height: 1.8em;
+	    color: #666;
+	}
+
 	.footer-partners {
 		float: left;
 		width: 8%;
@@ -459,6 +475,11 @@
 .enter__log-in, 
 .enter__sign-up {
 	width: 80px;
+}
+
+.enter__log-in a, 
+.enter__sign-up a {
+	color: white;
 }
 
 .slogan__button {

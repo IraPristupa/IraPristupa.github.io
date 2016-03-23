@@ -30,6 +30,10 @@ li {
 	list-style: none;
 }
 
+img {
+	border: none;
+}
+
 .header {
 	background: url("../img/bg_header.jpg") center center no-repeat;
 	background-size: cover;
@@ -811,11 +815,32 @@ li {
 	    padding-right: 9px;
 	}
 
-}
+/* ---------- IE9 buttons--------------- */
 
+	.enter__log-in, 
+	.enter__sign-up,
+	.slogan__button,
+	.partners__button,
+	.search__button {
+		height: 40px;
 
-/* -------------- IE 10 --------------- */
+	}
 
-img {
-	border: none;
+	.enter__log-in, 
+	.enter__sign-up {
+		width: 80px;
+	}
+
+	.slogan__button {
+		width: 228px;
+	}
+
+	.partners__button {
+		width: 208px;
+	}
+
+	.search__button {
+		width: 164px;
+	}
+
 }
