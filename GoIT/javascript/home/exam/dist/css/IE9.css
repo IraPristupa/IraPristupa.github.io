@@ -32,8 +32,6 @@
 	.enter__sign-up {
 		border: 2px solid transparent;
 		background-color: transparent;
-		@include border-radius(20px);
-		transition: all 0.25s;
 	}
 	
 	.enter__log-in:hover, 
@@ -70,11 +68,9 @@
 	}
 
 	.slogan__button {
-		background-color: $red-color;
-		border: 2px solid $red-color;
+		background-color: #ff4e50;
+		border: 2px solid #ff4e50;
 		margin-top: 10px;
-		border-radius: 22px;
-/*		transition: all 0.25s;	*/
 	}
 
 	.slogan__button:hover {
@@ -110,7 +106,6 @@
 		width: 33.3%;
     	height: 410px;
 		float: left;
-		border-radius: 4px;
 		overflow: hidden;
 		position: relative;
 		padding: 5px;
@@ -120,19 +115,16 @@
 			width: 20000em;
 			position: relative;
 			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
+	}
+
 	.jcarousel li {
-			float: left;
-		}
+		float: left;
 	}
 
 	.slider__group {
 		width: 300px;
 	    height: 400px;
-	    padding: 5px;
-	    border-radius: 4px;
+	   /* padding: 5px;*/
 	    color: #fff;
 	    margin: 0px 5px;
 	}
@@ -157,7 +149,6 @@
 		height: 20px;
 		font: 10px/21px 'Montserrat Bold', sans-serif;
 		background-color: #ff4e50;
-		border-radius: 10px;
 		text-transform: uppercase;
 		margin-bottom: 17px;
 		text-align: center;
@@ -172,12 +163,12 @@
 	}
 
 	.slider__title {
-		font: bold 24px/27px $font-Bold;
+		font: bold 24px/27px 'Montserrat Bold', sans-serif;
 	}
 
 	.slider__text {
 		margin-top: 10px;
-		font: 14px/17px $font-Light;
+		font: 14px/17px 'Roboto Light', sans-serif;
 		color: #ccc;
 	}
 
@@ -187,7 +178,6 @@
 		width: 30px;
 		height: 55px;
 		display: block;
-		cursor: pointer;
 	}
 
 	.arrows__left:hover, .arrows__right:hover {
@@ -281,7 +271,6 @@
 	.partners__button {
 		background-color: transparent;
 		border: 2px solid #ff4e50;
-		border-radius: 22px;
 		margin: 13px 0 3px;
     	transition: all 0.25s;
 	}
@@ -301,7 +290,6 @@
  	    color: #ff4e50;
     	padding: 0 69px;
     	letter-spacing: 1px;
-    	transition: all 0.25s;
 	}
 
 	/* ------------- IDEAS -------------- */
@@ -365,7 +353,6 @@
 	.search__input {
 		width: 237px;
 		height: 40px;
-	    border-radius: 5px;
 	    border: 1px solid #bbb;
 	    padding-left: 13px;
 	  	outline: none;
@@ -379,9 +366,7 @@
 		margin: 8px 0 0 4px;
 		background-color: #ff4e50;
 		border: 2px solid #ff4e50;
-		border-radius: 22px;
 		outline: none;
-		transition: all 0.25s;
 	}
 
 	.search__button:hover {
@@ -393,7 +378,6 @@
 	}
 
 	.search__link {
-		padding: 4px 83px;
 	    color: #fff;
 	    font-family: 'Montserrat Bold', sans-serif;
 		font-size: 14px;
@@ -421,23 +405,29 @@
 		font-family: 'Montserrat Bold', sans-serif;
 		font-size: 14px;
 		color: #333;
-		line-height: 1em;
+		line-height: 2em;
 	}
 
 	.footer__logo {
 		width: 17%;
+		float: left;
+		color: #ff4e50;
+    	letter-spacing: 2px;
 	}
 
 	.company {
 	    width: 16%;
 	    padding: 0;
 	    margin-left: 9%;
+	    float: left;
+	    text-align: left;
 	}
 
 	.footer-partners {
+		float: left;
 		width: 8%;
 		padding-left: 6px;
-		padding-left: 6px;
+		text-align: left;
 	}
 
 	.copyright {
@@ -449,7 +439,6 @@
 	.copyright__text {
 	    padding-right: 9px;
 	    float: right;
-	    padding-right: 9px;
 	    font-family: "Montserrat Bold",sans-serif;
     	font-size: 10px;
     	color: #ccc;

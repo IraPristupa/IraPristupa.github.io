@@ -58,11 +58,11 @@
 			wrap: 'circular'
 		})
 
-		.jcarouselAutoscroll({
-			interval: 5000,
-			target: '+=1',
-			autostart: true
-		});
+		// .jcarouselAutoscroll({
+		// 	interval: 5000,
+		// 	target: '+=1',
+		// 	autostart: true
+		// });
 
 		$('.jcarousel-control-prev')
 			.on('jcarouselcontrol:active', function() {
