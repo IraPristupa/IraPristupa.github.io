@@ -2,9 +2,9 @@
 
 $(function() {
 
-  var html = $('#testing').html();
+  let html = $('#testing').html();
 
-  var data = {
+  let data = {
     headerTitle: 'Тест по программированию',
     questions: [
       {
@@ -17,11 +17,6 @@ $(function() {
         options: ['Правильный ответ№1', 'Ответ№2', 'Ответ№3'],
         trueValue: [0]
       },
-      // {
-      //   title: 'Вопроc №3',
-      //   options: ['Ответ№1', 'Правильный ответ№2', 'Ответ№3'],
-      //    trueValue: [1]
-      // },
       {
         title: 'Вопроc №3',
         options: ['Правильный ответ№1', 'Правильный ответ№2', 'Ответ№3', 'Ответ№4'],
@@ -35,13 +30,13 @@ $(function() {
         submit: 'Проверить мои результаты'
     };
 
-  var content = tmpl(html,data);
+  let content = tmpl(html,data);
 
   $('body').append(content);
   
   
   localStorage.setItem('testing', JSON.stringify(data));
-  var test = localStorage.getItem('testing');
+  let test = localStorage.getItem('testing');
 
   test = JSON.parse(test);
 
@@ -49,49 +44,49 @@ $(function() {
 
 
 $('#submit').on('click', function () {
-  var test = document.getElementsByClassName('test__item')
-  var answ = JSON.parse(localStorage.getItem('testing'))
-  var modal = document.querySelector('#modal-body')
-  var html = ''
+  let test = document.getElementsByClassName('test__item')
+  let answ = JSON.parse(localStorage.getItem('testing'))
+  let modal = document.querySelector('#modal-body')
+  let html = ''
 
-  var errPusher = function(block) {
-    html += "<div><p>Block of questions #"+parseInt(i+1)+" has errors. Please, check answers. =(</p></div>"
-    test[i].classList.add('errored')
+  let errPusher = function(block) {
+    html += "<div><p>Block of questions #"+parseInt(block+1)+" has errors. Please, check answers. =(</p></div>"
+    test[block].classList.add('errored')
   }
 
-  var answCheker = function(trueAnsw, value) {
-    for (var i = 0; i < trueAnsw.length; i++) {
-      if(trueAnsw[i] == value) return true
+  let answCheker = function(trueAnsw, value) {
+    for (let block = 0; block < trueAnsw.length; block++) {
+      if(trueAnsw[block] == value) return true
     }
     return false
   }
 
-  var setResult = function(block, result, error) {
-    test[i].classList.add(result)
+  let setResult = function(block, result, error) {
+    test[block].classList.add(result)
     if(error) errPusher(block)
   }
 
 
-  for (var i = 0; i < test.length; i++) {
-    var rightAnswers = answ.questions[i].trueValue
-    var rightAnswersLength = rightAnswers.length
-    var chekboxes = test[i].getElementsByTagName('input')
-    var errCounter = 0
-    var unchecked = 0
+  for (let block  = 0; block  < test.length; block ++) {
+    let rightAnswers = answ.questions[block].trueValue
+    let rightAnswersLength = rightAnswers.length
+    let chekboxes = test[block].getElementsByTagName('input')
+    let errCounter = 0
+    let unchecked = 0
 
-    for (var k = 0; k < chekboxes.length; k++) {
-      var checkbox = chekboxes[k]
+    for (let k = 0; k < chekboxes.length; k++) {
+      let checkbox = chekboxes[k]
       if(checkbox.checked == true) {
         if(answCheker(rightAnswers, k)) {
           if(rightAnswersLength == 1) {
-            setResult(i, 'successed')
+            setResult(block, 'successed')
             break;
           }
          } else {
           if(rightAnswersLength > 1) {
             errCounter++
           } else {
-           setResult(i, 'errored', 1)
+           setResult(block, 'errored', 1)
            break;
           }
         }
@@ -100,12 +95,12 @@ $('#submit').on('click', function () {
         }
 
         if(unchecked == chekboxes.length) {
-          setResult(i, 'errored', 1)
+          setResult(block, 'errored', 1)
           break;
         }
       }
       if(errCounter) {
-         setResult(i, 'errored', 1) 
+         setResult(block, 'errored', 1) 
         }
   }
 
@@ -116,8 +111,8 @@ $('#submit').on('click', function () {
   html += '<button onClick="reloadPage()">Close me!</button>'
 
   modal.innerHTML = html
-  var form = document.querySelector('.test')
-  form.style.opacity = "0.3"
+  let form = document.querySelector('.test')
+  form.style.opacity = "0.4"
   modal.style.display = "block"
 })
 
@@ -128,7 +123,7 @@ function reloadPage() {
 }
 
 function createRightAnswers(test) {
-    var answersObject = {};
+    let answersObject = {};
     test.questions.forEach(function(question, index) {
       answersObject["question"+index] = question.trueValue;
     });
