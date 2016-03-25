@@ -112,7 +112,7 @@ $('#submit').on('click', function () {
 
   modal.innerHTML = html
   let form = document.querySelector('.test')
-  form.style.opacity = "0.4"
+  form.style.opacity = "0.3"
   modal.style.display = "block"
 })
 
