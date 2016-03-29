@@ -169,7 +169,6 @@ img {
 	.slider__group {
 		width: 300px;
 	    height: 240px;
-	    // padding: 5px;
 	    border-radius: 4px;
 	    color: #fff;
 	    margin: 0px 5px;
@@ -352,6 +351,13 @@ img {
 		height: 120px;
 		width: 300px;
 		@include border-radius(5px);
+		opacity: 1;
+		transition: all .5s;
+	}
+
+	.grid__item:hover {
+		box-shadow: 0 0px 6px #ddd;
+		opacity: .9; 
 	}
 
 	.grid__text {
@@ -449,10 +455,19 @@ img {
 		line-height: 2em;
 	}
 
+	.footer__logo:hover {
+		text-shadow: 1px 0 0 $red-color;
+		transition: all 0.25s;
+	}
+
 	.company {
 		padding: 10px 0 14px;
 	}
 
+	.company__title:hover, .footer-partners__link:hover {
+		text-shadow: 0 1px 0 #ccc;
+		transition: all 0.25s;
+	}
 
 	.company__list {
 		position: relative;
@@ -473,6 +488,12 @@ img {
 		color: #666;
 	}
 
+	.company__link:hover {
+		font-weight: bold;
+    	padding-left: 10px;
+    	transition: all 0.95s;
+	}
+
 	.copyright {
 		padding: 8px 0;
 	}
@@ -483,6 +504,11 @@ img {
 		color: #ccc;
 		line-height: 2.6em;
 		letter-spacing: 1px;
+	}
+
+	.copyright__text:hover {
+		text-shadow: 0 1px 0 #ddd;
+		transition: all 0.25s;
 	}
 
 }
@@ -504,13 +530,12 @@ img {
 	.enter {
 		float: right;
 		padding: 3px 38px 0;
-		// width: 253px;
 		width: 263px;
+
 	}
 
 	.enter__link {
 		line-height: 2.6em;
-	    padding: 0 17px;
 	}
 
 	.logo {
@@ -542,8 +567,8 @@ img {
 	}
 
 	.slogan__link {
-		// padding: 0 20px;
-		padding: 0 22px
+		padding: 0 20px;
+		line-height: 2.5em;
 	}
 
 	/* ---------- SLIDER ---------- */
@@ -555,7 +580,6 @@ img {
 	.sliders {
 		position: relative;
 		overflow: hidden;
-		// max-width: 100%;
 		max-width: 768px;
 	}
 
@@ -606,7 +630,8 @@ img {
 	}
 
 	 .partners__link {
-	    padding: 0 26px;
+	    padding: 0 24px;
+	    line-height: 2.5em;
 	}
 
 	/* ----------- IDEAS --------- */
@@ -651,7 +676,7 @@ img {
 
 	.search__input {
     	width: 237px;
-    	height: 40px; 	/* --for IE --- */
+    	height: 40px;
 	}
 
 	.search__button {
@@ -660,6 +685,7 @@ img {
 
 	.search__link {
 		padding: 4px 23px;
+		line-height: 1.9em;
 	}
 
 
@@ -735,7 +761,7 @@ img {
 		padding: 1px 0;
 	}
 	.enter {
-		width: 195px;
+		width: 202px;
     	padding: 1px 0 0 7px;
 	}
 
@@ -784,6 +810,11 @@ img {
 		width: 620px;
 	}
 
+	.grid__item:hover span {
+		text-shadow: 3px 3px 3px #555;
+		font-size: 26px;
+		transition: all .5s;
+	}
 
 	.footer__inner {
 		max-width: 960px;
@@ -828,7 +859,7 @@ img {
 
 	.enter__log-in, 
 	.enter__sign-up {
-		width: 80px;
+		width: 94px;
 	}
 
 	.slogan__button {
@@ -840,7 +871,7 @@ img {
 	}
 
 	.search__button {
-		width: 164px;
+		width: 168px;
 	}
 
 }

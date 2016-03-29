@@ -2521,7 +2521,13 @@ img {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    opacity: 1;
+    transition: all .5s; }
+
+  .grid__item:hover {
+    box-shadow: 0 0px 6px #ddd;
+    opacity: .9; }
 
   .grid__text {
     padding: 0 15px;
@@ -2604,8 +2610,16 @@ img {
     letter-spacing: 2px;
     line-height: 2em; }
 
+  .footer__logo:hover {
+    text-shadow: 1px 0 0 #ff4e50;
+    transition: all 0.25s; }
+
   .company {
     padding: 10px 0 14px; }
+
+  .company__title:hover, .footer-partners__link:hover {
+    text-shadow: 0 1px 0 #ccc;
+    transition: all 0.25s; }
 
   .company__list {
     position: relative;
@@ -2623,6 +2637,11 @@ img {
     line-height: 1.5em;
     color: #666; }
 
+  .company__link:hover {
+    font-weight: bold;
+    padding-left: 10px;
+    transition: all 0.95s; }
+
   .copyright {
     padding: 8px 0; }
 
@@ -2631,7 +2650,11 @@ img {
     font-size: 10px;
     color: #ccc;
     line-height: 2.6em;
-    letter-spacing: 1px; } }
+    letter-spacing: 1px; }
+
+  .copyright__text:hover {
+    text-shadow: 0 1px 0 #ddd;
+    transition: all 0.25s; } }
 @media only screen and (min-width: 768px) {
   /* ---------- HEADER --------- */
   .header {
@@ -2648,8 +2671,7 @@ img {
     width: 263px; }
 
   .enter__link {
-    line-height: 2.6em;
-    padding: 0 17px; }
+    line-height: 2.6em; }
 
   .logo {
     float: left;
@@ -2674,7 +2696,8 @@ img {
     margin-top: 10px; }
 
   .slogan__link {
-    padding: 0 22px; }
+    padding: 0 20px;
+    line-height: 2.5em; }
 
   /* ---------- SLIDER ---------- */
   .block-title {
@@ -2721,7 +2744,8 @@ img {
     padding: 14px 0px 13px; }
 
   .partners__link {
-    padding: 0 26px; }
+    padding: 0 24px;
+    line-height: 2.5em; }
 
   /* ----------- IDEAS --------- */
   .ideas .block-title {
@@ -2753,14 +2777,14 @@ img {
 
   .search__input {
     width: 237px;
-    height: 40px;
-    /* --for IE --- */ }
+    height: 40px; }
 
   .search__button {
     margin: 8px 0 0 4px; }
 
   .search__link {
-    padding: 4px 23px; }
+    padding: 4px 23px;
+    line-height: 1.9em; }
 
   /* ---------- FOOTER ---------- */
   .footer {
@@ -2816,7 +2840,7 @@ img {
     padding: 1px 0; }
 
   .enter {
-    width: 195px;
+    width: 202px;
     padding: 1px 0 0 7px; }
 
   .partners {
@@ -2853,6 +2877,11 @@ img {
   .grid__item--width2 {
     width: 620px; }
 
+  .grid__item:hover span {
+    text-shadow: 3px 3px 3px #555;
+    font-size: 26px;
+    transition: all .5s; }
+
   .footer__inner {
     max-width: 960px;
     margin: 0 auto; }
@@ -2887,7 +2916,7 @@ img {
 
   .enter__log-in,
   .enter__sign-up {
-    width: 80px; }
+    width: 94px; }
 
   .slogan__button {
     width: 228px; }
@@ -2896,6 +2925,6 @@ img {
     width: 208px; }
 
   .search__button {
-    width: 164px; } }
+    width: 168px; } }
 
 /*# sourceMappingURL=style.css.map */
