@@ -270,31 +270,52 @@ img {
 	    margin: 0px auto;
 	}
 
-	.partner__icon1,
-	.partner__icon2,
-	.partner__icon3,
-	.partner__icon4 {
+	.partner__circle {
 		position: absolute;
 	    right: 0px;
 	    bottom: 0px;
-	    width: 42px;
+	    width: 40px;
 	    height: 40px;
+	    @include border-radius(20px);
+		border: solid 4px #fff;
+		padding: 7px 7px 7px 8px;
 	}
 
-	.partner__icon1 {
-		background: url(../img/icons_partners.png) 0 0 no-repeat;
+	.red {
+		background-color: #ff4e50;
+	}
+	.green {
+		background-color: #1cd7ad;
+	}
+	.orange {
+		background-color: #ffa507;
+	}
+	.blue {
+		background-color: #4e73db;
+		padding-left: 7px;
+		padding-top: 8px;
 	}
 
-	.partner__icon2 {
-		background: url(../img/icons_partners.png) 0 -42px no-repeat;
+	.partner__icon {
+		background: url(../img/icons_partners2.png) no-repeat;
+		width: 16px;
+		height: 16px;
 	}
 
-	.partner__icon3 {
-		background: url(../img/icons_partners.png) 0 -86px no-repeat;
+	.tv {
+		background-position: 0 0;
 	}
-
-	.partner__icon4 {
-		background: url(../img/icons_partners.png) 0 -132px no-repeat;
+	.cup {
+		background-position: 0 -17px;
+	}
+	.bulb {
+		background-position: 2px -32px;
+		height: 18px;
+	}
+	.plane {
+		background-position: -1px -50px;
+		width: 18px;
+		height: 17px;
 	}
 
 	.partner__name {
@@ -370,8 +391,13 @@ img {
 		color: #fff;
 		font-size: 22px;
 		text-transform: capitalize;
+		text-shadow: 3px 3px 3px #555;
 	}
 
+	.grid__item:hover span {
+		font-size: 26px;
+		transition: all .5s;
+	}
 
 	/* ----------- SEARCH ----------- */
 
@@ -488,12 +514,6 @@ img {
 		color: #666;
 	}
 
-	.company__link:hover {
-		font-weight: bold;
-    	padding-left: 10px;
-    	transition: all 0.95s;
-	}
-
 	.copyright {
 		padding: 8px 0;
 	}
@@ -504,11 +524,6 @@ img {
 		color: #ccc;
 		line-height: 2.6em;
 		letter-spacing: 1px;
-	}
-
-	.copyright__text:hover {
-		text-shadow: 0 1px 0 #ddd;
-		transition: all 0.25s;
 	}
 
 }
@@ -724,6 +739,12 @@ img {
 		line-height: 1.8em;
 	}
 
+	.company__link:hover {
+		font-weight: bold;
+    	padding-left: 10px;
+    	transition: all 0.95s;
+	}
+
 	.footer-partners {
 		float: left;
 		width: 20%;
@@ -808,12 +829,6 @@ img {
 
 	.grid__item--width2 {
 		width: 620px;
-	}
-
-	.grid__item:hover span {
-		text-shadow: 3px 3px 3px #555;
-		font-size: 26px;
-		transition: all .5s;
 	}
 
 	.footer__inner {
