@@ -102,7 +102,7 @@
 				type: "GET",
     			dataType: "json",
     			cache: false,
-				url: 'http://api.pixplorer.co.uk/image?word=' + queryPic + '&amount=7&size=tb',
+				url: 'http://api.pixplorer.co.uk/image?word=' + queryPic + '&amount=7&size=s',
 				success: function(data) {
 					console.log(data);
 					var piclist = tmpl($('#piclist-template').html(), data);
