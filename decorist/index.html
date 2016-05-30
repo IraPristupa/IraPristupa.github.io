@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<title>&#10047 Decorist</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="dist/css/style.min.css">
+  	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h1 class="header__title">Complete your order</h1>
+			<span class="header__slogan">Making interior design personal, affordable and easy</span>
+		
+			<nav class="navbar">
+				<ul class="navbar__list">
+					<li class="navbar__item">
+							<div class="navbar__step"><span>1</span></div>
+							<span class="navbar__name">view cart</span>
+					</li>
+					<li class="navbar__item">
+							<div class="navbar__step"><span>2</span></div>
+							<span class="navbar__name">payment</span>
+					</li>
+					<li class="navbar__item">
+							<div class="navbar__step"><span>3</span></div>
+							<span class="navbar__name">additional info</span>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">	
+			<div class="order-block">
+				<div class="order-block__step1">
+					<div class="order-block__title">
+						<h3>your shopping cart</h3>
+						<a>continue shopping</a>
+					</div>
+					<div class="order-block__info">
+						<form class="view-form">
+							<table class="items">
+								<thead>
+									<tr>
+										<th>item</th>
+										<th>quantity</th>
+										<th>price</th>
+										<th>change</th>
+									</tr>
+								</thead>
+								<tbody id="cart">
+									<!-- <tr>
+										<td><img src="dist/img/item.png"> PERSONAL SHOPPER PACKAGE</td>
+										<td><a href="#"><div class="minus"></a></div><span>1</span><div class="plus"></div></td>
+										<td> $69</td>
+										<td><div class="remove"></div>REMOVE</td>
+									</tr> -->
+								</tbody>
+							</table>
+							<div class="code-total">
+								<div class="code"><a href="#">Add promo code</a></div>
+								<div class="total">
+									<table class="price">
+										<tr>
+											<td>subtotal</td>
+											<td>$69.00</td>
+										</tr>
+										<tr>
+											<td>tax</td>
+											<td>$0.00</td>
+										</tr>
+										<tr>
+											<td>shipping</td>
+											<td>$0.00</td>
+										</tr>
+										<tr>
+											<td>total</td>
+											<td>$69.00</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</form>
+						<button type="button" class="btn btn-primary">next&nbsp.&nbsppayment</button>
+						<div class="guarantee-link"><a href="#">happiness quarantee!</a></div>
+					</div>
+				</div>
+				<div class="order-block__step2">
+					<div class="order-block__title">
+						<h3>Your Billing Information</h3>
+					</div>
+					<div class="order-block__info">
+						<form class="payment-form ">
+						  	<div class="form-group">
+						    	<label for="firstName">FIRST NAME</label>
+						    	<input type="text" class="form-control width1" id="firstName">
+						 	</div>
+						  	<div class="form-group">
+						    	<label for="lastName">LAST NAME</label>
+						    	<input type="text" class="form-control width1" id="lastName">
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="zipCode">ZIP CODE</label>
+						    	<input type="text" class="form-control width2" id="zipCode">
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="cardNumber">CARD NUMBER</label>
+						    	<input type="text" class="form-control width3" id="cardNumber">
+						  	</div>
+						  	<div class="form-group">	
+								<label>EXPIRATION DATE</label>
+								<select id="month" name="month">
+							  		<option value="1">1</option>
+							  		<option value="2">2</option>
+							  		<option value="3">3</option>
+							  		<option value="4">4</option>
+							  		<option value="5">5</option>
+							  		<option value="6">6</option>
+							  		<option value="7">7</option>
+							  		<option value="8">8</option>
+							  		<option value="9">9</option>
+							  		<option value="10">10</option>
+							  		<option value="11">11</option>
+							  		<option value="12">12</option>
+								</select>
+								<select id="year" name="year">
+							  		<option value="2016">2016</option>
+							  		<option value="2017">2017</option>
+							  		<option value="2018">2018</option>
+							  		<option value="2019">2019</option>
+							  		<option value="2020">2020</option>
+							  		<option value="2021">2021</option>
+							  		<option value="2022">2022</option>
+							  		<option value="2023">2023</option>
+							  		<option value="2024">2024</option>
+								</select>
+							</div>
+							<div class="form-group">
+						    	<label for="cvv">CVV</label>
+						    	<input type="text" class="form-control width4" id="cvv">
+						  	</div>
+						  	<div class="checkbox">
+						    	<label>
+						      		<input type="checkbox"> SAVE CARD FOR FUTURE USE
+						    	</label>
+						  </div>
+						</form>
+						<button type="button" class="btn btn-primary">PLACE ORDER</button>
+						<div class="guarantee-link"><a href="#">HAPPINESS GUARANTEE!</a></div>
+					</div>
+				</div>
+				<div class="order-block__step3">
+					<div class="order-block__title">
+						<h3>Basic information</h3>
+					</div>
+					<div class="order-block__info">
+						<form class="form-inline basic-info">
+						  	<div class="form-group">
+						    	<label for="product">I am looking for a </label>
+						    	<input type="text" class="form-control width5" id="product" placeholder="product (ex.chair, sofa)">
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="room"> for my </label>
+						    	<input type="text" class="form-control width6" id="room" placeholder="room(ex. living room, bedroom)">
+						 	</div>
+						  	<div class="form-group">
+						    	<label for="color"> in </label>
+						    	<input type="text" class="form-control width5" id="color" placeholder="color or materials">
+						  	</div>
+						  	<div class="form-group">
+						    	<label for="price"> and my budget is</label>
+						    	<input type="text" class="form-control width5" id="price" placeholder="price (ex. $500)"> .
+						  	</div>
+						  	<div class="form-group">
+						  		<label for="textarea"> any additional information share helps us give the best recommendations</label>
+						    	<textarea class="form-control" rows="3" id="textarea" placeholder="Helpful information would be approximate dimensions of the product you’re looking for, other items your planning on replacing in your room, materials you prefer, materials or colors you like or do not like, etc."></textarea>
+						  	</div>
+						</form>
+					</div>
+					<div class="order-block__title">
+						<h3>Upload Photos</h3>
+					</div>
+					<div class="order-block__info">
+						<div class="photos">
+							<p>The best photos capture the key features of the room (main furniture, layout, room features) from 2 or 3 corners of the room.  Capture key colors, textures and patterns that you want to keep.</p>
+						</div>
+						<div id="dropzone">
+							<form action="/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
+						  		<div class="dz-message needsclick">
+						  			<img src="dist/img/dropzone.png">
+						    		<p>Drag and drop photos here</p>
+						    		<span class="note needsclick">or <a href="#">Select file to upload </a></span>
+						  		</div>
+						  	</form>
+						</div>
+					</div>
+					<div class="order-block__title">
+						<h3>Additional Information <span>(Optional)</span></h3>
+					</div>
+					<div class="order-block__info">
+						<form class="add-info">
+						  	<div class="form-group">
+						    	<label for="url">paste a url for a pinterest board, houzz idea book or other website</label>
+						    	<input type="text" class="form-control" id="url">
+						  	</div>
+						  	<div class="form-group">
+						    	<label>share one of your decorist design boards</label>
+						    	<button type="submit" class="btn btn-default">attach decorist design board</button>
+						 	</div>
+						</form>
+						<button type="button" class="btn btn-primary">SEND TO DESIGNER</button>
+						<button type="button" class="btn btn-default">SAVE DRAFT</button>
+					</div>
+				</div>
+			</div>
+			<div class="decor-img"><img src="dist/img/decor-img.jpg"></div>
+		</main>
+	</div>
+	<!-- <script type="text/template" id="testing">
+	<div class="wrapper">
+		<header class="header">
+			<h1 class="header__title"><%=headerTitle%></h1>
+		</header>
+		<form action="#" class="test">
+			<fieldset class="test__content">
+				<ul class="test__list">
+					<% questions.forEach(function(question, i) { %>
+					<li class="test__item">
+						<h3 class="test__title"><%=question.title%></h3>
+						<% question.options.forEach(function(option, index) { %>
+							<label>
+								<input type="checkbox" class="test__question" name="question<%=i%>" value="<%=index%>">
+								<%=option%>
+							</label>
+						<% }); %>
+					</li>
+					<% }); %>
+				</ul>
+			</fieldset>
+			<button type="button" class="btn btn-primary" id="submit" value="<%=submit%>"><%=submit%></button>
+		</form>
+		<div id="modal-body"></div>
+	</div>
+	</script> -->
+  <script src="dist/js/script.min.js"></script>
+</body>
+</html>
