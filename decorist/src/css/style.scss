@@ -1,49 +1,6 @@
 
-@font-face {
-    font-family: 'Futura Medium';
-    src: url('../../fonts/futura_medium-webfont.woff2') format('woff2'),
-         url('../../fonts/futura_medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-	font-family:"Justus Italic";
-	src:url("../../fonts/Justus-ItalicOldstyle.eot?") format("eot"),
-		url("../../fonts/Justus-ItalicOldstyle.woff") format("woff"),
-		url("../../fonts/Justus-ItalicOldstyle.ttf") format("truetype"),
-		url("../../fonts/Justus-ItalicOldstyle.svg#Justus-ItalicOldstyle") format("svg");
-	font-weight:normal;
-	font-style:normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../../fonts/OpenSans-Regular-webfont.eot');
-    src: url('../../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('../../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('../../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-$font-uppercase: 'Futura Medium', Arial, serif;;
-$font-italic: 'Justus Italic', Arial, sans-serif;
-$font-normal: 'Open Sans', Arial, sans-serif;
-$color-dark: #222;
-$color-light: #999;
-$color-blue: #78a8bb;
-
-
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
+@import 'fonts';
+@import 'variables';
 
 li {
 	list-style: none;
@@ -56,8 +13,9 @@ a {
 	text-transform: uppercase;
 	color: $color-blue;
 
-	&:hover {
+	&:hover, &:focus {
 	    text-decoration: none;
+	    outline: none;
 	    transition: all 0.25s;
 	    cursor: pointer;
 	    color: #5592aa;
@@ -80,7 +38,7 @@ tr {
     overflow: hidden;
 }
 
-/* --------- HEADER ----------- */
+/* --------------------- HEADER ---------------------- */
 
 .header {
 	text-align: center;
@@ -103,11 +61,10 @@ tr {
 	color: $color-light;
 }
 
-/* ------ navbar ------ */
+/* -------------- navbar --------------- */
 
 .navbar {
-	margin-bottom: 0px;
-	padding-top: 50px;
+	padding-top: 45px;
 	width: 940px;
 	margin: 0 auto;
 }
@@ -115,6 +72,7 @@ tr {
 .navbar__list {
 	text-align: center;
 	border-top: 1px solid #ededed;
+	margin-bottom: 5px;
 }
 
 .navbar__item {
@@ -142,22 +100,37 @@ tr {
 	}
 }
 
+.navbar__item.active {
+
+	.navbar__step {
+		border: 1px solid $color-dark;
+
+		span {
+			color: $color-dark;
+		}
+	}
+
+	.navbar__name {
+		color: $color-dark;
+	}
+}
+
 .navbar__name {
 	font-family: $font-italic;
 	font-size: 18px;
-	line-height: 1.5em;
+	line-height: 1.7em;
 	text-transform: capitalize;
 	color: $color-light;
 }
 
-/* --------------------------- MAIN ---------------------------------- */
+/* --------------------------- MAIN -------------------------------- */
 
 .main {
 	width: 940px;
 	margin: 0 auto;
 }
 
-/* ----- order-block ------ */
+/* ------------ order-block ------------ */
 
 .order-block {
 	background-color: #fff;
@@ -166,16 +139,41 @@ tr {
 	padding: 2%;
 }
 
-.order-block__step1 {
-	// display: none;
+.order-success {
+	width: 100%;
+	background-color: #71aa63;
+	@include border-radius(4px);
+	text-align: center;
+	padding: 1.5%;
+	margin-bottom: 12px;
+	display: none;
+
+	h4 {
+		font-family: $font-uppercase;
+    	font-size: 16px;
+    	line-height: 1.6em;
+    	text-transform: uppercase;
+    	letter-spacing: 1px;
+    	margin: 0;
+    	color: #fff;
+	}
+
+	p {
+		font-family: $font-italic;
+		font-size: 16px;
+		line-height: 1.6em;
+		margin: 0;
+		color: #e1edde;
+	}
+
 }
 
 .order-block__step2 {
-	// display: none;
+	display: none;
 }
 
 .order-block__step3 {
-	// display: none;
+	display: none;
 }
 
 .order-block__title {
@@ -203,18 +201,17 @@ tr {
 	text-transform: uppercase;
 	margin-left: 8px;
 	color: $color-blue;
-}
+	}
 
 }
 
-.order-block__info {
 
-}
-
-/* ------------------------- FORM SECTION-1 (VIEW CART)--------------------------*/
+/* -------------------- FORM SECTION-1 (VIEW CART)---------------------- */
 
 .view-form {
-	margin-bottom: 15px;
+	.form-submit {
+		border: none;
+	}
 }
 
 .items {
@@ -272,7 +269,7 @@ tr {
 	margin-right: 7px;
 }
 
-/* ----- code-total ----- */
+/* ------- code-total -------- */
 
 .code-total {
 	background-color: #f7f7f7;
@@ -285,6 +282,23 @@ tr {
 .code {
 	float: left;
 	padding: 62px 0 0 10px;
+	font-family: $font-uppercase;
+   	font-size: 11px;
+   	line-height: 1.8em;
+
+	input {
+		width: 80px;
+		@include border-radius(4px);
+		outline: none;
+		border: 1px solid #999;
+		padding-left: 10px;
+	}
+
+	button {
+		padding: 4px 15px;
+    	margin-left: 3px;
+    	outline: none;
+	}
 }
 
 .total {
@@ -313,19 +327,16 @@ tr {
 /* -------------------- FORM SECTION-2 (PAYMENT) -------------------- */
 
 .payment-form {
-	margin-bottom: 15px;
-	padding: 13px 0;
-    border-bottom: 1px solid #ededed;
+	padding-top: 13px;
     width: 100%;
     position: relative;
     overflow: hidden;
 
     div:nth-child(-n+2) {
-	    width: 34%;
 	    display: inline-block;
 	}
 
-	.form-group:nth-last-child(-n+3) {
+	.form-group:nth-last-child(-n+4) {
 	    width: 25%;
 	    display: inline-block;
 	}
@@ -370,11 +381,13 @@ tr {
 .checkbox, 
 .checkbox input {
 	margin: 0;
+	padding-bottom: 10px;
 }
 
 .form-control {
 	height: 27px;
 	border-color: #dedede;
+	padding: 0px 12px;
 }
 
 .width1 {
@@ -393,10 +406,68 @@ tr {
 	width: 50px;
 }
 
+.form-submit {
+	padding: 12px 0 5px;
+    border-top: 1px solid #ededed;
+    position: relative;
+    overflow: hidden;
+}
+
 .guarantee-link {
     padding: 4px 10px;
     float: right;
 }
+
+/* ------------ modal ------------ */
+
+.modal-dialog {
+    width: 620px;
+    margin: 75px auto;
+}
+
+.close {
+	position: absolute;
+    top: -25px;
+    right: -25px;
+    font-size: 30px;
+    opacity: 0.4;
+    color: $color-dark;
+}
+
+.modal-title {
+	font-family: $font-uppercase;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: $color-dark;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.modal-body {
+	padding: 15px 0;
+
+	h5 {
+		font-family: $font-italic;
+		font-size: 18px;
+		color: #404040;
+		text-transform: capitalize;
+		text-align: center;
+	}
+
+	p {
+		font-family: $font-normal;
+		font-size: 12px;
+		line-height: 1.7em;
+		color: #666;
+	}
+}
+
+.modal-content {
+	padding: 3%;
+}
+
+
+/* ------------- buttons ------------ */
 
 .btn-primary, 
 .btn-default {
@@ -405,17 +476,24 @@ tr {
 	text-transform: uppercase;
 	padding: 6px 23px;
 	float: right;
+	outline: none;
+
+	&:focus, &:active {
+		outline: none;
+		@include border-radius(4px);
+	}
 }
 
 .btn-primary {
 	background-color: $color-blue;
 	border-color: $color-blue;
 
-	&:hover {
+	&:hover, &:active, &:focus  {
 	    background-color: #5592aa;
 	    border-color: #5592aa;
 	    transition: all 0.25s;
 	    color: #f2f2f2;
+	    outline: none;
 	}
 }
 
@@ -425,11 +503,12 @@ tr {
 	margin-right: 8px;
 	color: $color-blue;
 
-	&:hover {
+	&:hover, &:active, &:focus {
 	    background-color: #d9d9d9;
 	    border-color: #d9d9d9;
 	    color: #5592aa;
 	    transition: all 0.25s;
+	    outline: none;
 	}
 }
 
@@ -442,7 +521,6 @@ tr {
 	padding: 10px 0;
 	font-family: $font-normal;
 	font-size: 14px;
-	/*font-weight: 500;*/
 }
 
 .basic-info {
@@ -483,9 +561,12 @@ textarea[placeholder] {
 	line-height: 1.5em;
 }
 
-#inputRoom {
+#room {
 	width: 200px;
 }
+
+
+/* ---------- upload photos --------- */
 
 .photos p {
 	font-family: $font-normal;
@@ -523,9 +604,10 @@ textarea[placeholder] {
 	font-size: 10px;
 }
 
+/* --------- additional info ---------- */
+
 .add-info {
-	padding: 15px 0;
-	border-bottom: 1px solid #ededed;;
+	padding-top: 15px;
     margin-bottom: 20px;
 
     label {
@@ -550,7 +632,7 @@ textarea[placeholder] {
 }
 
 
-/* ------------- decor-img ----------- */
+/* --------------- decor-img ------------- */
 
 .decor-img {
 	float: right;

@@ -23,8 +23,9 @@ a {
   font-size: 10px;
   text-transform: uppercase;
   color: #78a8bb; }
-  a:hover {
+  a:hover, a:focus {
     text-decoration: none;
+    outline: none;
     transition: all 0.25s;
     cursor: pointer;
     color: #5592aa; }
@@ -43,7 +44,7 @@ tr {
   position: relative;
   overflow: hidden; }
 
-/* --------- HEADER ----------- */
+/* --------------------- HEADER ---------------------- */
 .header {
   text-align: center; }
 
@@ -62,16 +63,16 @@ tr {
   font-size: 18px;
   color: #999; }
 
-/* ------ navbar ------ */
+/* -------------- navbar --------------- */
 .navbar {
-  margin-bottom: 0px;
-  padding-top: 50px;
+  padding-top: 45px;
   width: 940px;
   margin: 0 auto; }
 
 .navbar__list {
   text-align: center;
-  border-top: 1px solid #ededed; }
+  border-top: 1px solid #ededed;
+  margin-bottom: 5px; }
 
 .navbar__item {
   display: inline-block;
@@ -97,24 +98,63 @@ tr {
     font-size: 14px;
     color: #999; }
 
+.navbar__item.active .navbar__step {
+  border: 1px solid #222; }
+  .navbar__item.active .navbar__step span {
+    color: #222; }
+.navbar__item.active .navbar__name {
+  color: #222; }
+
 .navbar__name {
   font-family: "Justus Italic", Arial, sans-serif;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.7em;
   text-transform: capitalize;
   color: #999; }
 
-/* --------------------------- MAIN ---------------------------------- */
+/* --------------------------- MAIN -------------------------------- */
 .main {
   width: 940px;
   margin: 0 auto; }
 
-/* ----- order-block ------ */
+/* ------------ order-block ------------ */
 .order-block {
   background-color: #fff;
   float: left;
   width: 65%;
   padding: 2%; }
+
+.order-success {
+  width: 100%;
+  background-color: #71aa63;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1.5%;
+  margin-bottom: 12px;
+  display: none; }
+  .order-success h4 {
+    font-family: "Futura Medium", Arial, serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #fff; }
+  .order-success p {
+    font-family: "Justus Italic", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    color: #e1edde; }
+
+.order-block__step2 {
+  display: none; }
+
+.order-block__step3 {
+  display: none; }
 
 .order-block__title {
   padding-bottom: 5px;
@@ -136,9 +176,9 @@ tr {
     margin-left: 8px;
     color: #78a8bb; }
 
-/* ------------------------- FORM SECTION-1 (VIEW CART)--------------------------*/
-.view-form {
-  margin-bottom: 15px; }
+/* -------------------- FORM SECTION-1 (VIEW CART)---------------------- */
+.view-form .form-submit {
+  border: none; }
 
 .items {
   width: 100%; }
@@ -178,7 +218,7 @@ tr {
   background-position: -26px 13px;
   margin-right: 7px; }
 
-/* ----- code-total ----- */
+/* ------- code-total -------- */
 .code-total {
   background-color: #f7f7f7;
   width: 100%;
@@ -188,7 +228,23 @@ tr {
 
 .code {
   float: left;
-  padding: 62px 0 0 10px; }
+  padding: 62px 0 0 10px;
+  font-family: "Futura Medium", Arial, serif;
+  font-size: 11px;
+  line-height: 1.8em; }
+  .code input {
+    width: 80px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #999;
+    padding-left: 10px; }
+  .code button {
+    padding: 4px 15px;
+    margin-left: 3px;
+    outline: none; }
 
 .total {
   float: right; }
@@ -205,16 +261,13 @@ tr {
 
 /* -------------------- FORM SECTION-2 (PAYMENT) -------------------- */
 .payment-form {
-  margin-bottom: 15px;
-  padding: 13px 0;
-  border-bottom: 1px solid #ededed;
+  padding-top: 13px;
   width: 100%;
   position: relative;
   overflow: hidden; }
   .payment-form div:nth-child(-n+2) {
-    width: 34%;
     display: inline-block; }
-  .payment-form .form-group:nth-last-child(-n+3) {
+  .payment-form .form-group:nth-last-child(-n+4) {
     width: 25%;
     display: inline-block; }
   .payment-form label {
@@ -253,11 +306,13 @@ tr {
 
 .checkbox,
 .checkbox input {
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 10px; }
 
 .form-control {
   height: 27px;
-  border-color: #dedede; }
+  border-color: #dedede;
+  padding: 0px 12px; }
 
 .width1 {
   width: 190px; }
@@ -271,45 +326,100 @@ tr {
 .width4 {
   width: 50px; }
 
+.form-submit {
+  padding: 12px 0 5px;
+  border-top: 1px solid #ededed;
+  position: relative;
+  overflow: hidden; }
+
 .guarantee-link {
   padding: 4px 10px;
   float: right; }
 
+/* ------------ modal ------------ */
+.modal-dialog {
+  width: 620px;
+  margin: 75px auto; }
+
+.close {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  font-size: 30px;
+  opacity: 0.4;
+  color: #222; }
+
+.modal-title {
+  font-family: "Futura Medium", Arial, serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #222;
+  text-align: center;
+  letter-spacing: 1px; }
+
+.modal-body {
+  padding: 15px 0; }
+  .modal-body h5 {
+    font-family: "Justus Italic", Arial, sans-serif;
+    font-size: 18px;
+    color: #404040;
+    text-transform: capitalize;
+    text-align: center; }
+  .modal-body p {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.7em;
+    color: #666; }
+
+.modal-content {
+  padding: 3%; }
+
+/* ------------- buttons ------------ */
 .btn-primary,
 .btn-default {
   font-family: "Futura Medium", Arial, serif;
   font-size: 11px;
   text-transform: uppercase;
   padding: 6px 23px;
-  float: right; }
+  float: right;
+  outline: none; }
+  .btn-primary:focus, .btn-primary:active,
+  .btn-default:focus,
+  .btn-default:active {
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
 
 .btn-primary {
   background-color: #78a8bb;
   border-color: #78a8bb; }
-  .btn-primary:hover {
+  .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
     background-color: #5592aa;
     border-color: #5592aa;
     transition: all 0.25s;
-    color: #f2f2f2; }
+    color: #f2f2f2;
+    outline: none; }
 
 .btn-default {
   background-color: #f2f2f2;
   border-color: #f2f2f2;
   margin-right: 8px;
   color: #78a8bb; }
-  .btn-default:hover {
+  .btn-default:hover, .btn-default:active, .btn-default:focus {
     background-color: #d9d9d9;
     border-color: #d9d9d9;
     color: #5592aa;
-    transition: all 0.25s; }
+    transition: all 0.25s;
+    outline: none; }
 
 /* -------------------- FORM SECTION-3 (ADDITIONAL INFO) -------------------- */
 /* ---------- basic-info --------*/
 .basic-info .form-group {
   padding: 10px 0;
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
-  /*font-weight: 500;*/ }
+  font-size: 14px; }
 
 .basic-info label {
   font-weight: 500;
@@ -338,9 +448,10 @@ textarea[placeholder] {
   font-size: 12px;
   line-height: 1.5em; }
 
-#inputRoom {
+#room {
   width: 200px; }
 
+/* ---------- upload photos --------- */
 .photos p {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 12px;
@@ -374,9 +485,9 @@ textarea[placeholder] {
   display: block;
   font-size: 10px; }
 
+/* --------- additional info ---------- */
 .add-info {
-  padding: 15px 0;
-  border-bottom: 1px solid #ededed;
+  padding-top: 15px;
   margin-bottom: 20px; }
   .add-info label {
     font-family: "Futura Medium", Arial, serif;
@@ -391,7 +502,7 @@ textarea[placeholder] {
     float: none;
     display: block; }
 
-/* ------------- decor-img ----------- */
+/* --------------- decor-img ------------- */
 .decor-img {
   float: right;
   width: 32%; }

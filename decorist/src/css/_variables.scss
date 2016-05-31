@@ -1,0 +1,14 @@
+$font-uppercase:	'Futura Medium', Arial, serif;;
+$font-italic: 		'Justus Italic', Arial, sans-serif;
+$font-normal: 		'Open Sans', Arial, sans-serif;
+$color-dark: 		#222;
+$color-light:		#999;
+$color-blue: 		#78a8bb;
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}

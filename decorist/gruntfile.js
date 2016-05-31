@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['src/js/*.js'],
+        src: ['src/js/dropzone.js', 'src/js/script.js'],
         dest: 'dist/js/script.js'
       }
     },
