@@ -540,10 +540,11 @@ textarea[placeholder] {
 
   .decor-img {
     width: 100%;
-    padding-bottom: 5%; }
+    padding-top: 4%; }
     .decor-img img {
-      width: 50%; } }
-@media screen and (min-width: 768px) {
+      width: 468px;
+      max-width: 100%; } }
+@media screen and (min-width: 769px) {
   .decor-img img {
     width: 100%; } }
 @media screen and (max-width: 959px) {
@@ -563,6 +564,9 @@ textarea[placeholder] {
 
   .navbar__item {
     margin: 0 1%;
-    width: 30%; } }
+    width: 30%; }
+
+  .payment-form .form-group:nth-child(5) {
+    width: 138px; } }
 
 /*# sourceMappingURL=style.css.map */

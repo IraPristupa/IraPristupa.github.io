@@ -679,7 +679,6 @@ textarea[placeholder] {
 }
 
 
-
 @media screen and (max-width: 768px) { 
 
 	.order-block {
@@ -688,17 +687,18 @@ textarea[placeholder] {
 
 	.decor-img {
 		width: 100%;
-		padding-bottom: 5%;
+		padding-top: 4%;
 
 		img {
-		    width: 50%;
+		    width: 468px;
+		    max-width: 100%;
 		}
 	}
 		
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	.decor-img {
 
 		img {
@@ -732,5 +732,9 @@ textarea[placeholder] {
 	.navbar__item {
 		margin: 0 1%;
     	width: 30%;
+	}
+
+	.payment-form .form-group:nth-child(5) {
+    	width: 138px;
 	}
 }
