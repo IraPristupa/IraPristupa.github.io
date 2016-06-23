@@ -5,6 +5,8 @@ function GoogleCallback (func, data) {
     window[func](data);
 };
 
+var search =$('.search')
+
 $(function() {
  
     var $wrapper = $('.wrapper');
@@ -19,6 +21,8 @@ $(function() {
         $.ajax({
 
             url: "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&q="+ $text +"&rsz=8&callback=GoogleCallback&context=?",
+            // url: "http://ajax.googleapis.com/ajax/services/search/web?v=2.0&key=AIzaSyD5gSUdK9hVxb0mqvi4fw2hrMgbotUJGVA&q="+ $text +"&rsz=8&callback=GoogleCallback&context=?",
+            // AIzaSyD5gSUdK9hVxb0mqvi4fw2hrMgbotUJGVA
             dataType : "jsonp",
             success: function (data) {
                 $result = $('.result');
@@ -30,6 +34,7 @@ $(function() {
                     li.innerHTML = ('<h3><a href="' + val.url + '">' + val.title + '</a></h3><p class="visibleURL">' + val.visibleUrl + '</p><p class="content">' + val.content + '</p>');                           
                     ul.appendChild(li);
                 });
+
                 var $result = document.createElement('div');
                 $result.classList.add('result');
                 $result.appendChild(ul);
@@ -40,6 +45,7 @@ $(function() {
     });
 
 });
+
 
 /*--------- LESSON #16 (PROTOTYPE) ----------*/
 

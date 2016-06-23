@@ -102,9 +102,9 @@
 				type: "GET",
     			dataType: "json",
     			cache: false,
-				url: 'http://api.pixplorer.co.uk/image?word=' + queryPic + '&amount=7&size=s',
+				url: 'http://api.pixplorer.co.uk/image?word=' + queryPic + '&amount=7&size=tb',
+				// url: 'https://pixabay.com/api/?key=2702410-c1bfe1096276972627af84493&q=' + queryPic + '&per_page=7&image_type=photo',
 				success: function(data) {
-					console.log(data);
 					var piclist = tmpl($('#piclist-template').html(), data);
 
 					$('.grid').remove();
@@ -133,8 +133,7 @@
 
 	});
 
-})(jQuery);
-;// Simple JavaScript Templating
+})(jQuery);;// Simple JavaScript Templating
 // John Resig - http://ejohn.org/ - MIT Licensed
 (function(){
   var cache = {};
