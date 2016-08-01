@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+body {
+    font-family: "League Gothic", Arial, sans-serif;
+}
+
+a, p {
+    /*font-family: "League Gothic", Arial, sans-serif;*/
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    /*width: 960px;*/
+    width: 1160px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* ------------------- HEADER ---------------------- */
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.header__menu {
+  background-color: #2a2d32;
+  opacity: 0.9;
+  height: 56px;
+  margin-left: 90px;
+}
+
+.header__menu__item {
+  list-style: none;
+  float: left;
+  padding: 17px 36px;
+  border-right: 1px solid #181a1d;
+}
+
+.header__menu__link {
+  font-family: "League Gothic", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: white;
+  line-height: 1em;
+}
+
+.header__menu__link:hover {
+  color: #f4b60d; 
+}
+
+.header__menu__item_state_current {
+    background-color: #248cec;
+}
+    .header__menu__link:hover { color: #fff; }
+
+
+/* ------------------- SLIDER ---------------------- */
+
+.slider-image {
+    width: 940px;
+    max-width: 100%;
+}
+
+.slider-box {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.slider-form {
+    position: absolute;
+    bottom: 39px;
+    z-index: 1;
+    left: 36px;
+}
+
+.slider {
+    overflow: hidden;
+    margin: 0 0 7px;
+    }
+    .slider ul { width: 9999px; }
+
+    .slider li {
+        list-style-type: none;
+        float: left;
+    }
+
+    .nav {
+        position: absolute;
+        left: 550px;
+        bottom: 20px; 
+    }
+
+    .nav  span {
+            opacity: 0.9;
+            background: #fff;
+            margin: 0 15px 0 0;
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+            overflow: hidden;
+            display: block;
+            float: left;
+            box-shadow: 0 1px 2px #000;
+        }
+
+        span.on {
+            background: #000;
+            border: 3px solid #fff;
+            box-sizing: border-box;
+        }
+
+
+.info {
+    width: 100%;
+}
+
+.info__block {
+    width: 33%;
+    float: left;
+    padding: 2%;
+}
+
+.info__block a {
+    padding-left: 40%;
+}
+
+.info__block h2 {
+    font-size: 24px;
+}
+
+.article-image {
+    width: 100%;
+}
+
+.page-navigation {
+    text-align: center;
+}
+
+.add-info {
+    padding: 4%;
+}
+
+.map > div {
+    float: left;
+    width: 36%;
+    padding: 4%;
+}
+
+div.our-location {
+    width: 56%;
+}
+
+.footer {
+    background-color: #eee;
+    border: 1px dashed #ddd;
+}
+
+.footer > div {
+    float: left;
+    padding: 1% 4%;
+    margin: 3% 0;
+}
+
+.about-us {
+    width: 45%;
+}
+
+.contact-us {
+    width: 54%;
+}
+
+.contact-us h3 {
+    float: left;
+}
+
+.form-group {
+    float: right;
+    padding: 2%;
+    width: 230px;
+}
+
+.form-control {
+    margin: 10% 0;
+}
+
+.btn-primary {
+    float: right;
+}
+
+.footer {
+    background-color: #eee;
+    border: 1px dashed #ddd;
+}
+
+.footer > div {
+    float: left;
+    padding: 1% 4%;
+    margin: 3% 0;
+}
