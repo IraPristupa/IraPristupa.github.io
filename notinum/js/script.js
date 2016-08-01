@@ -3,14 +3,14 @@
 $(document).ready(function() {
  $(".slider").each(function () { // обрабатываем каждый слайдер
   var obj = $(this);
-  $(obj).append("<div class='nav'></div>");
-  $(obj).find("li").each(function () {
-   $(obj).find(".nav").append("<span rel='"+$(this).index()+"'></span>"); // добавляем блок навигации
-   $(this).addClass("slider"+$(this).index());
-  });
-  $(obj).find("span").first().addClass("on"); // делаем активным первый элемент меню
- });
-});
+  // $(obj).append("<div class='nav'></div>");
+ //  $(obj).find("li").each(function () {
+ //   $(obj).find(".prev").append("<span rel='"+$(this).index()+"'></span>"); // добавляем блок навигации
+ //   $(this).addClass("slider"+$(this).index());
+ //  });
+ //  $(obj).find("span").first().addClass("on"); // делаем активным первый элемент меню
+ // });
+// });
 function sliderJS (obj, sl) { // slider function
  var ul = $(sl).find("ul"); // находим блок
  var bl = $(sl).find("li.slider"+obj); // находим любой из элементов блока

@@ -46,8 +46,8 @@ a {
 }
 
 .wrapper {
-    /*width: 960px;*/
-    width: 1160px;
+    width: 960px;
+    /*width: 1160px;*/
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -61,8 +61,7 @@ a {
 .header__menu {
   background-color: #2a2d32;
   opacity: 0.9;
-  height: 56px;
-  margin-left: 90px;
+  height: 57px;
 }
 
 .header__menu__item {
@@ -93,7 +92,7 @@ a {
 /* ------------------- SLIDER ---------------------- */
 
 .slider-image {
-    width: 940px;
+    width: 960px;
     max-width: 100%;
 }
 
@@ -106,14 +105,30 @@ a {
 
 .slider-form {
     position: absolute;
-    bottom: 39px;
+    top: 82px;
     z-index: 1;
-    left: 36px;
+    right: 160px;
+    background-color: #fff;
+    padding: 1.5% 3%;
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+
+.slider-form button {
+    float: right;
+    margin-top: 10%;
+}
+
+.slider-form .form-group {
+    margin-bottom: 2px;
+    width: 205px;
 }
 
 .slider {
     overflow: hidden;
     margin: 0 0 7px;
+    clear: both;
+
     }
     .slider ul { width: 9999px; }
 
@@ -147,6 +162,23 @@ a {
             box-sizing: border-box;
         }
 
+.next {
+    position: absolute;
+    top: 160px;
+    right: 20px;
+    z-index: 1;
+    color: white;
+    font-size: 45px;
+}
+
+.prev {
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    z-index: 1;
+    color: white;
+    font-size: 45px;
+}
 
 .info {
     width: 100%;
@@ -211,13 +243,13 @@ div.our-location {
     float: left;
 }
 
-.form-group {
+.contact-us > div {
     float: right;
     padding: 2%;
     width: 230px;
 }
 
-.form-control {
+.contact-us textarea {
     margin: 10% 0;
 }
 
@@ -226,7 +258,7 @@ div.our-location {
 }
 
 .footer {
-    background-color: #eee;
+    background-color: #b9daf9;
     border: 1px dashed #ddd;
 }
 
