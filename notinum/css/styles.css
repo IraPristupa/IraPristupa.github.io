@@ -37,17 +37,16 @@ body {
 }
 
 a, p {
-    /*font-family: "League Gothic", Arial, sans-serif;*/
     font-size: 18px;
 }
 
 a {
     text-decoration: none;
+    transition: all 0.5s;
 }
 
 .wrapper {
     width: 960px;
-    /*width: 1160px;*/
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -108,7 +107,7 @@ a {
     top: 82px;
     z-index: 1;
     right: 160px;
-    background-color: #fff;
+    background-color: #e8f3fd;
     padding: 1.5% 3%;
     border-radius: 3px;
     border: 1px solid #000;
@@ -128,39 +127,16 @@ a {
     overflow: hidden;
     margin: 0 0 7px;
     clear: both;
+}
+    
+.slider ul { 
+    width: 9999px;
+}
 
-    }
-    .slider ul { width: 9999px; }
-
-    .slider li {
-        list-style-type: none;
-        float: left;
-    }
-
-    .nav {
-        position: absolute;
-        left: 550px;
-        bottom: 20px; 
-    }
-
-    .nav  span {
-            opacity: 0.9;
-            background: #fff;
-            margin: 0 15px 0 0;
-            width: 15px;
-            height: 15px;
-            cursor: pointer;
-            overflow: hidden;
-            display: block;
-            float: left;
-            box-shadow: 0 1px 2px #000;
-        }
-
-        span.on {
-            background: #000;
-            border: 3px solid #fff;
-            box-sizing: border-box;
-        }
+.slider li {
+    list-style-type: none;
+    float: left;
+}
 
 .next {
     position: absolute;
@@ -179,6 +155,14 @@ a {
     color: white;
     font-size: 45px;
 }
+
+.next:hover,
+.prev.hover {
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+/* ------------------- MAIN ---------------------- */
 
 .info {
     width: 100%;
@@ -220,8 +204,10 @@ div.our-location {
     width: 56%;
 }
 
+/* ------------------- FOOTER ---------------------- */
+
 .footer {
-    background-color: #eee;
+    background-color: #e8f3fd;
     border: 1px dashed #ddd;
 }
 
@@ -255,15 +241,4 @@ div.our-location {
 
 .btn-primary {
     float: right;
-}
-
-.footer {
-    background-color: #b9daf9;
-    border: 1px dashed #ddd;
-}
-
-.footer > div {
-    float: left;
-    padding: 1% 4%;
-    margin: 3% 0;
 }
