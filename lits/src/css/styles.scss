@@ -145,8 +145,7 @@ li {
     line-height: 2.8em;
 
     &:hover {
-        color: #333;
-        text-shadow: 1px 3px 3px rgba(50, 50, 50, 1);
+        text-shadow: 0px 0px 1px #777;
         transition: all 0.25s;
     }
 }
@@ -163,7 +162,7 @@ li {
     width: 100%;
     height: 45px;
     border: 1px solid #d5d5d5;
-    border-radius: 6px;
+    @include border-radius(6px);
     padding-left: 13px;
     outline: none;
     color: #dedede;
@@ -213,7 +212,7 @@ li {
     width: 30px;
     height:  30px;
     background-color: $red-color;
-    border-radius: 23px;
+    @include border-radius(23px);
     border: 3px solid #fafafa;
     left: 32px;
     color: #fff;
@@ -265,7 +264,7 @@ li {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 6px;
+    @include border-radius(6px);
     background-color: $red-color;
     -webkit-transition: .4s;
     transition: .4s;
@@ -277,7 +276,7 @@ li {
         width: 28px;
         left: 4px;
         bottom: 2px;
-        border-radius: 6px;
+        @include border-radius(6px);
         background-color: white;
         -webkit-transition: .4s;
         transition: .4s;
@@ -329,7 +328,7 @@ input:focus + .slide {
     }
 
     &:before {
-        border-radius: 50%;
+        @include border-radius(50%);
     }
 }
 
@@ -398,12 +397,11 @@ input:checked + .slide.rectangle {
 }
 
 .checked label:before {
-    border-radius: 4px;
-
+    @include border-radius(4px);
 }
 
 .radio label:before {
-    border-radius: 20px;
+  @include border-radius(20px);
 }
 
 
@@ -558,9 +556,9 @@ input:checked + .slide.rectangle {
 .form {
     width: 100%;
     border: 2px solid #d8d8d8;
-    border-radius: 4px;
     text-align: center;
     margin-bottom: 30px;
+    @include border-radius(4px);
 
     h2 {
         font-family: $font-Regular;
@@ -573,12 +571,12 @@ input:checked + .slide.rectangle {
         width: 100%;
         outline: none;
         border: 1px solid #d6d6d6;
-        border-radius: 4px;
         font-size: 19px;
         line-height: 2em;
         padding-left: 40px;
         margin-bottom: 15px;
         color: #ccc;
+        @include border-radius(4px);
 
         &:focus {
             border: 1px solid $blue-color;  
@@ -627,8 +625,8 @@ input:checked + .slide.rectangle {
     color: #fff;
     background-color: #4e90c7;
     border: none;
-    border-radius: 4px;
     float: right;
+    @include border-radius(4px);
 }
 
 /* ----------------- DROPDOWN-SELECTS -----------------*/
@@ -653,8 +651,8 @@ input:checked + .slide.rectangle {
         z-index: 1;
         padding: 0.6em;
         border: 1px solid #ddd;
-        border-radius: 4px;
         cursor: pointer;
+        @include border-radius(4px);
 
         &:after{
             position: absolute;
@@ -701,12 +699,12 @@ input:checked + .slide.rectangle {
         background: #fff;
         border: 1px solid #cdcdcd;
         border-top: 1px solid transparent;
-        border-radius: 2px;
         top: 92%;
         left: 0;
         list-style: none;
         padding: 0;
         z-index: 100;
+        @include border-radius(4px);
 
         li {
             display: block;
@@ -740,13 +738,13 @@ input:checked + .slide.rectangle {
     }
 
     td { 
-        color:#2b2b2b; 
-        width:32px; 
-        height:32px; 
-        line-height:30px; 
-        text-align:center; 
+        color: #2b2b2b; 
+        width: 32px; 
+        height: 32px; 
+        line-height: 30px; 
+        text-align: center; 
         border: none;
-        cursor:default; 
+        cursor: default; 
         padding: 3px;
     } 
 }
@@ -796,9 +794,9 @@ input:checked + .slide.rectangle {
 
 .day-number {
     border: 1px solid #ccc;
-    border-radius: 16px;
     width: inherit;
     height: inherit;
+    @include border-radius(16px);
 }
 
 .selectedDay {
@@ -834,11 +832,11 @@ input:checked + .slide.rectangle {
 .badge {
     width: 100%;
     border: 2px solid #e9e8ea;
-    border-radius: 6px;
     position: relative;
     overflow: hidden;
     font-family: $font-Regular;
     margin: 8% 0;
+    @include border-radius(6px);
 }
 
 .badge__top {
@@ -953,7 +951,7 @@ input[type=range]::-webkit-slider-runnable-track {
     height: 5px;
     background: #ededed;
     border: none;
-    border-radius: 4px;
+    @include border-radius(4px);
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -961,9 +959,9 @@ input[type=range]::-webkit-slider-thumb {
     border: 4px solid $green-color;
     height: 16px;
     width: 16px;
-    border-radius: 50%;
     background: #fff;
     margin-top: -4px;
+    @include border-radius(50%);
 }
 
 input[type=range]:focus {
@@ -997,7 +995,7 @@ input[type=range]:focus {
         width: 290px;
         background: #ededed;
         border: none;
-        border-radius: 3px;
+        @include border-radius(3px);
     }
 
     input[type="range"].multirange.ghost {
@@ -1075,7 +1073,6 @@ output {
       background-color: $blue-color;
       width: 37px;
       height: 24px;
-      border-radius: 6px;
       display: inline-block;
       font: 400 15px/24px $font-Regular;
       text-align: center;
@@ -1083,6 +1080,7 @@ output {
       bottom: 84%;
       left: 0;
       margin-left: 0%;
+      @include border-radius(6px);
     }
     output:after { 
       content: "";
@@ -1322,29 +1320,3 @@ output {
         }
     }
 }
-
-// @media only screen and (min-width: 668px) and (max-width: 768px) {
-
-//   .container {
-//         width: 100%;
-//     }
-
-//     .checked-radio fieldset {
-//       width:50%;
-//       float: left;
-
-//       > div {
-//         display: block;
-//       }
-//     }
-
-//     .switch {
-//       margin-left: 33%;
-//     }
-
-//     .pie-chart {
-//       div {
-//           margin-left: 26%;
-//       }
-//     }
-// }

@@ -64,8 +64,7 @@ li {
   color: #777;
   line-height: 2.8em; }
   .menu__link:hover {
-    color: #333;
-    text-shadow: 1px 3px 3px #323232;
+    text-shadow: 0px 0px 1px #777;
     transition: all 0.25s; }
 
 .search {
@@ -79,6 +78,9 @@ li {
   width: 100%;
   height: 45px;
   border: 1px solid #d5d5d5;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
   border-radius: 6px;
   padding-left: 13px;
   outline: none;
@@ -121,6 +123,9 @@ li {
   width: 30px;
   height: 30px;
   background-color: #ff7f68;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  -ms-border-radius: 23px;
   border-radius: 23px;
   border: 3px solid #fafafa;
   left: 32px;
@@ -161,6 +166,9 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
   border-radius: 6px;
   background-color: #ff7f68;
   -webkit-transition: .4s;
@@ -172,6 +180,9 @@ li {
     width: 28px;
     left: 4px;
     bottom: 2px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
     border-radius: 6px;
     background-color: white;
     -webkit-transition: .4s;
@@ -208,6 +219,9 @@ input:focus + .slide {
   .slide.round:after {
     content: "OFF"; }
   .slide.round:before {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
     border-radius: 50%; }
 
 .slide.rectangle:after {
@@ -255,9 +269,15 @@ input:checked + .slide.rectangle:after {
   vertical-align: top; }
 
 .checked label:before {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px; }
 
 .radio label:before {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
   border-radius: 20px; }
 
 .checked input[type=checkbox]:hover + label:before,
@@ -393,9 +413,12 @@ input:checked + .slide.rectangle:after {
 .form {
   width: 100%;
   border: 2px solid #d8d8d8;
-  border-radius: 4px;
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
   .form h2 {
     font-family: "Source Sans Pro Regular", sans-serif;
     color: #777;
@@ -405,12 +428,15 @@ input:checked + .slide.rectangle:after {
     width: 100%;
     outline: none;
     border: 1px solid #d6d6d6;
-    border-radius: 4px;
     font-size: 19px;
     line-height: 2em;
     padding-left: 40px;
     margin-bottom: 15px;
-    color: #ccc; }
+    color: #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
     .form input:focus {
       border: 1px solid #4e90c7;
       color: #333; }
@@ -449,8 +475,11 @@ input:checked + .slide.rectangle:after {
   color: #fff;
   background-color: #4e90c7;
   border: none;
-  border-radius: 4px;
-  float: right; }
+  float: right;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
 
 /* ----------------- DROPDOWN-SELECTS -----------------*/
 .select {
@@ -472,8 +501,11 @@ input:checked + .slide.rectangle:after {
     z-index: 1;
     padding: 0.6em;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
     .select .placeholder:after {
       position: absolute;
       right: -1px;
@@ -507,12 +539,15 @@ input:checked + .slide.rectangle:after {
     background: #fff;
     border: 1px solid #cdcdcd;
     border-top: 1px solid transparent;
-    border-radius: 2px;
     top: 92%;
     left: 0;
     list-style: none;
     padding: 0;
-    z-index: 100; }
+    z-index: 100;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
     .select ul li {
       display: block;
       text-align: left;
@@ -582,9 +617,12 @@ input:checked + .slide.rectangle:after {
 
 .day-number {
   border: 1px solid #ccc;
-  border-radius: 16px;
   width: inherit;
-  height: inherit; }
+  height: inherit;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  border-radius: 16px; }
 
 .selectedDay {
   border-radius: 0;
@@ -609,11 +647,14 @@ input:checked + .slide.rectangle:after {
 .badge {
   width: 100%;
   border: 2px solid #e9e8ea;
-  border-radius: 6px;
   position: relative;
   overflow: hidden;
   font-family: "Source Sans Pro Regular", sans-serif;
-  margin: 8% 0; }
+  margin: 8% 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px; }
 
 .badge__top {
   width: 100%;
@@ -694,6 +735,9 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 5px;
   background: #ededed;
   border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px; }
 
 input[type=range]::-webkit-slider-thumb {
@@ -701,9 +745,12 @@ input[type=range]::-webkit-slider-thumb {
   border: 4px solid #a9cf55;
   height: 16px;
   width: 16px;
-  border-radius: 50%;
   background: #fff;
-  margin-top: -4px; }
+  margin-top: -4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
 
 input[type=range]:focus {
   outline: none; }
@@ -731,6 +778,9 @@ input[type=range]:focus {
     width: 290px;
     background: #ededed;
     border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
     border-radius: 3px; }
 
   input[type="range"].multirange.ghost {
@@ -782,14 +832,17 @@ output {
   background-color: #4e90c7;
   width: 37px;
   height: 24px;
-  border-radius: 6px;
   display: inline-block;
   font: 400 15px/24px "Source Sans Pro Regular", sans-serif;
   text-align: center;
   color: #fff;
   bottom: 84%;
   left: 0;
-  margin-left: 0%; }
+  margin-left: 0%;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px; }
 
 output:after {
   content: "";
