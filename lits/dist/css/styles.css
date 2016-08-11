@@ -616,13 +616,16 @@ input:checked + .slide.rectangle:after {
   border-bottom: 1px solid #e1e0e2; }
 
 .day-number {
-  border: 1px solid #ccc;
+  border: 1px solid #f2f2f2;
   width: inherit;
   height: inherit;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   border-radius: 16px; }
+
+.nil {
+  background-color: #f2f2f2; }
 
 .selectedDay {
   border-radius: 0;
