@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LITS-test</title>
+	<link rel="stylesheet" href="dist/css/styles.min.css">
+	<script src="dist/js/script.min.js"></script>
+</head>
+<body>
+		<header class="header">
+			<div class="container">
+				<nav class="menu">
+					<ul class="menu__list drop_menu">
+						<li class="menu__item menu__item_state_current">
+							<a class="menu__link" href="#">Home</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Portfolio</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">About</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Block</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Contact</a>
+						</li>
+						</ul>
+					</nav>
+				<form action="#" class="search">
+					<input type="text" class="search__input" placeholder="Search...">
+					<div class="search__icon"></div>
+				</form>
+				<div class="info">
+					<div class="alert">
+						<div class="alert__icon"></div>
+						<span class="alert__circle">4</span>
+					</div>
+					<div class="message">
+						<div class="message__icon"></div>
+						<span class="message__circle">14</span>
+					</div>
+					<div class="user">
+						<img class="user__photo" src="dist/img/user-photo1.png" alt="user-photo" >
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="after-header">
+			<div class="container">
+			<div class="toggle">
+				<!-- Rounded switch off-->
+				<label class="switch">
+	 		 		<input type="checkbox">
+	  				<div class="slide round"></div>
+				</label>
+
+				<!-- Rectangular switch off-->
+				<label class="switch">
+	  				<input type="checkbox">
+	  				<div class="slide rectangle"></div>
+				</label>
+
+				<!-- Rounded switch on-->
+				<label class="switch">
+	 		 		<input type="checkbox" checked>
+	  				<div class="slide round"></div>
+				</label>
+
+				<!-- Rectangular switch on-->
+				<label class="switch">
+	  				<input type="checkbox" checked>
+	  				<div class="slide rectangle"></div>
+				</label>
+			</div>
+			<div class="checked-radio">
+				<fieldset class="checked">
+						<div>
+							<input type="checkbox" name="field" id="option1" value="option">
+							<label for="option1">Default</label>
+						</div>
+						<div class="hover">
+							<input type="checkbox" name="field" id="option2" value="option">
+							<label for="option2">Hover</label>	
+						</div>
+						<div class="selected">
+							<input type="checkbox" name="field" id="option3" value="option">
+							<label for="option3" checked="checked">Selected</label>
+						</div>
+					</fieldset>
+					<fieldset class="radio">
+						<div>
+							<input type="radio" name="field" id="option4" value="option">
+							<label for="option4"><span></span>Default</label>
+						</div>
+						<div class="hover">
+							<input type="radio" name="field" id="option5" value="option">
+							<label for="option5"><span><span></span></span>Hover</label>	
+						</div>
+						<div class="selected">
+							<input type="radio" name="field" id="option6" value="option">
+							<label for="option6" checked><span><span></span></span>Selected</label>
+						</div>
+					</fieldset>
+			</div>
+			<div class="pie-chart">
+				<div class="pie">
+					<div class="slice-right"></div>
+					<div class="slice-left"></div>
+					<div class="percent">
+					    <div class="number">75%</div>
+					</div>
+				</div>
+				<div class="pie">
+					<div class="slice-right"></div>
+					<div class="slice-left"></div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="container">
+			<div class="main__column">
+				<div class="form">
+					<div class="title">
+						<h2>SIGN IN</h2>
+					</div>
+					<form action="#" class="sign-in">
+						<div class="login">
+						    <input type="text" name="login" placeholder="Login">
+						    <div class="login-icon"></div>
+						</div>
+						<div class="password">
+						    <input type="password" name="login" placeholder="Password">
+						    <div class="password-icon"></div>
+						</div>
+						 	<button type="submit" class="submit-button">log in</button>
+						</form>
+				</div>
+				<div class="dropdown">
+					<div class="select">
+					  	<span class="placeholder">Select Something</span>
+					  	<ul>
+					    	<li data-value="first">First Option</li>
+					    	<li data-value="second">Another Option</li>
+					    	<li data-value="third">OK, that's enough</li>
+					  	</ul>
+					  	<input type="hidden" name="changeme"/>
+					</div>
+					<div class="select">
+					  	<span class="placeholder">Select Something</span>
+					  	<ul>
+					    	<li data-value="first">First Option</li>
+					    	<li data-value="second">Another Option</li>
+					    	<li data-value="third">OK, that's enough</li>
+					  	</ul>
+					  	<input type="hidden" name="changemetoo"/>
+					</div>
+					<div class="select">
+					  	<span class="placeholder">Select Something</span>
+					  	<ul>
+					    	<li data-value="first">First Option</li>
+					    	<li data-value="second">Another Option</li>
+					    	<li data-value="third">OK, that's enough</li>
+					  	</ul>
+					  	<input type="hidden" name="changemealso"/>
+					</div>
+				</div>
+			</div>
+			<div class="main__column">
+				<div class="calendar" id="cal">
+					<div class="calendar__header"> 
+		 				<span class="prev" id="prev"> &lang; </span> 
+						<span class="month-year" id="label"> OCTOBER 2014 </span> 
+						<span class="next" id="next"> &rang; </span>
+				    </div> 
+				    <div class="calendar__frame"id="cal-frame"> 
+				 		<table class="curr">
+				 			<thead class="day-name">
+						    	<tr>
+							 		<td>SU</td> 
+									<td>MO</td> 
+									<td>TU</td> 
+									<td>WE</td> 
+									<td>TH</td> 
+									<td>FR</td> 
+									<td>SA</td>
+								</tr>	
+						    </thead>
+						    <tbody>
+						        <tr>
+						        	<td class="nil"><div class="day-number"></div></td>
+						        	<td class="nil"><div class="day-number"></div></td>
+						        	<td class="nil"><div class="day-number"></div></td>
+						        	<td><div class="day-number">1</div></td>
+						        	<td><div class="day-number">2</div></td>
+						        	<td><div class="day-number">3</div></td>
+						        	<td><div class="day-number">4</div></td>
+						        </tr> 
+						        <tr>
+						        	<td><div class="day-number">5</div></td>
+						        	<td><div class="day-number">6</div></td>
+						        	<td><div class="day-number">7</div></td>
+						        	<td><div class="day-number">8</div></td>
+						        	<td><div class="day-number">9</div></td>
+						        	<td><div class="day-number">10</div></td>
+						        	<td class="today"><div class="day-number">11</div></td>
+						        </tr> 
+						        <tr>
+						        	<td><div class="day-number">12</div></td>
+						        	<td><div class="day-number">13</div></td>
+						        	<td><div class="day-number">14</div></td>
+						        	<td class="selectedDay first"><div class="day-number">15</div></td>
+						        	<td class="selectedDay"><div class="day-number">16</div></td>
+						        	<td class="selectedDay"><div class="day-number">17</div></td>
+						        	<td class="selectedDay"><div class="day-number">18</div></td>
+						        </tr> 
+						        <tr>
+						        	<td class="selectedDay"><div class="day-number">19</div></td>
+						        	<td class="selectedDay"><div class="day-number">20</div></td>
+						        	<td class="selectedDay"><div class="day-number">21</div></td>
+						        	<td class="selectedDay"><div class="day-number">22</div></td>
+						        	<td class="selectedDay"><div class="day-number">23</div></td>
+						        	<td class="selectedDay last"><div class="day-number">24</div></td>
+						        	<td><div class="day-number">25</div></td>
+						        </tr> 
+						        <tr>
+						        	<td><div class="day-number">26</div></td>
+						        	<td><div class="day-number">27</div></td>
+						        	<td><div class="day-number">28</div></td>
+						        	<td><div class="day-number">29</div></td>
+						        	<td><div class="day-number">30</div></td>
+						        	<td><div class="day-number">31</div></td>
+						        	<td class="nil"><div class="day-number"></div></td>
+						        </tr> 
+						    </tbody> 
+						</table>
+				    </div>
+				</div>
+				<div class="badge">
+					<div class="badge__top">
+						<div class="badge__photo">
+							<img src="dist/img/badge-photo.png">
+						</div>
+						<div class="badge__info">
+							<h4>Emma Stone</h4>
+							<p>The Amazing Spider-Man,<br>Gangster Squad,<br>The Croods</p>
+						</div>
+					</div>
+					<div class="badge__bottom">
+						<div class="likes">
+							<span>172</span>
+						</div>
+						<div class="friends">
+							<span>34</span>
+						</div>
+						<div class="view">
+							<span>210</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__column">
+				<div class="slider">
+					<form>
+						<input type="range" name="foo" min="0" max="100">
+						<output for="foo"></output>
+					</form>
+					<div class="slider2">
+						<input type="range" multiple value="10,80">
+						<div><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
+					</div>
+					<div class="slider3">
+						<span>0%</span><input type="range" multiple value="0,75"><span>100%</span>
+					</div>
+				</div>
+				<div class="video">
+					<div id="video-container">
+					  <!-- Video -->
+					  	<video id="video" allowfullscreen controls>
+					    	<source src="src/video/cartoon.webm" type="video/webm">
+					    	<source src="src/video/cartoon.mp4" type="video/mp4">
+					  	</video>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+</body>
+</html>
