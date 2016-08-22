@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         multirange.init();
     }
 
+ // input-output
     input = document.querySelector("input[type='range']");
     output = document.querySelector("output");
 
