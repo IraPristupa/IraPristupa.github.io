@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<title>Седона-гостиницы</title>
+	<script src="https://use.fontawesome.com/629bac11d2.js"></script>
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header clearfix">
+			<h1 class="logo"> 
+				<a class="logo__link" href="#">
+					<img class="logo__img" src="images/logo.png" alt="logo">
+				</a>
+			</h1>
+			<nav class="menu clearfix">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a class="menu__link" href="#">Информация</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">Фото и видео</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">Гостиницы</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">Карта штата</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="filter clearfix">
+				<div class="checkboxes">
+					<form action="#" class="checkboxes__form">
+						<fieldset class="checkboxes__fieldset">
+							<legend>ИНФРАСТРУКТУРА</legend>
+							<div>
+								<input type="checkbox" id="pool" checked="checked">
+								<label for="pool">БАССЕЙН</label>
+							</div>
+							<div>
+								<input type="checkbox" id="parking">
+								<label for="parking">ПАРКОВКА</label>
+							</div>
+							<div>
+								<input type="checkbox" id="wi-fi">
+								<label for="wi-fi">WI-FI</label>
+							</div>
+						</fieldset>
+					</form>
+					<form action="#" class="checkboxes__form">
+						<fieldset class="checkboxes__fieldset">
+							<legend>ТИП ЖИЛЬЯ</legend>
+							<div>
+								<input type="checkbox" id="hotel" checked="checked">
+								<label for="hotel">ГОСТИНИЦА</label>
+							</div>
+							<div>
+								<input type="checkbox" id="motel" checked="checked">
+								<label for="motel">МОТЕЛЬ</label>
+							</div>
+							<div>
+								<input type="checkbox" id="appartments" checked="checked">
+								<label for="appartments">АПАРТАМЕНТЫ</label>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="price">
+					<form action="#" class="checkboxes__form">
+						<h4 class="price__title">Стоимость в сутки (Р):</h4>
+						<button class="btn"><span>от 0</span> <span>ДО 3000</span></button>
+						<div class="slider">
+							<input type="range" class="multirange ghost" min="0" max="100" step="1" value="0" >
+							<input type="range" class="multirange original" min="0" max="100" step="1" value="80">
+						</div>
+						<button id="search" class="btn">ПОКАЗАТЬ</button>
+					</form>
+				</div>
+			</div>
+		</header>
+		<div class="result clearfix">
+			<div class="result__sort clearfix">
+				<h3 class="sort__title">НАЙДЕНО: 3</h3>
+				<ul class="sort__menu">
+					<li class="sort__item">СОРТИРОВКА:</li>
+					<li class="sort__item">
+						<a class="sort__link sort__link_active" href="#">ПО ЦЕНЕ</a>
+					</li>
+					<li class="sort__item">
+						<a class="sort__link" href="#">ПО ТИПУ</a>
+					</li>
+					<li class="sort__item">
+						<a class="sort__link" href="#">ПО РЕЙТИНГУ</a>
+					</li>
+				</ul>
+				<div class="sort__arrow">
+					<i class="fa fa-caret-up sort__arrow_up" aria-hidden="true"></i>
+					<i class="fa fa-caret-down sort__arrow_down" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="result__block clearfix">
+				<div class="result__main">
+					<img class="result__img" src="images/amara-resort.png" height="92" alt="amara-resort">
+					<div class="result__info">
+						<h3 class="result__title">Amara Resort & Spa</h3>
+						<span class="result__category">ГОСТИНИЦА</span>
+						<span class="result__category">ОТ 3500 Р.</span>
+						<button class="btn btn_blue btn_small">ПОДРОБНЕЕ</button>
+						<button class="btn btn_brown btn_small">ЗАБРОНИРОВАТЬ</button>
+					</div>
+				</div>
+				<div class="result__rating">
+					<span class="stars"></span>
+					<button class="btn btn_small">РЕЙТИНГ: 8,5</button>
+				</div>
+			</div>
+				<div class="result__block clearfix">
+					<img class="result__img" src="images/desert-inn.png" height="92" alt="desert-inn">
+					<div class="result__info">
+						<h3 class="result__title">Desert Quail Inn</h3>
+						<span class="result__category">МОТЕЛЬ</span>
+						<span class="result__category">ОТ 2000 Р.</span>
+						<button class="btn btn_blue btn_small">ПОДРОБНЕЕ</button>
+						<button class="btn btn_brown btn_small">ЗАБРОНИРОВАТЬ</button>
+					</div>
+					<div class="result__rating">
+						<span class="stars stars_2"></span>
+						<button class="btn btn_small">РЕЙТИНГ: 8,9</button>
+					</div>
+				</div>
+				<div class="result__block clearfix">
+					<img class="result__img" src="images/poco-diablo.png" height="92" alt="poco-diablo">
+					<div class="result__info">
+						<h3 class="result__title">Villas at Poco Diablo</h3>
+						<span class="result__category">АПАРТАМЕНТЫ</span>
+						<span class="result__category">ОТ 4000 Р.</span>
+						<button class="btn btn_blue btn_small">ПОДРОБНЕЕ</button>
+						<button class="btn btn_brown btn_small">ЗАБРОНИРОВАТЬ</button>
+					</div>
+					<div class="result__rating">
+						<span class="stars stars_3"></span>
+						<button class="btn btn_small">РЕЙТИНГ: 8,2</button>
+					</div>
+				</div>
+		</div>
+		<footer class="footer clearfix">
+			<div class="footer__block">
+				<span class="title">#VISITSEDONA</span>
+			</div>
+			<div class="footer__block">
+				<div class="social">
+					<a class="social__link" href="#">
+						<i class="fa fa-twitter social__icon"></i>
+					</a>
+				</div>
+				<div class="social">
+					<a class="social__link" href="#">
+						<i class="fa fa-facebook social__icon"></i>
+					</a>
+				</div>
+				<div class="social">
+					<a class="social__link" href="#">
+						<i class="fa fa-youtube-play social__icon"></i>
+					</a>
+				</div>
+			</div>
+			<div class="footer__block">
+				<span class="text">WEBSITE BY</span>
+				<img src="images/developer.png" alt="logo">
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

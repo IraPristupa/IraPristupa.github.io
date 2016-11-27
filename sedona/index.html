@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Седона</title>
+	<script src="https://use.fontawesome.com/629bac11d2.js"></script>
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header clearfix">
+			<h1 class="logo"> 
+				<a class="logo__link" href="index.html">
+					<img class="logo__img" src="images/logo.png" alt="logo">
+				</a>
+			</h1>
+			<nav class="menu clearfix">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<a class="menu__link" href="#">Информация</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">Фото и видео</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="filter.html">Гостиницы</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">Карта штата</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="banner">
+				<img class="banner__text" src="images/header-text.png" alt="banner-content">
+				<img class="banner__overlay" src="images/header-overlay.png" alt="banner-content">
+			</div>
+		</header>
+		<main class="main clearfix">
+			<div class="about">
+				<div class="about__content">
+					<h2 class="about__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h2>
+					<p  class="about__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				</div>
+			</div>
+			<div class="reason clearfix">
+				<div class="reason__one">
+					<h3 class="reason__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+					<span class="reason__number">— №1 —</span>
+					<p class="reason__text">СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+				</div>
+			</div>
+			<div class="info clearfix">
+				<div class="info__block">
+					<img class="info__image" src="images/icons/house.png" height="76" alt="info-image1">
+					<h3 class="info__title">Жилье</h3>
+					<p class="info__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</div>
+				<div class="info__block">
+					<img class="info__image" src="images/icons/burger.png" height="76" alt="info-image2">
+					<h3 class="info__title">Еда</h3>
+					<p class="info__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+				</div>
+				<div class="info__block">
+					<img class="info__image" src="images/icons/gift.png" height="76" alt="info-image">
+					<h3 class="info__title">Сувениры</h3>
+					<p class="info__text">Не только китайского, но и местного производства!</p>
+				</div>
+			</div>
+			<div class="reason clearfix">
+				<div class="reason__two">
+					<h3 class="reason__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+					<span class="reason__number">— №1 —</span>
+					<p class="reason__text">СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+				</div>
+			</div>
+			<div class="reasons clearfix">
+				<div class="reason__block">
+					<h3 class="reason__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+					<span class="reason__number">— №3 —</span>
+					<p class="reason__text">ВСЕ достопримечательности находятся очень близко</p>
+				</div>
+				<div class="reason__block">
+					<h3 class="reason__title">КРАСИВАЯ ДОРОГА</h3>
+					<span class="reason__number">— №4 —</span>
+					<p class="reason__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+				</div>
+				<div class="reason__block">
+					<h3 class="reason__title">МАЛО ТУРИСТОВ</h3>
+					<span class="reason__number">— №5 —</span>
+					<p class="reason__text">Большинство едет в гранд каньон и толпится там</p>
+				</div>
+			</div>
+			<div class="booking">
+				<div class="booking__content">
+					<h2 class="booking__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+					<p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+					предложения гостиниц в седоне</p>
+					<button class="btn btn_large btn_brown" onclick="disp(document.getElementById('modal'))">ПОИСК ГОСТИНИЦЫ В седоне </button>
+					<div class="modal" id="modal">
+						<form class="form" action="#">
+							<div class="form__block">
+							    <label for="date-in">ДАТА ЗАЕЗДА:</label>
+							    <input type="text" class="date-in" id="date-in" placeholder="24 АПРЕЛЯ 2016">
+							    <img class="calendar date-in" src="images/icons/calendar.png" alt="calendar-image">
+							</div>
+							<div class="form__block"> 	
+							    <label for="date-out">ДАТА ВЫЕЗДА:</label>
+							    <input type="text" class="date-out" id="date-out" placeholder="4 ИЮЛЯ 2016">
+							    <img class="calendar date-out" src="images/icons/calendar.png" alt="calendar-image">
+							</div>
+							<div class="form__block">
+							    <label for="adults">ВЗРОСЛЫЕ:</label>
+							    <button class="button-minus">-</button>
+							    <input type="text" class="adults" id="adults" placeholder="1">
+							    <button class="button-plus">+</button>
+
+							    <label for="children">ДЕТИ:</label>
+							    <button class="button-minus">-</button>
+							    <input type="text" class="children" id="children" placeholder="1">
+							    <button class="button-plus">+</button>
+							</div>
+							    <button class="btn btn_blue btn_middle">НАЙТИ</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="map">
+				<div class="map__overlay" onClick="style.pointerEvents='none'"></div>
+				<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3194.0945544723695!2d30.487969286973115!3d50.44074694225517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef2971caeab%3A0x36f5ae65d17534c3!2z0JLQvtC60LfQsNC70YzQvdCwINC_0LvQvtGJ0LAsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1479249157908" height="480" allowfullscreen></iframe>
+			</div>
+		</main>
+		<footer class="footer clearfix">
+			<div class="footer__block">
+				<span class="title">#VISITSEDONA</span>
+			</div>
+			<div class="footer__block">
+				<div class="social">
+					<a class="social__link" href="#">
+						<i class="fa fa-twitter social__icon"></i>
+					</a>
+				</div>
+				<div class="social">
+					<a class="social__link" href="#">
+						<i class="fa fa-facebook social__icon"></i>
+					</a>
+				</div>
+				<div class="social">
+					<a class="social__link" href="#">
+						<i class="fa fa-youtube-play social__icon"></i>
+					</a>
+				</div>
+			</div>
+			<div class="footer__block">
+				<span class="text">WEBSITE BY</span>
+				<img src="images/developer.png" alt="logo">
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/script.min.js"></script>
+</body>
+</html>
