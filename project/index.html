@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport-size" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Project</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/flickity.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="css/simplePagination.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>window.jQuery || document.write('<script src="http://code.jquery.com/jquery-1.9.1.min.js"><\/script>')</script>
+	<script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.simplePagination.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	 <!--[if gt IE 8]>
+    <script src="js/html5shiv.min.js" charset="utf-8"></script>
+    <script src="js/respond.js" charset="utf-8"></script>
+    <script src="js/css3-mediaqueries.min.js" charset="utf-8"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h1 class="logo"> 
+				<a class="logo__link" href="index.html">
+					<img class="logo__img" src="img/logo.png" alt="logo">
+				</a>
+			</h1>
+			<div class="book__submit">
+                <button class="button" type="submit">Book a table</button>
+            </div>
+				<nav class="menu clearfix">
+					<ul class="menu__list">
+						<li class="menu__item dropdown">
+							<a class="menu__link" href="#">Menus</a>
+							<ul class="sub-menu">
+								<li class="sub-menu__item">
+									<a class="menu__link" href="#">Breakfast menu</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="menu__link" href="#">Kids menu</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="menu__link" href="#">Dessert menu</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="menu__link" href="filter.html">Main menu</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="menu__link" href="#">Drinks menu</a>
+								</li>
+								<li class="sub-menu__item">
+									<a class="menu__link" href="#">Original menu</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Events</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="filter.html">Book</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Info</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Contact us</a>
+						</li>
+					</ul>
+				</nav>
+				<aside>
+					<ul class="social-nav">
+                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+		        </aside>
+		</header>
+		<main class="main">
+			<div class="carousel__wrapper">
+				<div class="carousel" data-flickity>
+								
+					<a class="carousel__cell" href="#"
+						data-flickity-bg-lazyload="img/festive-set-menu.jpg" title="Festive Set Menu">
+					</a> 
+
+					<a class="carousel__cell" href="#"
+						data-img="img/specials.jpg" title="Festive Set Menu">
+					</a> 
+
+					<a class="carousel__cell" href="#"
+						data-img="img/mondays-special.jpg" title="Festive Set Menu">
+					</a> 
+					
+				</div>
+			</div>
+			<section class="reason">
+                <div class="reason__inner">
+                    <h3 class="reason__heading">Why Bella Fresca?</h3>
+                    <p>Our warm and friendly Bella Fresca restaurants lend themselves to any event, day or night, transforming easily from hearty breakfast, to quick lunch, to a corporate dinner and Champagne reception in the evening.</p>
+                </div>
+			</section>
+			<section class="book">
+                <div class="book__inner">
+                    <h3 class="book__heading">Book a table</h3>
+                    <p>Please tell us the date of your visit</p>
+                    <form action="" class="book__form">
+                        <div class="book__input">
+                            <input type="text" placeholder="Enter date"></br>
+                        </div>
+                        <div class="book__submit">
+                            <button class="button" type="submit">Search for a place</button>
+                        </div>
+                    </form>
+                </div>
+			</section>
+			<section class="panel">
+                <div class="info">
+                    <div class="info__image">
+                        <div><span data-img="img/our-food.jpg"></span></div>
+                    </div>
+                    <div class="info__content">
+                    	<div class="info__inner">
+	                        <h3 class="info__heading">Our food</h3>
+	                        <div class="info__text">
+	                            <p>Classic and contemporary bistro dishes inspired by fantastic French recipes and paired with wines by our expert sommeliers.</p>
+	                        </div>
+	                    </div>
+                    </div>
+                </div>
+                <div class="info" >
+                	<div class="info__image classics">
+                        <div><span data-img="img/camembert.jpg"></span></div>
+                    </div>
+                    <div class="info__content classics">
+                    	<div class="info__inner">
+	                        <h3 class="info__heading">Our classics</h3>
+	                        <div class="info__text">
+	                            <p>Real forever style dishes using the best ingredients, skilfully prepared by our chefs, ensuring the Bella Fresca classics like our breaded Camembert are always a customer favourite.</p>
+	                        </div>
+	                    </div>
+                    </div>
+    			</div>
+            </section>
+			<section class="panel">
+                        <div class="menu-blocks">
+                            <div class="menu-blocks__inner">
+                                <div class="row">
+                                    <div class="menu-blocks__item">
+                                        <a href="/breakfast" class="menu-blocks__link">
+                                            <h2>BREAKFAST MENU</h2>
+                                        </a>
+                                    </div>
+                                    <div class="menu-blocks__item">
+                                        <a href="/main-menu" class="menu-blocks__link">
+                                            <h2>MAIN MENU</h2>
+                                        </a>
+                                    </div>
+                                    <div class="menu-blocks__item">
+                                        <a href="/dessert-menu" class="menu-blocks__link">
+                                            <h2>DESSERT MENU</h2>
+                                        </a>
+                                    </div>
+                                    <div class="menu-blocks__item">
+                                        <a href="/drinks-menu" class="menu-blocks__link">
+                                            <h2>DRINKS MENU</h2>
+                                        </a>
+                                    </div>
+                                    <div class="menu-blocks__item">
+                                        <a href="/kids-menu" class="menu-blocks__link">
+                                            <h2>KIDS MENU</h2>
+                                        </a>
+                                    </div>
+                                    <div class="menu-blocks__item">
+                                        <a href="/original-menu" class="menu-blocks__link">
+                                            <h2>ORIGINAL MENU</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </section>
+		</main>
+
+		<!-- book a table  -->
+
+		<!-- <div class="site-wrapper" id="site-wrapper">
+		    <div class="container">
+			    <section class="book">
+	                <div class="book__inner">
+	                    <h3 class="book__heading">Book a table</h3>
+	                    <p>Please tell us the date of your visit</p>
+	                    <form action="" class="book__form">
+	                        <div class="book__input">
+	                            <input type="text" placeholder="Enter date"></br>
+	                        </div>
+	                        <div class="book__submit">
+	                            <button class="button" type="submit">Search for a place</button>
+	                        </div>
+	                    </form>
+	                </div>
+				</section>	   
+		    </div>
+		</div> -->
+
+		<!-- end of book a table -->
+
+		<!-- gallery of photos -->
+
+		<div class="carousel js-flickity" data-flickity-options='{ "lazyLoad": true }'>
+			<img class="carousel-cell-image" data-flickity-lazyload="img/kitchen.jpg" alt="kitchen" />
+		  	<img class="carousel-cell-image" data-flickity-lazyload="img/sweets.jpeg" alt="sweets" />
+		    <img class="carousel-cell-image" data-flickity-lazyload="img/cook.jpg" alt="cook" />
+		  	<img class="carousel-cell-image" data-flickity-lazyload="img/table.jpeg" alt="table" />
+		  	<img class="carousel-cell-image" data-flickity-lazyload="img/food-salad.jpg" alt="restaurant" />
+		    <img class="carousel-cell-image" data-flickity-lazyload="img/restaurant-yard.jpg" alt="restaurant-yard" />
+		    <img class="carousel-cell-image" data-flickity-lazyload="img/bread.jpeg" alt="restaurant" />
+		</div>
+
+		<!-- gallery of photos -->
+
+		<!-- map -->
+
+		<!-- <div class="map">
+			<div class="map__overlay" onClick="style.pointerEvents='none'"></div>
+			<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3194.0945544723695!2d30.487969286973115!3d50.44074694225517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef2971caeab%3A0x36f5ae65d17534c3!2z0JLQvtC60LfQsNC70YzQvdCwINC_0LvQvtGJ0LAsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1479249157908" height="480" allowfullscreen></iframe>
+		</div> -->
+
+		<!-- end of map -->
+
+		<!-- pagination -->
+		<!-- <main class="main">
+			<div class="menu-image">
+                <div><span data-img="img/table.jpeg"></span></div>
+            </div>
+			<div class="menu-overview">
+				<h2>MAIN MENU</h2>
+		        <div class="food-menu" id="main-menu" >
+		        	<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish number1</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N2</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread,chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N4</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N2</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread,chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter.  </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter.  </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N4</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish number1</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N2</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread,chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter.  </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N4</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish number1</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N2</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread,chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter.  </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N4</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish number1</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N2</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread,chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter.  </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N4</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N2</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread,chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter.  </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N4</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish N3</h3>
+						<p class="food-menu__text"><em></em>wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+					<div class="food-menu__dish">
+						<h3 class="food-menu__title">Dish number1</h3>
+						<p class="food-menu__text"><em></em>chargrilled sourdough bread, wedge of rye &amp; caraway bread and French baguette with d'Isigny butter </p>
+					</div>
+				</div>
+		        <div id="pagination"></div>
+		    </div>
+        </main> -->
+
+        <!-- end of pagination -->
+
+		<footer class="footer" id="footer">
+			<div class="footer__inner">
+                	<div class="footer__block">
+                        <div class="sign-up">
+                            <h3>Sign up to</h3>
+                            <img class="logo__img" src="img/logo.png" alt="logo" height="30">
+                            <p>Get all the latest news, competitions and promotions straight to your inbox!</p>
+                            <form action="#">
+                                <label>Email Address</label>
+                                <input type="text" name="email" placeholder="Enter your email address">
+                                <input type="submit" value=">">
+                            </form>
+                        </div>
+                	</div>
+                	<div class="footer__block">   
+                        <div class="footer-social">
+                            <ul class="social-nav">
+                                <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="footer-links">
+                        <ul>
+                            <li><a href="/location">Location</a></li>
+                            <li><a href="/about-us">About us</a></li>
+                            <li><a href="/news">News</a></li>
+                            <li><a href="/social">Social</a></li>
+                            <li><a href="/events">Groups &amp; Events</a></li>
+                            <li><a href="/delivery">Delivery</a></li>
+                        </ul>
+                    </nav>
+            </div>
+        </footer>
+	</div>
+</body>
+</html>
