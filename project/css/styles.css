@@ -784,9 +784,6 @@ input[type="text"] {
     .info__content {
         font-size: 16px;
     }
-    .info__inner {
-        padding: 7%;
-    }
     .food-menu__dish {
         width: 50%;
         float: left;
@@ -851,6 +848,9 @@ input[type="text"] {
     .info > div {
         width: 50%;
         float: right;
+    }
+    .info__inner {
+        padding: 12%;
     }
     .info__content {
         height: 300px;
