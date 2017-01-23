@@ -80,8 +80,8 @@ $animation-speed: .3s;*/
 body {
     background: url(../img/page-bg.jpg);
     font-family: "philosopheritalic", Arial, sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.5em;
     color: #1D1D1D;
     background-color: #FBF7EF;
 }
@@ -101,6 +101,11 @@ li {
 h3 {
     font-family: "philosopherbold", Arial, sans-serif;
 }
+
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
 .wrapper {
     width: 100%;
     text-align: center;
@@ -114,28 +119,28 @@ h3 {
 }
 .header .book__submit {
     position: absolute;
-    top: 6%;
-    right: 3rem;
+    top: 4%;
+    right: 5%;
 }
 .header .button {
     background: #9B1B25;
     display: none;
 }
-.header .button:hover {
-    color: #fff;
-    background: #c6b356;
-}
 .header .button:hover,
 .header .button:focus {
-    right: 3.5rem;
-    -webkit-transition: 0.2s right cubic-bezier(0.55, 0.085, 0.68, 0.53), 0.2s padding cubic-bezier(0.55, 0.085, 0.68, 0.53), 0.2s box-shadow cubic-bezier(0.55, 0.085, 0.68, 0.53);
-    transition: 0.2s right cubic-bezier(0.55, 0.085, 0.68, 0.53), 0.2s padding cubic-bezier(0.55, 0.085, 0.68, 0.53), 0.2s box-shadow cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    color: #fff;
+    background: #c6b356;
 }
 .header .logo__img {
     height: 60px;
 }
+
+.logo__link {
+    width: 70%;
+    margin: 0 auto;
+}
 .menu {
-    background: #000;
+    background: #1d1d1d;
     text-align: center;
     position: relative;
 }
@@ -224,7 +229,6 @@ h3 {
 .carousel__cell {
     display: none;
     width: 100%;
-    margin-top: -.1rem;
     background: 50% 50% no-repeat;
     background-size: cover;
     height: 100%;
@@ -276,9 +280,9 @@ h3 {
 .reason__inner {
     margin-left: auto;
     margin-right: auto;
-    padding: 4rem;
+    padding: 7%;
     width: 100%;
-    max-width: 45rem;
+    max-width: 768px;
 }
 .reason__heading {
     text-transform: uppercase;
@@ -291,8 +295,6 @@ h3 {
 /*  ------------------- booking --------------------- */
 
 .book {
-    /*background: #9B1B25;*/
-    
     background: url(../img/restaurant.jpg);
     color: #1d1d1d;
     position: relative;
@@ -301,8 +303,9 @@ h3 {
     background-size: cover;
 }
 .book__inner {
-    padding: 4rem 2rem 5rem;
+    padding: 13% 6% 15%;
     background-color: rgba(251, 247, 239, 0.85);
+    /*background-color: rgb(251, 247, 239);*/
     z-index: 1;
     max-width: 640px;
     margin: 0 auto;
@@ -322,20 +325,18 @@ h3 {
     border-top: 2px solid #c6b356;
     border-bottom: 2px solid #1d1d1d;
     margin-bottom: 32px;
-    /*background: rgba(198, 179, 86, 0.2);*/
     background: #c6b356;
 }
 input[type="text"] {
     border: 1px solid rgba(29, 29, 29, 0.15);
     color: #888;
     font-size: 14px;
-    line-height: 1.5em;
+    height: 36px;
     padding: 6px 10px;
     width: 235px;
     outline: none;
 }
 .button {
-    /*font-family: 'PTSans Bold', Arial, sans-serif;*/
     font-family: "philosopherbold", Arial, sans-serif;
     font-weight: 700;
     font-size: 15px;
@@ -415,9 +416,9 @@ input[type="text"] {
 .info__inner {
     margin-left: auto;
     margin-right: auto;
-    padding: 4rem 3rem;
+    padding: 11% 8%; 
     width: 100%;
-    max-width: 40rem;
+    max-width: 640px;
 }
 .info__heading {
     text-transform: uppercase;
@@ -434,8 +435,7 @@ input[type="text"] {
     position: relative;
     float: left;
     width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: 0 2%; 
 }
 .menu-blocks {
     position: relative;
@@ -448,7 +448,7 @@ input[type="text"] {
     background-size: 300px auto;
     position: relative;
     overflow: hidden;
-    padding: 2rem 1rem;
+    padding: 7% 2%;
 }
 .menu-blocks__link {
     -webkit-touch-callout: none;
@@ -460,17 +460,17 @@ input[type="text"] {
     box-shadow: 1px 1px 4px #ccc, -1px -1px 4px #ccc;
     background: #9B1B25;
     border: 1px solid #c6b356;
-    margin: 0 0 2rem;
-    height: 6rem;
+    margin-bottom: 12%;
+    height: 100px;
 }
 .menu-blocks__link h2 {
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: 0;
     width: 100%;
     font-family: "philosopherbold", Arial, sans-serif;
     line-height: 1.1;
-    font-size: 1.2rem;
+    font-size: 19px;
     color: #c6b356;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -483,19 +483,7 @@ input[type="text"] {
     line-height: 0;
     text-decoration: none;
 }
-.menu-blocks__link:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 40%;
-    right: .2rem;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: 0.2s color cubic-bezier(0.365, 0.005, 0.355, 1), 0.2s -webkit-transform cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: 0.2s color cubic-bezier(0.365, 0.005, 0.355, 1), 0.2s -webkit-transform cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: 0.2s color cubic-bezier(0.365, 0.005, 0.355, 1), 0.2s transform cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: 0.2s color cubic-bezier(0.365, 0.005, 0.355, 1), 0.2s transform cubic-bezier(0.645, 0.045, 0.355, 1), 0.2s -webkit-transform cubic-bezier(0.645, 0.045, 0.355, 1);
-}
+
 .menu-blocks__link:hover {
     background: rgba(198, 179, 86, 0.9);
 }
@@ -516,7 +504,7 @@ input[type="text"] {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     z-index: 3;
-    padding: 3rem 2rem 1rem;
+    padding: 13% 10% 4%;
     color: #FBF7EF;
     background: #1D1D1D;
     position: relative;
@@ -536,9 +524,9 @@ input[type="text"] {
     color: #c6b356;
 }
 .sign-up p {
-    margin: 1rem 0 2rem;
+    margin: 3% 0 5%;
     color: #FBF7EF;
-    font-size: 1.1rem;
+    font-size: 16px;
     letter-spacing: -0.03em;
 }
 .sign-up form {
@@ -554,12 +542,12 @@ input[type="text"] {
 }
 .sign-up form input[type='submit'] {
     position: absolute;
-    top: 45%;
+    top: 48%;
     right: 0;
     padding: 0;
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: none;
     color: #1d1d1d;
@@ -569,10 +557,6 @@ input[type="text"] {
     -webkit-transition: 0.2s color cubic-bezier(0.55, 0.085, 0.68, 0.53);
     transition: 0.2s color cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
-.sign-up form input[type='submit']:before,
-.sign-up form input[type='submit']:after {
-    display: none;
-}
 .sign-up form input[type='submit']:hover {
     box-shadow: none;
     color: #C7A932;
@@ -580,7 +564,7 @@ input[type="text"] {
     transition: 0.2s color cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .footer-social {
-    padding-top: 2rem;
+    padding-top: 30px;
     text-align: center;
 }
 .social-nav {
@@ -613,27 +597,27 @@ input[type="text"] {
 }
 .header .social-nav {
     position: absolute;
-    top: 37%;
-    left: 3rem;
-    height: 5rem;
+    top: 40%;
+    left: 5%;
+    height: 80px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     display: none;
 }
 .header .social-nav li {
-    margin: 0 .2rem;
-    width: 3rem;
-    height: 3rem;
+    margin: 0 4px;
+    width: 45px;
+    height: 45px;
 }
 .header .social-nav a {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    height: 2.9rem;
-    width: 2.9rem;
-    font-size: 1.3rem;
-    line-height: 3rem;
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    line-height: 2.5em;
     color: #FBF7EF;
     background: #1d1d1d;
 }
@@ -645,28 +629,24 @@ input[type="text"] {
     background: #c6b356;
 }
 .footer .social-nav {
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
 }
 .footer .social-nav li {
-    margin: 0 0 0 1rem;
+    margin-left: 15px;
     height: 60px;
 }
 .footer .social-nav a {
-    height: 2.6rem;
-    width: 2.6rem;
-    font-size: 1.5rem;
-    line-height: 2.8rem;
+    height: 45px;
+    width: 45px;
+    font-size: 22px;
+    line-height: 2.2em;
     border-width: 2px;
 }
 .footer .social-nav a:focus {
     box-shadow: none;
 }
 .footer-links {
-/*    float: left;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;*/
-    font-size: .9rem;
+    font-size: 14px;
     text-align: center;
 }
 .footer-links ul {
@@ -679,7 +659,7 @@ input[type="text"] {
 }
 .footer-links ul a {
     display: inline-block;
-    padding: .2rem .8rem;
+    padding: 1% 2%;
     font-weight: normal;
     color: #FBF7EF;
     text-decoration: none;
@@ -736,8 +716,7 @@ input[type="text"] {
 }
 .food-menu {
     text-align: left;
-    font-size: 1.1rem;
-    padding: 2rem 0;
+    padding: 6% 0;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -746,11 +725,11 @@ input[type="text"] {
 }
 
 .food-menu__dish {
-    margin: 0.8rem 0;
+    margin: 2% 0;
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding: 0 2rem;
+    padding: 0 6%; 
 }
 
 .food-menu__title {
@@ -770,7 +749,7 @@ input[type="text"] {
     display: table;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 3rem;
+    padding-bottom: 6%;
 }
 
 @media only screen and (min-width: 480px) {
@@ -784,8 +763,8 @@ input[type="text"] {
         width: 50%;
     }
     .menu-blocks__inner {
-        padding-top: 6rem;
-        padding-bottom: 4rem;
+        padding-top: 10%;
+        padding-bottom: 8%;
     }
 }
 @media only screen and (min-width: 640px) {
@@ -800,18 +779,18 @@ input[type="text"] {
         padding: 8% 0;
     }
     .book__inner {
-        padding: 6rem 4rem 7rem;
+        padding: 10% 7% 12%;
     }
     .info__content {
         font-size: 16px;
     }
     .info__inner {
-        padding: 4rem;
+        padding: 7%;
     }
     .food-menu__dish {
         width: 50%;
         float: left;
-        padding: 0 1rem;
+        padding: 0 3%; 
     }
     .food-menu__text {
         min-height: 80px;
@@ -826,11 +805,11 @@ input[type="text"] {
         padding-top: 40%;
     }
     .footer {
-        padding-top: 5rem;
-        padding-bottom: 1rem;
+        padding-top: 8%;
+        padding-bottom: 2%;
     }
     .footer-links {
-        padding-top: 1rem;
+        padding-top: 2%;
     }
     .menu-blocks__item {
         width: 33.3%;
@@ -859,8 +838,8 @@ input[type="text"] {
     .sub-menu {
         top: 54px;
     }
-    .menu-overview h2 {
-        line-height: 3em;
+    .menu-overview h3 {
+        line-height: 2em;
     }
 
 }
