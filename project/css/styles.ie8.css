@@ -1,0 +1,27 @@
+.book__inner {
+    padding: 13% 6% 15%;
+    background-color: rgb(251, 247, 239);
+    z-index: 1;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.menu-overview {
+    background-color: rgb(251, 247, 239);
+}
+
+.menu-blocks__link:hover {
+    background: rgb(198, 179, 86);
+}
+
+.header .social-nav {
+    top: 5%;
+}
+
+.menu-blocks__link h2 {
+    top: 33%;
+}
+
+.sign-up form input[type='submit'] {
+    top: 12%;
+}
