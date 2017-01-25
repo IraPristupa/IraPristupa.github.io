@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport-size" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" /> -->
+    <title>Booking</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/compiled-style.min.css">
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="dist/css/styles.ie8.style">
+    <script src="dist/js/html5shiv.min.js" charset="utf-8"></script>
+    <script src="dist/js/respond.js" charset="utf-8"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <h1 class="logo">
+            <a class="logo__link" href="index.html">
+                <img class="logo__img" src="dist/img/logo.png" alt="logo">
+            </a>
+        </h1>
+        <div class="book__submit">
+            <button class="button" type="submit">Book a table</button>
+        </div>
+        <nav class="menu clearfix">
+            <ul class="menu__list">
+                <li class="menu__item dropdown">
+                    <a class="menu__link" href="menu.html">Menus</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Breakfast menu</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Kids menu</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Dessert menu</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Main menu</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Drinks menu</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Original menu</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="info.html">Events</a>
+                </li>
+                <li class="menu__item active">
+                    <a class="menu__link" href="booking.html">Book</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="info.html">Info</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="location.html">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+        <aside>
+            <ul class="social-nav">
+                <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </aside>
+    </header>
+
+    <main class="main">
+        <section class="book">
+            <div class="book__inner">
+                <h3 class="book__heading">Book a table</h3>
+                <p>Please tell us the date of your visit</p>
+                <form action="" class="book__form">
+                    <div class="book__input">
+                        <input type="text" placeholder="Enter date"></br>
+                        <select name="month" id="month">
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                        </select>
+                        <select name="day" id="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="time" id="time">
+                            <option value="10">10-00</option>
+                            <option value="11">11-00</option>
+                            <option value="12">12-00</option>
+                            <option value="13">13-00</option>
+                            <option value="14">14-00</option>
+                            <option value="15">15-00</option>
+                            <option value="16">16-00</option>
+                            <option value="17">17-00</option>
+                            <option value="18">18-00</option>
+                            <option value="19">19-00</option>
+                            <option value="20">20-00</option>
+                            <option value="21">21-00</option>
+                            <option value="22">22-00</option>
+                            <option value="23">23-00</option>
+                            <option value="24">24-00</option>
+                        </select>
+                    </div>
+                    <div class="book__submit">
+                        <button class="button" type="submit">Search for a place</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer__inner">
+            <div class="footer__block">
+                <div class="sign-up">
+                    <h3>Sign up to</h3>
+                    <img class="logo__img" src="dist/img/logo.png" alt="logo" height="30">
+                    <p>Get all the latest news, competitions and promotions straight to your inbox!</p>
+                    <form action="#">
+                        <label>Email Address</label>
+                        <input type="text" name="email" placeholder="Enter your email address">
+                        <input type="submit" value=">">
+                    </form>
+                </div>
+            </div>
+            <div class="footer__block">
+                <div class="footer-social">
+                    <ul class="social-nav">
+                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="footer-links">
+                <ul>
+                    <li><a href="/location">Location</a></li>
+                    <li><a href="/about-us">About us</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/social">Social</a></li>
+                    <li><a href="/events">Groups &amp; Events</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="dist/js/script.min.js"></script>
+</body>
+</html>

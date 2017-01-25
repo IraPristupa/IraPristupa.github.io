@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport-size" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" /> -->
+    <title>Booking</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/compiled-style.min.css">
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="dist/css/styles.ie8.style">
+    <script src="dist/js/html5shiv.min.js" charset="utf-8"></script>
+    <script src="dist/js/respond.js" charset="utf-8"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <h1 class="logo">
+            <a class="logo__link" href="index.html">
+                <img class="logo__img" src="dist/img/logo.png" alt="logo">
+            </a>
+        </h1>
+        <div class="book__submit">
+            <button class="button" type="submit">Book a table</button>
+        </div>
+        <nav class="menu clearfix">
+            <ul class="menu__list">
+                <li class="menu__item dropdown active">
+                    <a class="menu__link" href="menu.html">Menus</a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Breakfast menu</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Kids menu</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Dessert menu</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Main menu</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Drinks menu</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="menu__link" href="menu.html">Original menu</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="info.html">Events</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="booking.html">Book</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="info.html">Info</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="location.html">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+        <aside>
+            <ul class="social-nav">
+                <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </aside>
+    </header>
+    <main class="main" id="main-menu"></main>
+    <footer class="footer" id="footer">
+        <div class="footer__inner">
+            <div class="footer__block">
+                <div class="sign-up">
+                    <h3>Sign up to</h3>
+                    <img class="logo__img" src="dist/img/logo.png" alt="logo" height="30">
+                    <p>Get all the latest news, competitions and promotions straight to your inbox!</p>
+                    <form action="#">
+                        <label>Email Address</label>
+                        <input type="text" name="email" placeholder="Enter your email address">
+                        <input type="submit" value=">">
+                    </form>
+                </div>
+            </div>
+            <div class="footer__block">
+                <div class="footer-social">
+                    <ul class="social-nav">
+                        <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="footer-links">
+                <ul>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Social</a></li>
+                    <li><a href="#">Groups &amp; Events</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</div>
+    <script type="text/template" data-name="Menus">
+        <div class="menu-image">
+            <div><span data-img="dist/img/table.jpeg"></span></div>
+        </div>
+        <div class="menu-overview">
+            <h2>MENU</h2>
+            <div class="food-menu">
+                <% menus.forEach(function(menu) { %>
+
+                <div class="food-menu__dish">
+
+                    <h3 class="food-menu__title"><%= menu.title %></h3>
+                    <p class="food-menu__text"><em><%= menu.description %></em></p>
+
+                </div>
+                <% }); %>
+            </div>
+            <div id="pagination"></div>
+        </div>
+    </script>
+    <script type="text/javascript" src="dist/js/lodash.js"></script>
+    <script type="text/javascript" src="dist/js/tmpl.js"></script>
+    <script type="text/javascript" src="dist/js/menus.js"></script>
+    <script type="text/javascript" src="dist/js/script.min.js"></script>
+</body>
+</html>
