@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>bookimed</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header class="header">
+    <div class="header__top">
+    	<div class="logo">
+	        <a class="logo__link" href="#">
+	        	<img src="http://bookimed.com/frontend/img/logo-heart.png" alt="Bookimed" class="logo__img">
+	        </a>
+	        <h1>International patients support center</h1>
+	    </div>
+        <div class="login-callback">
+        	<div class="callback">
+            	<a class="btn" href="#" role="button">Call me back</a>
+            </div>
+        	<div class="login">
+                <a class="">Login</a>
+            </div>
+        </div>
+        <div class="language">
+        	<a href="#" class="lang-rus">Популярные страны и клиники (2016)</a>
+            <span class="lang-name">Русский: </span>
+        </div>
+    </div>
+    <div class="header__bottom">
+            <div class="search-block">
+                <div class="search">
+                    <label>Disease, department, clinic, doctor</label>
+                    <input type="text" id="search_row" placeholder="oncology">
+                </div>
+                <div class="dropdown">
+					<div class="select">
+						<label>Country</label>
+					  	<span class="placeholder">All countries</span>
+					  	<ul>
+					  		<li data-value="all-countries">All countries</li>
+					    	<li data-value="austria">Austria</li>
+					    	<li data-value="bulgaria">Bulgaria</li>
+					    	<li data-value="czech Republic">Czech Republic</li>
+					    	<li data-value="estonia">Estonia</li>
+					    	<li data-value="france">France</li>
+					    	<li data-value="germany">Germany</li>
+					  	</ul>
+					  	<input type="hidden" name="changeme"/>
+					</div>
+				</div>
+                <input type="submit" id="search_find" value="Search">
+                <ul class="categories">
+                    <li><a href="#">Countries</a></li>
+                    <li><a href="#">Directions</a></li>
+                    <li><a href="#">Clinics</a></li>
+                    <li><a href="#">Illnesses</a></li>
+                </ul>
+            </div>
+            <div class="video_how_it_works">
+                    <!-- <a class="video-top video" href="https://www.youtube.com/watch?v=HNruYrXqhQM"> -->
+                    <a href="#" data-toggle="modal" data-target="#myModal">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>How it works?<br><strong>WATCH IT</strong></td>
+                                    <td><img src="http://bookimed.com/frontend/img/play_circle.png"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </a>
+            </div>
+            <div class="support">
+                <span>Hot line support:</span><br>
+                <span class="phone">+38(067)352-91-82</span>
+            </div>
+            </div>
+        </div>
+
+    <!-- Modal -->
+	<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+				</div>
+				<div class="modal-body">
+	                <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</header>
+</body>
+</html>

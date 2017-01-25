@@ -1,0 +1,153 @@
+a: hover {
+	text-decoration: none;
+}
+
+.header {
+    width: 1210px;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    padding: 15px 0;
+}
+
+.header__top {
+	clear: both;
+	position: relative;
+	overflow: hidden;
+}
+
+.logo {
+	float: left;
+	width: 50%;
+}
+
+.logo a {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.logo  h1 {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 19px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.login-callback {
+	float: right;
+	width: 40%;
+}
+
+.login-callback div {
+	float: right;
+	margin: 0 20px;
+}
+
+.login {
+	padding-top: 20px;
+}
+
+.login a,
+.language a {
+	color: #fd7b64;
+	font-size: 16px;
+}
+
+.btn {
+	font-size: 16px;
+    border: 1px solid #f35a3f;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-image: linear-gradient(to bottom,#fd7b64 0,#f35a3f 100%);
+}
+
+.btn:hover {
+	background: #e94f34;
+	color: #fff;
+
+    background-image: -moz-linear-gradient(top,#e84d32 0,#eb5337 100%);
+    background-image: -o-linear-gradient(top,#e84d32 0,#eb5337 100%);
+    background-image: -webkit-linear-gradient(top,#e84d32 0,#eb5337 100%);
+    background-image: linear-gradient(top,#e84d32 0,#eb5337 100%);
+}
+
+.language {
+	width: 100%;
+	float: right;
+}
+
+.language > a, span {
+	float: right;
+}
+
+.language a {
+	text-decoration: underline;
+}
+
+.language span {
+	padding-right: 5px;
+	font-size: 16px
+}
+
+
+
+
+.modal-dialog {
+    width: 620px;
+    max-width: 90%;
+    margin: 7% auto;
+}
+
+.close {
+	position: absolute;
+    top: -25px;
+    right: -25px;
+    font-size: 30px;
+    opacity: 0.4;
+}
+
+.header__bottom {
+	position: relative;
+}
+
+.search-block {
+	width: 739px;
+    height: 106px;
+    background-image: url(http://bookimed.com/frontend/img/bg-search.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+}
+
+.categories {
+	width: 100%;
+}
+
+.categories li {
+	float: left;
+	list-style: none;
+}
+
+.video_how_it_works {
+	position: absolute;
+    left: 740px;
+    top: 30px;
+    border: 1px solid #84af00;
+    width: 190px;
+}
+
+.video_how_it_works table {
+    color: #84af00;
+}
+
+.video_how_it_works td {
+    vertical-align: middle;
+    padding: 5px;
+}

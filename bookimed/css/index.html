@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Article</title>
+
+    <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+    	const ArticleComponent = React.createClass({
+    		render() {
+    			return React.createElement( 'div', {},
+    				React.createElement('h1', {}, this.props.name),
+    				React.createElement('a', {}, this.props.author),
+    				React.createElement('p', {}, this.props.text)
+    			);
+    		}
+    	});
+
+        ReactDOM.render(
+        	React.createElement(ArticleComponent, { 
+        		name: "Article title", 
+        		author: "John Snow", 
+        		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque lorem sem, luctus tincidunt urna ullamcorper non. Etiam diam orci, consectetur in auctor id, imperdiet fringilla velit. Aenean vitae ex quam. Sed placerat orci id dolor feugiat, id dictum nunc sollicitudin. Nunc feugiat, diam vel pellentesque pretium, mauris nisi pharetra nunc, in pulvinar nunc nunc a tellus. Cras at venenatis justo. Nulla imperdiet nisi at enim dignissim, sit amet sollicitudin velit pretium. Phasellus leo mi, blandit vel quam in, molestie bibendum neque. "
+        	});
+        	document.getElementById('root')
+        );
+    </script>
+</body>
+</html>
