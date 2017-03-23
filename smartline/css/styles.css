@@ -1,0 +1,508 @@
+@font-face {
+    font-family: 'Roboto Condensed Bold';
+    src: url('../fonts/robotocondensed-bold-webfont.eot');
+    src: url('../fonts/robotocondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
+         url('../fonts/robotocondensed-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Regular';
+    src: url('../fonts/robotocondensed-regular-webfont.eot');
+    src: url('../fonts/robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+         url('../fonts/robotocondensed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Light';
+    src: url('../fonts/robotocondensed-light-webfont.eot');
+    src: url('../fonts/robotocondensed-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-light-webfont.woff2') format('woff2'),
+         url('../fonts/robotocondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: #f9fafc;
+	color: #383838;
+}
+
+input[type="text"] {
+	border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    font-family: "Roboto Condensed Light", sans-serif;
+    font-size: 18px;
+    line-height: 1.6em;
+    padding-left: 20px;
+    margin-left: 6px;
+    width: 340px;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    color: #707070;
+}
+
+.container {
+	max-width: 100%;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 15px;
+}
+
+.btn {
+	color: #fff;
+	background: #ff3800;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-family: 'Roboto Condensed Bold', Arial, sans-serif;
+	font-size: 18px;
+    line-height: 3.2em;
+    border-radius: 30px;
+    box-shadow: 0px 13px 50px rgba(255, 0, 0, 0.6)
+}
+
+.btn-large {
+	width: 283px;
+}
+
+.btn-small {
+	width: 198px;
+}
+
+.btn:hover {
+	border-color: #fff;
+  	background: #6b6d6f;
+  	box-shadow: none;
+  	outline: none;
+  	transition: all 0.25s ease-in-out;
+  	border-radius: 30px;
+}
+
+/* ---------------------- HEADER ------------------------ */
+
+.header {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 15px 10px;
+    font-family: 'Roboto Condensed Light', Arial, sans-serif;
+    font-size: 12px;
+    color: #707070;
+}
+
+.header-info {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 456px;
+}
+
+.header-info p:first-child {
+	font-family: 'Roboto Condensed Regular', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.9em;
+	color: #000;
+}
+
+.header-menu {
+	display: none;
+}
+
+.header-logo {
+	padding-top: 20px;
+}
+
+
+/* ----------------------- MAIN -------------------------- */
+
+.main {
+	position: relative;
+}
+
+/* ------------ slider ------------------- */
+
+.slider-info {
+    z-index: 1;
+    left: 36px;
+    color: #fff;
+    width: 456px;
+    padding-top: 100px;
+}
+
+.slider-title {
+	font-size: 60px;
+	line-height: 2.2em;
+	font-family: 'Yeseva One';
+}
+
+.slider-text {
+	font-family: 'Roboto Condensed Light', sans-serif;
+	font-size: 30px;
+	line-height: 1.6em;
+	font-weight: 300;
+	padding-bottom: 55px;
+}
+
+.carousel {
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	width: 100%;
+	height: 650px;
+	background: #455666;
+	outline: none;
+}
+
+.carousel.flickity-enabled .carousel-cell {
+  	display: block; 
+}
+
+.carousel-cell {
+	display: none;
+	width: 100%;
+	background: top right no-repeat;
+	background-size: cover;
+	height: 650px;
+}
+
+.carousel-cell:first-child {
+	display: block;
+}
+
+.carousel-cell img {
+    width: 100%; 
+}
+
+.carousel-cell.is-selected {
+    background-image: url(../img/banner-bg.jpg); 
+}
+  
+.flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+}
+
+.flickity-page-dots .dot {
+	display: inline-block;
+  	width: 15px;
+  	height: 15px;
+  	margin: 0 8px;
+  	opacity: 1;
+  	background: transparent;
+  	border: 1px solid #6b6d6f;
+  	border-radius: 50%;
+}
+
+.flickity-page-dots .dot.is-selected {
+  	border-color: #fff;
+  	background: #6b6d6f;
+}
+
+/* ----------------- info ------------------- */
+
+.info {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 105px 0 115px;
+}
+
+.info-block {
+	width: 270px;
+	padding: 40px;
+	background: #fff;
+	margin-bottom: 25px;
+}
+
+.info-title {
+	font-family: "Roboto Condensed Bold", sans-serif;
+	font-size: 24px;
+	max-width: 80%;
+}
+
+.info-title::after { 
+    content: " ___ ";
+    font-family: "Roboto Condensed Light", sans-serif;
+    font-weight: 100;
+    color: #eecec5;
+}
+
+.info-text {
+	font-family: "Roboto Condensed Light", sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	padding-top: 20px;
+}
+
+.info span {
+	display: none;
+}
+
+/* ------------------ map -------------------- */
+
+.map-overlay {
+	background:transparent; 
+	position:relative; 
+	width:100%;
+	height:720px;
+	top:720px;
+	margin-top:-720px;
+}
+
+.iframe {
+	width:100%;
+	border: none;
+}
+
+.form-wrapper {
+    width: 570px;
+    height: 600px;
+    position: absolute;
+    bottom: 74px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 70px 40px 100px;
+    font-size: 18px;
+}
+
+.form {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-family: "Roboto Condensed Light", sans-serif;
+	font-weight: 300;
+	line-height: 1.7em;
+
+}
+
+.form-title {
+	font-size: 48px;
+	line-height: 1.4em;
+	font-family: "Roboto Condensed Regular", sans-serif;
+	font-weight: 500;
+    max-width: 60%;
+    padding-bottom: 10px;
+}
+
+.form-text {
+	font-size: 18px;
+	line-height: 1.7em;
+}
+
+.form .btn {
+	margin: 15px 0 -20px 0;
+}
+
+/* ---------------------- FOOTER ----------------------- */
+
+.footer {
+	background: #1e2027;
+	color: #fff;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 40px 15px;
+	font-family: "Roboto Condensed Light", sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+
+
+/* ======================= MEDIA QUERIES ========================= */
+
+@media only screen and (max-width: 568px) {
+	.btn {
+		font-size: 14px;
+		width: 195px;
+		background: #f04a42;
+	}
+
+	.container {
+	  	width: 320px;
+	}
+
+/* ------------ header ---------- */
+
+	.header {
+		align-items: center;
+		padding: 15px;
+	}
+
+	.header-menu {
+		display: block;
+	}
+
+	.bar {
+	    width: 35px;
+	    height: 4px;
+	    background-color: #333;
+	    margin: 6px 0;
+	    transition: 0.4s;
+	}
+
+	.header-info {
+		width: 80%;
+	}
+
+	.header-info p:not(:first-child),
+	.address, .logo {
+		display: none;
+	}
+
+/* ------------ slider --------------- */
+
+	.carousel {
+		height: 315px;
+	}
+
+	.carousel-cell {
+		background: top center no-repeat;
+	}
+
+  	.slider-info {
+	  	width: 100%;
+	  	text-align: center;
+	  	padding: 30px 25px;
+	}
+
+	.slider-title {
+	    font-size: 34px;
+	    line-height: 2em;
+	}
+
+	.slider-text {
+		font-size: 18px;
+	    padding-bottom: 30px;
+	}
+
+ 	.flickity-page-dots {
+    	bottom: 25px;
+	}
+
+/* ------------- form -------------- */
+
+	.form-wrapper {
+	    width: 300px;
+	    height: 600px;
+	    right: 10px;
+	    padding: 40px 15px;
+	    font-size: 14px;
+	}
+
+	input[type="text"] {
+		width: 265px;
+	}
+
+	.form-title {
+		font-size: 36px;
+		line-height: 1.4em;
+	    max-width: 65%;
+	}
+
+	.form-text {
+		font-size: 14px;
+	    line-height: 2em;
+	    width: 90%;
+	}
+
+	.form .btn {
+		margin: 0;
+		width: 138px;
+		margin-left: 6px;
+	}
+
+/* ------------- info ---------------- */
+
+	.info {
+	    position: relative;
+	    height: 480px;
+	    list-style-type: none;
+	}
+
+	.info-block {
+		display:none;
+	    position: absolute;
+	    left: 25px;
+	    top: 60px;
+	    height: 305px;
+	}
+
+	.info-block:nth-child(1) {
+		display:block;
+	}
+
+	.info span {
+		display: block;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		bottom: 7%;
+		cursor: pointer;
+		border: 1px solid #6d6b6e;
+	    font-family: "Roboto Condensed Light", sans-serif;
+	    font-size: 30px;
+	    line-height: 1.3em;
+	    font-weight: 100;
+	    text-align: center;
+	    color: #6d6b6e;
+	    transition: all 0.25s ease-in-out;
+	}
+
+	.info span:hover,
+	.info span:active {
+		color: #fff;
+		background: #6d6b6e;
+	}
+
+	.info span.next {
+		right: 32%;
+	}
+
+	.info span.prev {
+		left: 32%;
+	}
+
+/* ------------- footer ---------------- */
+
+	.footer-content {
+		padding: 15px 5px 15px 10px;
+	}
+
+}
+
+  
